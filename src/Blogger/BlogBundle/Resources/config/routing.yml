@@ -1,0 +1,74 @@
+# src/Blogger/BlogBundle/Resources/config/routing.yml
+BloggerBlogBundle_homepage:
+    path:     /
+    defaults: { _controller: "BloggerBlogBundle:Page:index" }
+    requirements:
+         methods:  GET
+
+BloggerBlogBundle_about:
+    path:   /about
+    defaults: { _controller: "BloggerBlogBundle:Page:about" }
+    requirements:
+         methods:  GET
+
+BloggerBlogBundle_contact:
+    path:  /contact
+    defaults: { _controller: "BloggerBlogBundle:Page:contact" }
+    requirements:
+        methods:  GET|POST
+
+BloggerBlogBundle_blog_show:
+    path:  /{id}/{slug}
+    defaults: { _controller: "BloggerBlogBundle:Blog:show" }
+    requirements:
+        methods:  GET
+        id: \d+
+
+BloggerBlogBundle_comment_create:
+    path:  /comment/{blog_id}
+    defaults: { _controller: "BloggerBlogBundle:Comment:create" }
+    requirements:
+        methods:  POST
+        blog_id: \d+
+
+BloggerBlogBundle_comment_delete:
+    path:  /comment/delete/{commentId}
+    defaults: { _controller: "BloggerBlogBundle:Comment:delete" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_admin:
+    path:  /admin
+    defaults: { _controller: "BloggerBlogBundle:Admin:index" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_admin_add:
+    path:  /admin/addBlog
+    defaults: { _controller: "BloggerBlogBundle:Admin:add" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_admin_create:
+    path:  /admin/createBlog
+    defaults: { _controller: "BloggerBlogBundle:Admin:create" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_blog_delete:
+    path:  /admin/blogDelete/{blogId}
+    defaults: { _controller: "BloggerBlogBundle:Admin:delete" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_blog_change:
+    path:  /admin/change/{blogId}
+    defaults: { _controller: "BloggerBlogBundle:Admin:change" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_blog_update:
+    path:  /admin/update/{blogId}
+    defaults: { _controller: "BloggerBlogBundle:Admin:update" }
+    requirements:
+        methods:  POST

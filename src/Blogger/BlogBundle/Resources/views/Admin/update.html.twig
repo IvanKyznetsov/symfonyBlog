@@ -1,0 +1,21 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/admin.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Admin{% endblock%}
+
+{% block body %}
+    <h2>Update Blog</h2>
+
+    {{ form_start(form, { 'action': path('BloggerBlogBundle_blog_update',{ 'blogId': blog.id }), 'method': 'POST', 'attr': {'class': 'blogger'} }) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.title, {'value' : blog.title}) }}
+    {{ form_row(form.author, {'value' : blog.author}) }}
+    {{ form_row(form.blog, {'value' : blog.blog}) }}
+    {{ form_row(form.image) }} <img class="image_update" src="{{ asset(['images/', blog.image]|join) }}" />
+    {{ form_row(form.tags, {'value' : blog.tags}) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Submit" />
+{% endblock %}

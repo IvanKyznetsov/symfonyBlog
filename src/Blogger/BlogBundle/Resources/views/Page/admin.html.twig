@@ -1,0 +1,24 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/admin.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Admin{% endblock%}
+
+{% block body %}
+    <a href="{{ path('BloggerBlogBundle_admin_add') }}">Add Blog</a><hr>
+    {% for blog in blogs %}
+        <article class="blog">
+            <div class="delete_blog">
+                {% if is_granted('ROLE_ADMIN') %}
+                    <a href="{{ path('BloggerBlogBundle_blog_delete',{ 'blogId': blog.id }) }}">X</a>
+                    <a href="{{ path('BloggerBlogBundle_blog_change',{ 'blogId': blog.id }) }}">Update</a>
+                {% endif %}
+            </div>
+            <div class="blog_show">
+                <h3><a href="{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}">{{ blog.title }}</a></h3>
+                <p>Author: <span class="highlight">{{ blog.author }}</span> at {{ blog.created|date('h:iA') }}</p>
+            </div>
+        </article>
+    {% else %}
+        <p>There are no blog entries for symblog</p>
+    {% endfor %}
+{% endblock %}

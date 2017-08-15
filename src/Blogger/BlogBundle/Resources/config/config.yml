@@ -1,0 +1,4 @@
+parameters:
+    # Blogger contact email address
+    blogger_blog.emails.contact_email: ivan.kyznecov94@gmail.com
+    blogger_blog.comments.latest_comment_limit: 10

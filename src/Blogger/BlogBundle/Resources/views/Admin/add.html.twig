@@ -1,0 +1,21 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/admin.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Admin{% endblock%}
+
+{% block body %}
+    <h2>Add new Blog</h2>
+
+    {{ form_start(form, { 'action': path('BloggerBlogBundle_admin_create'), 'method': 'POST', 'attr': {'class': 'blogger'} }) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.title) }}
+    {{ form_row(form.author) }}
+    {{ form_row(form.blog) }}
+    {{ form_row(form.image) }}
+    {{ form_row(form.tags) }}
+
+    {{ form_rest(form) }}
+
+    <input type="submit" value="Submit" />
+{% endblock %}

@@ -1,0 +1,49 @@
+sudo a2ensite symfonyTest
+
+service apache2 reload
+
+app/console server:run 127.0.0.1:8001
+
+
+/**
+     * Set user
+     *
+     * @param string $user
+     *
+     * @return Comment
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return string
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+
+
+            ->add('created')
+            ->add('updated')
+            ->add('slug')
+
+
+
+$this->getParameter('image_directory'),
+                $imageName
+
+
+
+, {'value' : 'blog.title'}) 
+
+
+
+, FileType::class
