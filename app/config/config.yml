@@ -3,6 +3,7 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@BloggerBlogBundle/Resources/config/config.yml"}
+    - { resource: "@BloggerBlogBundle/Resources/config/admin.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -31,6 +32,7 @@ framework:
         handler_id: ~
     fragments: ~
     http_method_override: true
+    translator: { fallbacks: ["%locale%"] }
 
 # Twig Configuration
 twig:
@@ -86,3 +88,20 @@ services:
     resize_image:
         class:     Blogger\BlogBundle\DependencyInjection\ResizeImage
         arguments: []
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+
+sonata_admin:
+    title: Symblog
+    dashboard:
+            groups:
+                app.admin.group.content:
+                    label: Admin
+                    items:
+                        - admin.blog
+                        - admin.comment
+                        - admin.user

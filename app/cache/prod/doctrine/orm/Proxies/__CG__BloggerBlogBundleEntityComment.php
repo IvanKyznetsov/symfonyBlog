@@ -202,7 +202,7 @@ class Comment extends \Blogger\BlogBundle\Entity\Comment implements \Doctrine\OR
     /**
      * {@inheritDoc}
      */
-    public function setUser($user)
+    public function setUser(\Blogger\BlogBundle\Entity\User $user = NULL)
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUser', [$user]);

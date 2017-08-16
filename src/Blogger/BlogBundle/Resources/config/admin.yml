@@ -1,0 +1,22 @@
+services:
+    admin.blog:
+            class: Blogger\BlogBundle\Admin\BlogAdmin
+            arguments:
+                -  ~
+                -  Blogger\BlogBundle\Entity\Blog
+                -  ~
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Blog }
+
+    admin.comment:
+                class: Blogger\BlogBundle\Admin\CommentAdmin
+                arguments: [~, Blogger\BlogBundle\Entity\Comment, ~]
+                tags:
+                    - { name: sonata.admin, manager_type: orm, label: Comment }
+
+    admin.user:
+                    class: Blogger\BlogBundle\Admin\UserAdmin
+                    arguments: [~, Blogger\BlogBundle\Entity\User, ~]
+                    tags:
+                        - { name: sonata.admin, manager_type: orm, label: User }
+#BloggerBlogBundle:CRUD

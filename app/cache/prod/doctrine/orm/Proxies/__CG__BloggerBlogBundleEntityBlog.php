@@ -389,17 +389,6 @@ class Blog extends \Blogger\BlogBundle\Entity\Blog implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
-    public function __toString()
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__toString', []);
-
-        return parent::__toString();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
     public function setSlug($slug)
     {
 
