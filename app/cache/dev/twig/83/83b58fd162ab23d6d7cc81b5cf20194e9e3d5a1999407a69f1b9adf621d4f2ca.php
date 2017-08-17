@@ -21,20 +21,20 @@ class __TwigTemplate_22d044161a3167d79882d356433497eae0fa066bd69afd7ef1fe9805eca
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2473ac03df7810145e53f81d3c43b0331d4a5168db2197b1fe2aaaf8b27cd7c1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2473ac03df7810145e53f81d3c43b0331d4a5168db2197b1fe2aaaf8b27cd7c1->enter($__internal_2473ac03df7810145e53f81d3c43b0331d4a5168db2197b1fe2aaaf8b27cd7c1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:index.html.twig"));
+        $__internal_430a546b384d717578b18175e29eba9651a66fac53f1d2515c9db53418b180ab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_430a546b384d717578b18175e29eba9651a66fac53f1d2515c9db53418b180ab->enter($__internal_430a546b384d717578b18175e29eba9651a66fac53f1d2515c9db53418b180ab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_2473ac03df7810145e53f81d3c43b0331d4a5168db2197b1fe2aaaf8b27cd7c1->leave($__internal_2473ac03df7810145e53f81d3c43b0331d4a5168db2197b1fe2aaaf8b27cd7c1_prof);
+        $__internal_430a546b384d717578b18175e29eba9651a66fac53f1d2515c9db53418b180ab->leave($__internal_430a546b384d717578b18175e29eba9651a66fac53f1d2515c9db53418b180ab_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_2ca7fd47238c9ee07eb4810ad88c82e23f440c3fe38e9375b44c2e654c44814b = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2ca7fd47238c9ee07eb4810ad88c82e23f440c3fe38e9375b44c2e654c44814b->enter($__internal_2ca7fd47238c9ee07eb4810ad88c82e23f440c3fe38e9375b44c2e654c44814b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_3391f1620115b0b853245d90cfdc6af383f557bccb05a1aa8b77fc53ad8035e5 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_3391f1620115b0b853245d90cfdc6af383f557bccb05a1aa8b77fc53ad8035e5->enter($__internal_3391f1620115b0b853245d90cfdc6af383f557bccb05a1aa8b77fc53ad8035e5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
         echo "    ";
@@ -61,7 +61,7 @@ class __TwigTemplate_22d044161a3167d79882d356433497eae0fa066bd69afd7ef1fe9805eca
 
             <img src=\"";
             // line 13
-            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(twig_join_filter(array(0 => "images/", 1 => $this->getAttribute($context["blog"], "image", array())))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(((("images/" . $this->getAttribute($context["blog"], "id", array())) . "/") . $this->getAttribute($context["blog"], "image", array()))), "html", null, true);
             echo "\" />
             <div class=\"snippet\">
                 <p>";
@@ -105,7 +105,7 @@ class __TwigTemplate_22d044161a3167d79882d356433497eae0fa066bd69afd7ef1fe9805eca
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['blog'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_2ca7fd47238c9ee07eb4810ad88c82e23f440c3fe38e9375b44c2e654c44814b->leave($__internal_2ca7fd47238c9ee07eb4810ad88c82e23f440c3fe38e9375b44c2e654c44814b_prof);
+        $__internal_3391f1620115b0b853245d90cfdc6af383f557bccb05a1aa8b77fc53ad8035e5->leave($__internal_3391f1620115b0b853245d90cfdc6af383f557bccb05a1aa8b77fc53ad8035e5_prof);
 
     }
 
@@ -146,7 +146,7 @@ class __TwigTemplate_22d044161a3167d79882d356433497eae0fa066bd69afd7ef1fe9805eca
                 <h2><a href=\"{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}\">{{ blog.title }}</a></h2>
             </header>
 
-            <img src=\"{{ asset(['images/', blog.image]|join) }}\" />
+            <img src=\"{{ asset('images/' ~ blog.id ~'/' ~ blog.image)}}\" />
             <div class=\"snippet\">
                 <p>{{ blog.blog(500) }}</p>
                 <p class=\"continue\"><a href=\"{{ path('BloggerBlogBundle_blog_show', { 'id': blog.id, 'slug': blog.slug }) }}\">Continue reading...</a></p>

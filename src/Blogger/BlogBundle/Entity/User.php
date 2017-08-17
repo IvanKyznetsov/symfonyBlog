@@ -23,4 +23,19 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+
+    /**
+     * @return string
+     */
+    public function getRolesAsString()
+    {
+        $roles = array();
+        foreach ($this->getRoles() as $role) {
+            $role = explode('_', $role);
+            array_shift($role);
+            $roles[] = ucfirst(strtolower(implode(' ', $role)));
+        }
+
+        return implode(', ', $roles);
+    }
 }

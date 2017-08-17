@@ -176,6 +176,17 @@ class User extends \Blogger\BlogBundle\Entity\User implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
+    public function getRolesAsString()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRolesAsString', []);
+
+        return parent::getRolesAsString();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function addRole($role)
     {
 

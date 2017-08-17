@@ -43,15 +43,15 @@ class AdminController extends Controller
         if ($request->isMethod($request::METHOD_POST)) {
             $form->handleRequest($request);
 
-            $image = $blog->getImage();
-            $imageName = md5(uniqid()).'.'.$image->guessExtension();
-
-            $image->move(
-                $this->getParameter('image_directory'),
-                $imageName
-            );
-
-            $blog->setImage($imageName);
+//            $image = $blog->getImage();
+//            $imageName = md5(uniqid()).'.'.$image->guessExtension();
+//
+//            $image->move(
+//                $this->getParameter('image_directory'),
+//                $imageName
+//            );
+//
+//            $blog->setImage($imageName);
 
 
             if ($form->isValid()) {
@@ -60,7 +60,7 @@ class AdminController extends Controller
                 $em->persist($blog);
                 $em->flush();
 
-                $resimg = $this->container->get('resize_image')->resize($imageName);
+                //$resimg = $this->container->get('resize_image')->resize($imageName);
 
                 return $this->redirect($this->generateUrl('BloggerBlogBundle_admin_add'));
             }
@@ -108,26 +108,26 @@ class AdminController extends Controller
             ->getLatestBlogs();
         $form = $this->createForm(BlogType::class, $blog);
 
-        $img = $blog->getImage();
+        //$img = $blog->getImage();
 
         if ($request->isMethod($request::METHOD_POST)) {
             $form->handleRequest($request);
 
-            if ($blog->getImage()) {
-                $image = $blog->getImage();
-                $imageName = md5(uniqid()).'.'.$image->guessExtension();
-
-                $image->move(
-                    $this->getParameter('image_directory'),
-                    $imageName
-                );
-                $blog->setImage($imageName);
-
-                $fs = new Filesystem();
-                $fs->remove($this->getParameter('image_directory').$img);
-            } else {
-                $blog->setImage($img);
-            }
+//            if ($blog->getImage()) {
+//                $image = $blog->getImage();
+//                $imageName = md5(uniqid()).'.'.$image->guessExtension();
+//
+//                $image->move(
+//                    $this->getParameter('image_directory'),
+//                    $imageName
+//                );
+//                $blog->setImage($imageName);
+//
+//                $fs = new Filesystem();
+//                $fs->remove($this->getParameter('image_directory').$img);
+//            } else {
+//                $blog->setImage($img);
+//            }
 
             if ($form->isValid()) {
                 $em->persist($blog);

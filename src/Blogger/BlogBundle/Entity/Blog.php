@@ -378,4 +378,56 @@ class Blog
 
         return $text;
     }
+
+    public function getFullImagePath() {
+        return null === $this->image ? null : $this->getUploadRootDir(). $this->image;
+    }
+
+    protected function getUploadRootDir() {
+        return $this->getTmpUploadRootDir().$this->getId()."/";
+    }
+
+    protected function getTmpUploadRootDir() {
+        return __DIR__ . '/../../../../web/images/';
+    }
+
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function uploadImage() {
+        if (null === $this->image) {
+            return;
+        }
+        if(!$this->id){
+            $this->image->move($this->getTmpUploadRootDir(), $this->image->getClientOriginalName());
+        }else{
+            $this->image->move($this->getUploadRootDir(), $this->image->getClientOriginalName());
+        }
+        $this->setImage($this->image->getClientOriginalName());
+    }
+
+    /**
+     * @ORM\PostPersist()
+     */
+    public function moveImage()
+    {
+        if (null === $this->image) {
+            return;
+        }
+        if(!is_dir($this->getUploadRootDir())){
+            mkdir($this->getUploadRootDir());
+        }
+        copy($this->getTmpUploadRootDir().$this->image, $this->getFullImagePath());
+        unlink($this->getTmpUploadRootDir().$this->image);
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function removeImage()
+    {
+        unlink($this->getFullImagePath());
+        rmdir($this->getUploadRootDir());
+    }
 }
