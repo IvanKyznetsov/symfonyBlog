@@ -1,0 +1,5 @@
+Blogger\BlogBundle\Entity\Comment:
+    exclusion_policy: ALL
+    properties:
+        comment:
+            expose: true

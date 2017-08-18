@@ -1,0 +1,13 @@
+Blogger\BlogBundle\Entity\Blog:
+    exclusion_policy: All
+    properties:
+        id:
+            expose: true
+        blog:
+            expose: true
+        tags:
+            expose: true
+        title:
+            expose: true
+        author:
+            expose: true

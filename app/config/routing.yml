@@ -13,3 +13,8 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admins
+
+mvms_api:
+    type: rest
+    prefix: /api
+    resource: "@BloggerBlogBundle/Resources/config/api-routing.yml"

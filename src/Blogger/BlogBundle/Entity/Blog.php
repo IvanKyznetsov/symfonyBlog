@@ -9,6 +9,7 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\File;
 
+
 /**
  * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Entity\Repository\BlogRepository")
  * @ORM\Table(name="blog")
@@ -21,7 +22,6 @@ class Blog
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-
     protected $id;
 
     /**

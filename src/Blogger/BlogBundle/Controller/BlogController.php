@@ -4,6 +4,7 @@
 namespace Blogger\BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use FOS\RestBundle\Controller\FOSRestController;
 
 /**
  * Blog controller.
@@ -30,5 +31,23 @@ class BlogController extends Controller
             'blog'      => $blog,
             'comments'  => $comments
         ));
+    }
+
+    public function getBlogsAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $blogs = $em->getRepository('BloggerBlogBundle:Blog')->findAll();
+
+        return array('blogs' => $blogs);
+    }
+
+    public function getBlogAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($id);
+
+        return array('blog' => $blog);
     }
 }

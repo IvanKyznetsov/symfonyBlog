@@ -1,0 +1,14 @@
+get_api_users:
+    type: rest
+    resource: "@BloggerBlogBundle/Controller/UsersController.php"
+    name_prefix: api_users_
+
+get_api_blogs:
+    type: rest
+    resource: "@BloggerBlogBundle/Controller/BlogController.php"
+    name_prefix: api_blogs_
+
+get_api_comments:
+    type: rest
+    resource: "@BloggerBlogBundle/Controller/CommentController.php"
+    name_prefix: api_comments_

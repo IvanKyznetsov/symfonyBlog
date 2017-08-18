@@ -448,117 +448,170 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
         not_fos_user_change_password:
 
-        if (0 === strpos($pathinfo, '/admins/blogger/blog')) {
-            if (0 === strpos($pathinfo, '/admins/blogger/blog/blog')) {
-                // admin_blogger_blog_blog_list
-                if ($pathinfo === '/admins/blogger/blog/blog/list') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_list',  '_route' => 'admin_blogger_blog_blog_list',);
+        if (0 === strpos($pathinfo, '/a')) {
+            if (0 === strpos($pathinfo, '/admins/blogger/blog')) {
+                if (0 === strpos($pathinfo, '/admins/blogger/blog/blog')) {
+                    // admin_blogger_blog_blog_list
+                    if ($pathinfo === '/admins/blogger/blog/blog/list') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_list',  '_route' => 'admin_blogger_blog_blog_list',);
+                    }
+
+                    // admin_blogger_blog_blog_create
+                    if ($pathinfo === '/admins/blogger/blog/blog/create') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_create',  '_route' => 'admin_blogger_blog_blog_create',);
+                    }
+
+                    // admin_blogger_blog_blog_batch
+                    if ($pathinfo === '/admins/blogger/blog/blog/batch') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_batch',  '_route' => 'admin_blogger_blog_blog_batch',);
+                    }
+
+                    // admin_blogger_blog_blog_edit
+                    if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_edit',));
+                    }
+
+                    // admin_blogger_blog_blog_delete
+                    if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_delete',));
+                    }
+
+                    // admin_blogger_blog_blog_show
+                    if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_show',));
+                    }
+
+                    // admin_blogger_blog_blog_export
+                    if ($pathinfo === '/admins/blogger/blog/blog/export') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_export',  '_route' => 'admin_blogger_blog_blog_export',);
+                    }
+
                 }
 
-                // admin_blogger_blog_blog_create
-                if ($pathinfo === '/admins/blogger/blog/blog/create') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_create',  '_route' => 'admin_blogger_blog_blog_create',);
+                if (0 === strpos($pathinfo, '/admins/blogger/blog/comment')) {
+                    // admin_blogger_blog_comment_list
+                    if ($pathinfo === '/admins/blogger/blog/comment/list') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_list',  '_route' => 'admin_blogger_blog_comment_list',);
+                    }
+
+                    // admin_blogger_blog_comment_create
+                    if ($pathinfo === '/admins/blogger/blog/comment/create') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_create',  '_route' => 'admin_blogger_blog_comment_create',);
+                    }
+
+                    // admin_blogger_blog_comment_batch
+                    if ($pathinfo === '/admins/blogger/blog/comment/batch') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_batch',  '_route' => 'admin_blogger_blog_comment_batch',);
+                    }
+
+                    // admin_blogger_blog_comment_edit
+                    if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_edit',));
+                    }
+
+                    // admin_blogger_blog_comment_delete
+                    if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_delete',));
+                    }
+
+                    // admin_blogger_blog_comment_show
+                    if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_show',));
+                    }
+
+                    // admin_blogger_blog_comment_export
+                    if ($pathinfo === '/admins/blogger/blog/comment/export') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_export',  '_route' => 'admin_blogger_blog_comment_export',);
+                    }
+
                 }
 
-                // admin_blogger_blog_blog_batch
-                if ($pathinfo === '/admins/blogger/blog/blog/batch') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_batch',  '_route' => 'admin_blogger_blog_blog_batch',);
-                }
+                if (0 === strpos($pathinfo, '/admins/blogger/blog/user')) {
+                    // admin_blogger_blog_user_list
+                    if ($pathinfo === '/admins/blogger/blog/user/list') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_list',  '_route' => 'admin_blogger_blog_user_list',);
+                    }
 
-                // admin_blogger_blog_blog_edit
-                if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_edit',));
-                }
+                    // admin_blogger_blog_user_create
+                    if ($pathinfo === '/admins/blogger/blog/user/create') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_create',  '_route' => 'admin_blogger_blog_user_create',);
+                    }
 
-                // admin_blogger_blog_blog_delete
-                if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_delete',));
-                }
+                    // admin_blogger_blog_user_batch
+                    if ($pathinfo === '/admins/blogger/blog/user/batch') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_batch',  '_route' => 'admin_blogger_blog_user_batch',);
+                    }
 
-                // admin_blogger_blog_blog_show
-                if (preg_match('#^/admins/blogger/blog/blog/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_blog_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_show',));
-                }
+                    // admin_blogger_blog_user_edit
+                    if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_edit',));
+                    }
 
-                // admin_blogger_blog_blog_export
-                if ($pathinfo === '/admins/blogger/blog/blog/export') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.blog',  '_sonata_name' => 'admin_blogger_blog_blog_export',  '_route' => 'admin_blogger_blog_blog_export',);
+                    // admin_blogger_blog_user_delete
+                    if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_delete',));
+                    }
+
+                    // admin_blogger_blog_user_show
+                    if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_show',));
+                    }
+
+                    // admin_blogger_blog_user_export
+                    if ($pathinfo === '/admins/blogger/blog/user/export') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_export',  '_route' => 'admin_blogger_blog_user_export',);
+                    }
+
                 }
 
             }
 
-            if (0 === strpos($pathinfo, '/admins/blogger/blog/comment')) {
-                // admin_blogger_blog_comment_list
-                if ($pathinfo === '/admins/blogger/blog/comment/list') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_list',  '_route' => 'admin_blogger_blog_comment_list',);
+            if (0 === strpos($pathinfo, '/api')) {
+                // api_users_get_user
+                if (0 === strpos($pathinfo, '/api/users') && preg_match('#^/api/users/(?P<param>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_api_users_get_user;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_get_user')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::getUserAction',  '_format' => NULL,));
                 }
+                not_api_users_get_user:
 
-                // admin_blogger_blog_comment_create
-                if ($pathinfo === '/admins/blogger/blog/comment/create') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_create',  '_route' => 'admin_blogger_blog_comment_create',);
+                // api_blogs_show
+                if (preg_match('#^/api/(?P<id>[^/]++)/show(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_blogs_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_show')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::showAction',  '_format' => NULL,));
                 }
+                not_api_blogs_show:
 
-                // admin_blogger_blog_comment_batch
-                if ($pathinfo === '/admins/blogger/blog/comment/batch') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_batch',  '_route' => 'admin_blogger_blog_comment_batch',);
-                }
+                if (0 === strpos($pathinfo, '/api/blogs')) {
+                    // api_blogs_get_blogs
+                    if (preg_match('#^/api/blogs(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                            $allow = array_merge($allow, array('GET', 'HEAD'));
+                            goto not_api_blogs_get_blogs;
+                        }
 
-                // admin_blogger_blog_comment_edit
-                if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_edit',));
-                }
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blogs')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogsAction',  '_format' => NULL,));
+                    }
+                    not_api_blogs_get_blogs:
 
-                // admin_blogger_blog_comment_delete
-                if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_delete',));
-                }
+                    // api_blogs_get_blog
+                    if (preg_match('#^/api/blogs/(?P<id>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                            $allow = array_merge($allow, array('GET', 'HEAD'));
+                            goto not_api_blogs_get_blog;
+                        }
 
-                // admin_blogger_blog_comment_show
-                if (preg_match('#^/admins/blogger/blog/comment/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_comment_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_show',));
-                }
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blog')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogAction',  '_format' => NULL,));
+                    }
+                    not_api_blogs_get_blog:
 
-                // admin_blogger_blog_comment_export
-                if ($pathinfo === '/admins/blogger/blog/comment/export') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.comment',  '_sonata_name' => 'admin_blogger_blog_comment_export',  '_route' => 'admin_blogger_blog_comment_export',);
-                }
-
-            }
-
-            if (0 === strpos($pathinfo, '/admins/blogger/blog/user')) {
-                // admin_blogger_blog_user_list
-                if ($pathinfo === '/admins/blogger/blog/user/list') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_list',  '_route' => 'admin_blogger_blog_user_list',);
-                }
-
-                // admin_blogger_blog_user_create
-                if ($pathinfo === '/admins/blogger/blog/user/create') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_create',  '_route' => 'admin_blogger_blog_user_create',);
-                }
-
-                // admin_blogger_blog_user_batch
-                if ($pathinfo === '/admins/blogger/blog/user/batch') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_batch',  '_route' => 'admin_blogger_blog_user_batch',);
-                }
-
-                // admin_blogger_blog_user_edit
-                if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_edit',));
-                }
-
-                // admin_blogger_blog_user_delete
-                if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_delete',));
-                }
-
-                // admin_blogger_blog_user_show
-                if (preg_match('#^/admins/blogger/blog/user/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_blogger_blog_user_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_show',));
-                }
-
-                // admin_blogger_blog_user_export
-                if ($pathinfo === '/admins/blogger/blog/user/export') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'admin.user',  '_sonata_name' => 'admin_blogger_blog_user_export',  '_route' => 'admin_blogger_blog_user_export',);
                 }
 
             }

@@ -82,4 +82,12 @@ class CommentController extends Controller
         return $this->redirect($request->headers->get('referer'));
     }
 
+    public function getCommentAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $blogs = $em->getRepository('BloggerBlogBundle:Blog')->findAll();
+
+        return array('blogs' => $blogs);
+    }
 }
