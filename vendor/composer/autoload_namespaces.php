@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Uecode\\Bundle\\ApiKeyBundle' => array($vendorDir . '/uecode/api-key-bundle/src'),
     'Twig_Extensions_' => array($vendorDir . '/twig/extensions/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Sensio\\Bundle\\DistributionBundle' => array($vendorDir . '/sensio/distribution-bundle'),
@@ -13,6 +14,8 @@ return array(
     'ProxyManager\\' => array($vendorDir . '/ocramius/proxy-manager/src'),
     'PhpOption\\' => array($vendorDir . '/phpoption/phpoption/src'),
     'PhpCollection' => array($vendorDir . '/phpcollection/phpcollection/src'),
+    'Nelmio\\ApiDocBundle' => array($vendorDir . '/nelmio/api-doc-bundle'),
+    'Michelf' => array($vendorDir . '/michelf/php-markdown'),
     'Metadata\\' => array($vendorDir . '/jms/metadata/src'),
     'JsonpCallbackValidator' => array($vendorDir . '/willdurand/jsonp-callback-validator/src'),
     'JMS\\Serializer' => array($vendorDir . '/jms/serializer/src'),

@@ -40,6 +40,9 @@ class appDevDebugProjectContainer extends Container
             'admin.comment' => 'getAdmin_CommentService',
             'admin.user' => 'getAdmin_UserService',
             'annotation_reader' => 'getAnnotationReaderService',
+            'api_key' => 'getApiKeyService',
+            'api_key_provider' => 'getApiKeyProviderService',
+            'app.token_authenticator' => 'getApp_TokenAuthenticatorService',
             'assetic.asset_factory' => 'getAssetic_AssetFactoryService',
             'assetic.asset_manager' => 'getAssetic_AssetManagerService',
             'assetic.controller' => 'getAssetic_ControllerService',
@@ -143,6 +146,7 @@ class appDevDebugProjectContainer extends Container
             'fos_rest.serializer.jms_handler_registry' => 'getFosRest_Serializer_JmsHandlerRegistryService',
             'fos_rest.view_handler' => 'getFosRest_ViewHandlerService',
             'fos_rest.view_response_listener' => 'getFosRest_ViewResponseListenerService',
+            'fos_rest.zone_matcher_listener' => 'getFosRest_ZoneMatcherListenerService',
             'fos_user.change_password.form.factory' => 'getFosUser_ChangePassword_Form_FactoryService',
             'fos_user.change_password.form.type' => 'getFosUser_ChangePassword_Form_TypeService',
             'fos_user.listener.authentication' => 'getFosUser_Listener_AuthenticationService',
@@ -185,6 +189,7 @@ class appDevDebugProjectContainer extends Container
             'jms_serializer.json_deserialization_visitor' => 'getJmsSerializer_JsonDeserializationVisitorService',
             'jms_serializer.json_serialization_visitor' => 'getJmsSerializer_JsonSerializationVisitorService',
             'jms_serializer.metadata_driver' => 'getJmsSerializer_MetadataDriverService',
+            'jms_serializer.metadata_factory' => 'getJmsSerializer_MetadataFactoryService',
             'jms_serializer.naming_strategy' => 'getJmsSerializer_NamingStrategyService',
             'jms_serializer.object_constructor' => 'getJmsSerializer_ObjectConstructorService',
             'jms_serializer.php_collection_handler' => 'getJmsSerializer_PhpCollectionHandlerService',
@@ -205,6 +210,18 @@ class appDevDebugProjectContainer extends Container
             'knp_menu.renderer.twig' => 'getKnpMenu_Renderer_TwigService',
             'knp_menu.renderer_provider' => 'getKnpMenu_RendererProviderService',
             'knp_menu.voter.router' => 'getKnpMenu_Voter_RouterService',
+            'lexik\\bundle\\jwtauthenticationbundle\\services\\jwsprovider\\jwsproviderinterface' => 'getLexik_Bundle_Jwtauthenticationbundle_Services_Jwsprovider_JwsproviderinterfaceService',
+            'lexik\\bundle\\jwtauthenticationbundle\\tokenextractor\\tokenextractorinterface' => 'getLexik_Bundle_Jwtauthenticationbundle_Tokenextractor_TokenextractorinterfaceService',
+            'lexik_jwt_authentication.encoder.default' => 'getLexikJwtAuthentication_Encoder_DefaultService',
+            'lexik_jwt_authentication.encoder.lcobucci' => 'getLexikJwtAuthentication_Encoder_LcobucciService',
+            'lexik_jwt_authentication.extractor.authorization_header_extractor' => 'getLexikJwtAuthentication_Extractor_AuthorizationHeaderExtractorService',
+            'lexik_jwt_authentication.extractor.cookie_extractor' => 'getLexikJwtAuthentication_Extractor_CookieExtractorService',
+            'lexik_jwt_authentication.extractor.query_parameter_extractor' => 'getLexikJwtAuthentication_Extractor_QueryParameterExtractorService',
+            'lexik_jwt_authentication.handler.authentication_failure' => 'getLexikJwtAuthentication_Handler_AuthenticationFailureService',
+            'lexik_jwt_authentication.handler.authentication_success' => 'getLexikJwtAuthentication_Handler_AuthenticationSuccessService',
+            'lexik_jwt_authentication.jwt_manager' => 'getLexikJwtAuthentication_JwtManagerService',
+            'lexik_jwt_authentication.key_loader' => 'getLexikJwtAuthentication_KeyLoaderService',
+            'lexik_jwt_authentication.security.guard.jwt_token_authenticator' => 'getLexikJwtAuthentication_Security_Guard_JwtTokenAuthenticatorService',
             'locale_listener' => 'getLocaleListenerService',
             'logger' => 'getLoggerService',
             'monolog.activation_strategy.not_found' => 'getMonolog_ActivationStrategy_NotFoundService',
@@ -224,6 +241,23 @@ class appDevDebugProjectContainer extends Container
             'monolog.logger.templating' => 'getMonolog_Logger_TemplatingService',
             'monolog.logger.translation' => 'getMonolog_Logger_TranslationService',
             'monolog.processor.psr_log_message' => 'getMonolog_Processor_PsrLogMessageService',
+            'nelmio_api_doc.doc_comment_extractor' => 'getNelmioApiDoc_DocCommentExtractorService',
+            'nelmio_api_doc.event_listener.request' => 'getNelmioApiDoc_EventListener_RequestService',
+            'nelmio_api_doc.extractor.api_doc_extractor' => 'getNelmioApiDoc_Extractor_ApiDocExtractorService',
+            'nelmio_api_doc.form.extension.description_form_type_extension' => 'getNelmioApiDoc_Form_Extension_DescriptionFormTypeExtensionService',
+            'nelmio_api_doc.formatter.html_formatter' => 'getNelmioApiDoc_Formatter_HtmlFormatterService',
+            'nelmio_api_doc.formatter.markdown_formatter' => 'getNelmioApiDoc_Formatter_MarkdownFormatterService',
+            'nelmio_api_doc.formatter.simple_formatter' => 'getNelmioApiDoc_Formatter_SimpleFormatterService',
+            'nelmio_api_doc.formatter.swagger_formatter' => 'getNelmioApiDoc_Formatter_SwaggerFormatterService',
+            'nelmio_api_doc.parser.collection_parser' => 'getNelmioApiDoc_Parser_CollectionParserService',
+            'nelmio_api_doc.parser.form_errors_parser' => 'getNelmioApiDoc_Parser_FormErrorsParserService',
+            'nelmio_api_doc.parser.form_type_parser' => 'getNelmioApiDoc_Parser_FormTypeParserService',
+            'nelmio_api_doc.parser.jms_metadata_parser' => 'getNelmioApiDoc_Parser_JmsMetadataParserService',
+            'nelmio_api_doc.parser.json_serializable_parser' => 'getNelmioApiDoc_Parser_JsonSerializableParserService',
+            'nelmio_api_doc.parser.validation_parser' => 'getNelmioApiDoc_Parser_ValidationParserService',
+            'nelmio_api_doc.twig.extension.extra_markdown' => 'getNelmioApiDoc_Twig_Extension_ExtraMarkdownService',
+            'nelmio_cors.cors_listener' => 'getNelmioCors_CorsListenerService',
+            'nelmio_cors.options_provider.config' => 'getNelmioCors_OptionsProvider_ConfigService',
             'profiler' => 'getProfilerService',
             'profiler_listener' => 'getProfilerListenerService',
             'property_accessor' => 'getPropertyAccessorService',
@@ -236,25 +270,31 @@ class appDevDebugProjectContainer extends Container
             'router_listener' => 'getRouterListenerService',
             'routing.loader' => 'getRouting_LoaderService',
             'security.access.decision_manager' => 'getSecurity_Access_DecisionManagerService',
+            'security.access_listener' => 'getSecurity_AccessListenerService',
+            'security.access_map' => 'getSecurity_AccessMapService',
             'security.authentication.guard_handler' => 'getSecurity_Authentication_GuardHandlerService',
             'security.authentication.manager' => 'getSecurity_Authentication_ManagerService',
             'security.authentication.session_strategy' => 'getSecurity_Authentication_SessionStrategyService',
             'security.authentication.trust_resolver' => 'getSecurity_Authentication_TrustResolverService',
             'security.authentication_utils' => 'getSecurity_AuthenticationUtilsService',
             'security.authorization_checker' => 'getSecurity_AuthorizationCheckerService',
+            'security.channel_listener' => 'getSecurity_ChannelListenerService',
             'security.context' => 'getSecurity_ContextService',
             'security.csrf.token_manager' => 'getSecurity_Csrf_TokenManagerService',
             'security.encoder_factory' => 'getSecurity_EncoderFactoryService',
             'security.firewall' => 'getSecurity_FirewallService',
+            'security.firewall.map.context.api_keys' => 'getSecurity_Firewall_Map_Context_ApiKeysService',
             'security.firewall.map.context.dev' => 'getSecurity_Firewall_Map_Context_DevService',
             'security.firewall.map.context.main' => 'getSecurity_Firewall_Map_Context_MainService',
+            'security.http_utils' => 'getSecurity_HttpUtilsService',
             'security.logout_url_generator' => 'getSecurity_LogoutUrlGeneratorService',
             'security.password_encoder' => 'getSecurity_PasswordEncoderService',
             'security.rememberme.response_listener' => 'getSecurity_Rememberme_ResponseListenerService',
             'security.role_hierarchy' => 'getSecurity_RoleHierarchyService',
             'security.secure_random' => 'getSecurity_SecureRandomService',
             'security.token_storage' => 'getSecurity_TokenStorageService',
-            'security.user_checker.main' => 'getSecurity_UserChecker_MainService',
+            'security.user.provider.concrete.in_memory' => 'getSecurity_User_Provider_Concrete_InMemoryService',
+            'security.user_checker.api_keys' => 'getSecurity_UserChecker_ApiKeysService',
             'security.validator.user_password' => 'getSecurity_Validator_UserPasswordService',
             'sensio_distribution.security_checker' => 'getSensioDistribution_SecurityCheckerService',
             'sensio_distribution.security_checker.command' => 'getSensioDistribution_SecurityChecker_CommandService',
@@ -455,6 +495,11 @@ class appDevDebugProjectContainer extends Container
             'twig.loader' => 'getTwig_LoaderService',
             'twig.profile' => 'getTwig_ProfileService',
             'twig.translation.extractor' => 'getTwig_Translation_ExtractorService',
+            'uecode.api_key.extractor' => 'getUecode_ApiKey_ExtractorService',
+            'uecode.api_key.listener.api_key' => 'getUecode_ApiKey_Listener_ApiKeyService',
+            'uecode.api_key.provider.api_key' => 'getUecode_ApiKey_Provider_ApiKeyService',
+            'uecode.api_key.provider.email_user_provider' => 'getUecode_ApiKey_Provider_EmailUserProviderService',
+            'uecode.api_key.provider.user_provider' => 'getUecode_ApiKey_Provider_UserProviderService',
             'uri_signer' => 'getUriSignerService',
             'validate_request_listener' => 'getValidateRequestListenerService',
             'validator' => 'getValidatorService',
@@ -482,7 +527,13 @@ class appDevDebugProjectContainer extends Container
             'fos_user.util.username_canonicalizer' => 'fos_user.util.email_canonicalizer',
             'jms\\serializer\\arraytransformerinterface' => 'jms_serializer',
             'jms\\serializer\\serializerinterface' => 'jms_serializer',
+            'lexik\\bundle\\jwtauthenticationbundle\\encoder\\jwtencoderinterface' => 'lexik_jwt_authentication.encoder.default',
+            'lexik\\bundle\\jwtauthenticationbundle\\services\\jwttokeninterface' => 'lexik_jwt_authentication.jwt_manager',
+            'lexik\\bundle\\jwtauthenticationbundle\\services\\jwttokenmanagerinterface' => 'lexik_jwt_authentication.jwt_manager',
+            'lexik_jwt_authentication.encoder' => 'lexik_jwt_authentication.encoder.default',
+            'lexik_jwt_authentication.jwt_token_authenticator' => 'lexik_jwt_authentication.security.guard.jwt_token_authenticator',
             'mailer' => 'swiftmailer.mailer.default',
+            'security.user_checker.main' => 'security.user_checker.api_keys',
             'sensio.distribution.webconfigurator' => 'sensio_distribution.webconfigurator',
             'session.storage' => 'session.storage.native',
             'sonata.block.cache.handler' => 'sonata.block.cache.handler.default',
@@ -631,6 +682,36 @@ class appDevDebugProjectContainer extends Container
     protected function getAnnotationReaderService()
     {
         return $this->services['annotation_reader'] = new \Doctrine\Common\Annotations\CachedReader(new \Doctrine\Common\Annotations\AnnotationReader(), new \Doctrine\Common\Cache\FilesystemCache((__DIR__.'/annotations')), true);
+    }
+
+    /**
+     * Gets the public 'api_key' shared service.
+     *
+     * @return \Blogger\BlogBundle\DependencyInjection\ApiKey
+     */
+    protected function getApiKeyService()
+    {
+        return $this->services['api_key'] = new \Blogger\BlogBundle\DependencyInjection\ApiKey();
+    }
+
+    /**
+     * Gets the public 'api_key_provider' shared service.
+     *
+     * @return \Blogger\BlogBundle\Security\User\WebserviceUserProvider
+     */
+    protected function getApiKeyProviderService()
+    {
+        return $this->services['api_key_provider'] = new \Blogger\BlogBundle\Security\User\WebserviceUserProvider($this->get('doctrine.orm.default_entity_manager'));
+    }
+
+    /**
+     * Gets the public 'app.token_authenticator' shared service.
+     *
+     * @return \Blogger\BlogBundle\Security\TokenAuthenticator
+     */
+    protected function getApp_TokenAuthenticatorService()
+    {
+        return $this->services['app.token_authenticator'] = new \Blogger\BlogBundle\Security\TokenAuthenticator();
     }
 
     /**
@@ -860,6 +941,9 @@ class appDevDebugProjectContainer extends Container
         $instance->addListenerService('kernel.request', array(0 => 'knp_menu.listener.voters', 1 => 'onKernelRequest'), 0);
         $instance->addListenerService('kernel.request', array(0 => 'fos_rest.body_listener', 1 => 'onKernelRequest'), 10);
         $instance->addListenerService('kernel.request', array(0 => 'fos_rest.format_listener', 1 => 'onKernelRequest'), 34);
+        $instance->addListenerService('kernel.request', array(0 => 'fos_rest.zone_matcher_listener', 1 => 'onKernelRequest'), 248);
+        $instance->addListenerService('kernel.request', array(0 => 'nelmio_api_doc.event_listener.request', 1 => 'onKernelRequest'), 0);
+        $instance->addListenerService('kernel.request', array(0 => 'nelmio_cors.cors_listener', 1 => 'onKernelRequest'), 250);
         $instance->addSubscriberService('response_listener', 'Symfony\\Component\\HttpKernel\\EventListener\\ResponseListener');
         $instance->addSubscriberService('streamed_response_listener', 'Symfony\\Component\\HttpKernel\\EventListener\\StreamedResponseListener');
         $instance->addSubscriberService('locale_listener', 'Symfony\\Component\\HttpKernel\\EventListener\\LocaleListener');
@@ -964,7 +1048,7 @@ class appDevDebugProjectContainer extends Container
         if ($lazyLoad) {
             $container = $this;
 
-            return $this->services['doctrine.orm.default_entity_manager'] = new DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d6d99caa4d874e99(
+            return $this->services['doctrine.orm.default_entity_manager'] = new DoctrineORMEntityManager_000000005d75a49a00007f08fdbdb5429779a2b113f6ccb5d6d99caa4d874e99(
                 function (&$wrappedInstance, \ProxyManager\Proxy\LazyLoadingInterface $proxy) use ($container) {
                     $wrappedInstance = $container->getDoctrine_Orm_DefaultEntityManagerService(false);
 
@@ -975,26 +1059,31 @@ class appDevDebugProjectContainer extends Container
             );
         }
 
-        $a = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
-        $a->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($this->get('annotation_reader'), array(0 => ($this->targetDirs[3].'/src/Blogger/BlogBundle/Entity'))), 'Blogger\\BlogBundle\\Entity');
-        $a->addDriver(new \Doctrine\ORM\Mapping\Driver\XmlDriver(new \Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator(array(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping') => 'FOS\\UserBundle\\Model'), '.orm.xml')), 'FOS\\UserBundle\\Model');
+        $a = $this->get('annotation_reader');
 
-        $b = new \Doctrine\ORM\Configuration();
-        $b->setEntityNamespaces(array('BloggerBlogBundle' => 'Blogger\\BlogBundle\\Entity'));
-        $b->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
-        $b->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
-        $b->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
-        $b->setMetadataDriverImpl($a);
-        $b->setProxyDir((__DIR__.'/doctrine/orm/Proxies'));
-        $b->setProxyNamespace('Proxies');
-        $b->setAutoGenerateProxyClasses(true);
-        $b->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
-        $b->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
-        $b->setNamingStrategy(new \Doctrine\ORM\Mapping\UnderscoreNamingStrategy());
-        $b->setQuoteStrategy(new \Doctrine\ORM\Mapping\DefaultQuoteStrategy());
-        $b->setEntityListenerResolver($this->get('doctrine.orm.default_entity_listener_resolver'));
+        $b = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($a, array(0 => ($this->targetDirs[3].'/src/Blogger/BlogBundle/Entity'), 1 => ($this->targetDirs[3].'/vendor/uecode/api-key-bundle/src/Uecode/Bundle/ApiKeyBundle/Entity')));
 
-        $instance = \Doctrine\ORM\EntityManager::create($this->get('doctrine.dbal.default_connection'), $b);
+        $c = new \Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain();
+        $c->addDriver($b, 'Blogger\\BlogBundle\\Entity');
+        $c->addDriver($b, 'Uecode\\Bundle\\ApiKeyBundle\\Entity');
+        $c->addDriver(new \Doctrine\ORM\Mapping\Driver\XmlDriver(new \Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator(array(($this->targetDirs[3].'/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping') => 'FOS\\UserBundle\\Model'), '.orm.xml')), 'FOS\\UserBundle\\Model');
+
+        $d = new \Doctrine\ORM\Configuration();
+        $d->setEntityNamespaces(array('BloggerBlogBundle' => 'Blogger\\BlogBundle\\Entity', 'UecodeApiKeyBundle' => 'Uecode\\Bundle\\ApiKeyBundle\\Entity'));
+        $d->setMetadataCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_metadata_cache'));
+        $d->setQueryCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_query_cache'));
+        $d->setResultCacheImpl($this->get('doctrine_cache.providers.doctrine.orm.default_result_cache'));
+        $d->setMetadataDriverImpl($c);
+        $d->setProxyDir((__DIR__.'/doctrine/orm/Proxies'));
+        $d->setProxyNamespace('Proxies');
+        $d->setAutoGenerateProxyClasses(true);
+        $d->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
+        $d->setDefaultRepositoryClassName('Doctrine\\ORM\\EntityRepository');
+        $d->setNamingStrategy(new \Doctrine\ORM\Mapping\UnderscoreNamingStrategy());
+        $d->setQuoteStrategy(new \Doctrine\ORM\Mapping\DefaultQuoteStrategy());
+        $d->setEntityListenerResolver($this->get('doctrine.orm.default_entity_listener_resolver'));
+
+        $instance = \Doctrine\ORM\EntityManager::create($this->get('doctrine.dbal.default_connection'), $d);
 
         $this->get('doctrine.orm.default_manager_configurator')->configure($instance);
 
@@ -1134,7 +1223,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getForm_ExtensionService()
     {
-        return $this->services['form.extension'] = new \Sonata\CoreBundle\Form\Extension\DependencyInjectionExtension($this, array('form' => 'form.type.form', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType' => 'form.type.form', 'birthday' => 'form.type.birthday', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType' => 'form.type.birthday', 'checkbox' => 'form.type.checkbox', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CheckboxType' => 'form.type.checkbox', 'choice' => 'form.type.choice', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => 'form.type.choice', 'collection' => 'form.type.collection', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CollectionType' => 'form.type.collection', 'country' => 'form.type.country', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CountryType' => 'form.type.country', 'date' => 'form.type.date', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateType' => 'form.type.date', 'datetime' => 'form.type.datetime', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType' => 'form.type.datetime', 'email' => 'form.type.email', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\EmailType' => 'form.type.email', 'file' => 'form.type.file', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType' => 'form.type.file', 'hidden' => 'form.type.hidden', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\HiddenType' => 'form.type.hidden', 'integer' => 'form.type.integer', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\IntegerType' => 'form.type.integer', 'language' => 'form.type.language', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LanguageType' => 'form.type.language', 'locale' => 'form.type.locale', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LocaleType' => 'form.type.locale', 'money' => 'form.type.money', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\MoneyType' => 'form.type.money', 'number' => 'form.type.number', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType' => 'form.type.number', 'password' => 'form.type.password', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PasswordType' => 'form.type.password', 'percent' => 'form.type.percent', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PercentType' => 'form.type.percent', 'radio' => 'form.type.radio', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RadioType' => 'form.type.radio', 'range' => 'form.type.range', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RangeType' => 'form.type.range', 'repeated' => 'form.type.repeated', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType' => 'form.type.repeated', 'search' => 'form.type.search', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SearchType' => 'form.type.search', 'textarea' => 'form.type.textarea', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextareaType' => 'form.type.textarea', 'text' => 'form.type.text', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType' => 'form.type.text', 'time' => 'form.type.time', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType' => 'form.type.time', 'timezone' => 'form.type.timezone', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimezoneType' => 'form.type.timezone', 'url' => 'form.type.url', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\UrlType' => 'form.type.url', 'button' => 'form.type.button', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ButtonType' => 'form.type.button', 'submit' => 'form.type.submit', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType' => 'form.type.submit', 'reset' => 'form.type.reset', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ResetType' => 'form.type.reset', 'currency' => 'form.type.currency', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CurrencyType' => 'form.type.currency', 'entity' => 'form.type.entity', 'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType' => 'form.type.entity', 'fos_user_username' => 'fos_user.username_form_type', 'FOS\\UserBundle\\Form\\Type\\UsernameFormType' => 'fos_user.username_form_type', 'fos_user_profile' => 'fos_user.profile.form.type', 'FOS\\UserBundle\\Form\\Type\\ProfileFormType' => 'fos_user.profile.form.type', 'fos_user_registration' => 'fos_user.registration.form.type', 'FOS\\UserBundle\\Form\\Type\\RegistrationFormType' => 'fos_user.registration.form.type', 'fos_user_change_password' => 'fos_user.change_password.form.type', 'FOS\\UserBundle\\Form\\Type\\ChangePasswordFormType' => 'fos_user.change_password.form.type', 'fos_user_resetting' => 'fos_user.resetting.form.type', 'FOS\\UserBundle\\Form\\Type\\ResettingFormType' => 'fos_user.resetting.form.type', 'sonata_type_immutable_array' => 'sonata.core.form.type.array', 'Sonata\\CoreBundle\\Form\\Type\\ImmutableArrayType' => 'sonata.core.form.type.array', 'sonata_type_boolean' => 'sonata.core.form.type.boolean', 'Sonata\\CoreBundle\\Form\\Type\\BooleanType' => 'sonata.core.form.type.boolean', 'sonata_type_collection' => 'sonata.core.form.type.collection', 'Sonata\\CoreBundle\\Form\\Type\\CollectionType' => 'sonata.core.form.type.collection', 'sonata_type_translatable_choice' => 'sonata.core.form.type.translatable_choice', 'Sonata\\CoreBundle\\Form\\Type\\TranslatableChoiceType' => 'sonata.core.form.type.translatable_choice', 'sonata_type_date_range' => 'sonata.core.form.type.date_range', 'Sonata\\CoreBundle\\Form\\Type\\DateRangeType' => 'sonata.core.form.type.date_range', 'sonata_type_datetime_range' => 'sonata.core.form.type.datetime_range', 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangeType' => 'sonata.core.form.type.datetime_range', 'sonata_type_date_picker' => 'sonata.core.form.type.date_picker', 'Sonata\\CoreBundle\\Form\\Type\\DatePickerType' => 'sonata.core.form.type.date_picker', 'sonata_type_datetime_picker' => 'sonata.core.form.type.datetime_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateTimePickerType' => 'sonata.core.form.type.datetime_picker', 'sonata_type_date_range_picker' => 'sonata.core.form.type.date_range_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateRangePickerType' => 'sonata.core.form.type.date_range_picker', 'sonata_type_datetime_range_picker' => 'sonata.core.form.type.datetime_range_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangePickerType' => 'sonata.core.form.type.datetime_range_picker', 'sonata_type_equal' => 'sonata.core.form.type.equal', 'Sonata\\CoreBundle\\Form\\Type\\EqualType' => 'sonata.core.form.type.equal', 'sonata_type_color_selector' => 'sonata.core.form.type.color_selector', 'Sonata\\CoreBundle\\Form\\Type\\ColorSelectorType' => 'sonata.core.form.type.color_selector', 'sonata_block_service_choice' => 'sonata.block.form.type.block', 'Sonata\\BlockBundle\\Form\\Type\\ServiceListType' => 'sonata.block.form.type.block', 'sonata_type_container_template_choice' => 'sonata.block.form.type.container_template', 'Sonata\\BlockBundle\\Form\\Type\\ContainerTemplateType' => 'sonata.block.form.type.container_template', 'sonata_type_admin' => 'sonata.admin.form.type.admin', 'Sonata\\AdminBundle\\Form\\Type\\AdminType' => 'sonata.admin.form.type.admin', 'sonata_type_model' => 'sonata.admin.form.type.model_choice', 'Sonata\\AdminBundle\\Form\\Type\\ModelType' => 'sonata.admin.form.type.model_choice', 'sonata_type_model_list' => 'sonata.admin.form.type.model_list', 'Sonata\\AdminBundle\\Form\\Type\\ModelListType' => 'sonata.admin.form.type.model_list', 'sonata_type_model_reference' => 'sonata.admin.form.type.model_reference', 'Sonata\\AdminBundle\\Form\\Type\\ModelReferenceType' => 'sonata.admin.form.type.model_reference', 'sonata_type_model_hidden' => 'sonata.admin.form.type.model_hidden', 'Sonata\\AdminBundle\\Form\\Type\\ModelHiddenType' => 'sonata.admin.form.type.model_hidden', 'sonata_type_model_autocomplete' => 'sonata.admin.form.type.model_autocomplete', 'Sonata\\AdminBundle\\Form\\Type\\ModelAutocompleteType' => 'sonata.admin.form.type.model_autocomplete', 'sonata_type_native_collection' => 'sonata.admin.form.type.collection', 'Sonata\\AdminBundle\\Form\\Type\\CollectionType' => 'sonata.admin.form.type.collection', 'sonata_type_choice_field_mask' => 'sonata.admin.doctrine_orm.form.type.choice_field_mask', 'Sonata\\AdminBundle\\Form\\Type\\ChoiceFieldMaskType' => 'sonata.admin.doctrine_orm.form.type.choice_field_mask', 'sonata_type_filter_number' => 'sonata.admin.form.filter.type.number', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\NumberType' => 'sonata.admin.form.filter.type.number', 'sonata_type_filter_choice' => 'sonata.admin.form.filter.type.choice', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\ChoiceType' => 'sonata.admin.form.filter.type.choice', 'sonata_type_filter_default' => 'sonata.admin.form.filter.type.default', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DefaultType' => 'sonata.admin.form.filter.type.default', 'sonata_type_filter_date' => 'sonata.admin.form.filter.type.date', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateType' => 'sonata.admin.form.filter.type.date', 'sonata_type_filter_date_range' => 'sonata.admin.form.filter.type.daterange', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateRangeType' => 'sonata.admin.form.filter.type.daterange', 'sonata_type_filter_datetime' => 'sonata.admin.form.filter.type.datetime', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeType' => 'sonata.admin.form.filter.type.datetime', 'sonata_type_filter_datetime_range' => 'sonata.admin.form.filter.type.datetime_range', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeRangeType' => 'sonata.admin.form.filter.type.datetime_range'), array('Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.upload.validator', 3 => 'form.type_extension.csrf', 4 => 'form.type_extension.form.data_collector', 5 => 'sonata.admin.form.extension.field', 6 => 'sonata.admin.form.extension.field.mopa'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType' => array(0 => 'form.type_extension.repeated.validator'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType' => array(0 => 'form.type_extension.submit.validator'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => array(0 => 'sonata.admin.form.extension.choice')), array(0 => 'form.type_guesser.validator', 1 => 'form.type_guesser.doctrine'), array('form' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType', 'birthday' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType', 'checkbox' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CheckboxType', 'choice' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType', 'collection' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CollectionType', 'country' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CountryType', 'date' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateType', 'datetime' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType', 'email' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\EmailType', 'file' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType', 'hidden' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\HiddenType', 'integer' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\IntegerType', 'language' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LanguageType', 'locale' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LocaleType', 'money' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\MoneyType', 'number' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType', 'password' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PasswordType', 'percent' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PercentType', 'radio' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RadioType', 'repeated' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType', 'search' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SearchType', 'textarea' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextareaType', 'text' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType', 'time' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType', 'timezone' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimezoneType', 'url' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\UrlType', 'button' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ButtonType', 'submit' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType', 'reset' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ResetType', 'currency' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CurrencyType', 'entity' => 'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType', 'sonata_type_immutable_array' => 'Sonata\\CoreBundle\\Form\\Type\\ImmutableArrayType', 'sonata_type_boolean' => 'Sonata\\CoreBundle\\Form\\Type\\BooleanType', 'sonata_type_collection' => 'Sonata\\CoreBundle\\Form\\Type\\CollectionType', 'sonata_type_translatable_choice' => 'Sonata\\CoreBundle\\Form\\Type\\TranslatableChoiceType', 'sonata_type_date_range' => 'Sonata\\CoreBundle\\Form\\Type\\DateRangeType', 'sonata_type_datetime_range' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangeType', 'sonata_type_date_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DatePickerType', 'sonata_type_datetime_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimePickerType', 'sonata_type_date_range_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateRangePickerType', 'sonata_type_datetime_range_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangePickerType', 'sonata_type_equal' => 'Sonata\\CoreBundle\\Form\\Type\\EqualType', 'sonata_type_color_selector' => 'Sonata\\CoreBundle\\Form\\Type\\ColorSelectorType', 'sonata_block_service_choice' => 'Sonata\\BlockBundle\\Form\\Type\\ServiceListType', 'sonata_type_container_template_choice' => 'Sonata\\BlockBundle\\Form\\Type\\ContainerTemplateType', 'sonata_type_admin' => 'Sonata\\AdminBundle\\Form\\Type\\AdminType', 'sonata_type_model' => 'Sonata\\AdminBundle\\Form\\Type\\ModelType', 'sonata_type_model_list' => 'Sonata\\AdminBundle\\Form\\Type\\ModelListType', 'sonata_type_model_reference' => 'Sonata\\AdminBundle\\Form\\Type\\ModelReferenceType', 'sonata_type_model_hidden' => 'Sonata\\AdminBundle\\Form\\Type\\ModelHiddenType', 'sonata_type_model_autocomplete' => 'Sonata\\AdminBundle\\Form\\Type\\ModelAutocompleteType', 'sonata_type_native_collection' => 'Sonata\\AdminBundle\\Form\\Type\\CollectionType', 'sonata_type_choice_field_mask' => 'Sonata\\AdminBundle\\Form\\Type\\ChoiceFieldMaskType', 'sonata_type_filter_number' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\NumberType', 'sonata_type_filter_choice' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\ChoiceType', 'sonata_type_filter_default' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DefaultType', 'sonata_type_filter_date' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateType', 'sonata_type_filter_date_range' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateRangeType', 'sonata_type_filter_datetime' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeType', 'sonata_type_filter_datetime_range' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeRangeType', 'tab' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Type\\TabType'), array('form' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.csrf', 3 => 'form.type_extension.form.data_collector', 4 => 'sonata.admin.form.extension.field', 5 => 'mopa_bootstrap.form.type_extension.help', 6 => 'mopa_bootstrap.form.type_extension.legend', 7 => 'mopa_bootstrap.form.type_extension.error', 8 => 'mopa_bootstrap.form.type_extension.widget', 9 => 'mopa_bootstrap.form.type_extension.horizontal', 10 => 'mopa_bootstrap.form.type_extension.widget_collection', 11 => 'mopa_bootstrap.form.type_extension.tabbed'), 'repeated' => array(0 => 'form.type_extension.repeated.validator'), 'submit' => array(0 => 'form.type_extension.submit.validator'), 'choice' => array(0 => 'sonata.admin.form.extension.choice'), 'button' => array(0 => 'mopa_bootstrap.form.type_extension.button'), 'date' => array(0 => 'mopa_bootstrap.form.type_extension.date')), array());
+        return $this->services['form.extension'] = new \Sonata\CoreBundle\Form\Extension\DependencyInjectionExtension($this, array('form' => 'form.type.form', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType' => 'form.type.form', 'birthday' => 'form.type.birthday', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType' => 'form.type.birthday', 'checkbox' => 'form.type.checkbox', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CheckboxType' => 'form.type.checkbox', 'choice' => 'form.type.choice', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => 'form.type.choice', 'collection' => 'form.type.collection', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CollectionType' => 'form.type.collection', 'country' => 'form.type.country', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CountryType' => 'form.type.country', 'date' => 'form.type.date', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateType' => 'form.type.date', 'datetime' => 'form.type.datetime', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType' => 'form.type.datetime', 'email' => 'form.type.email', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\EmailType' => 'form.type.email', 'file' => 'form.type.file', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType' => 'form.type.file', 'hidden' => 'form.type.hidden', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\HiddenType' => 'form.type.hidden', 'integer' => 'form.type.integer', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\IntegerType' => 'form.type.integer', 'language' => 'form.type.language', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LanguageType' => 'form.type.language', 'locale' => 'form.type.locale', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LocaleType' => 'form.type.locale', 'money' => 'form.type.money', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\MoneyType' => 'form.type.money', 'number' => 'form.type.number', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType' => 'form.type.number', 'password' => 'form.type.password', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PasswordType' => 'form.type.password', 'percent' => 'form.type.percent', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PercentType' => 'form.type.percent', 'radio' => 'form.type.radio', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RadioType' => 'form.type.radio', 'range' => 'form.type.range', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RangeType' => 'form.type.range', 'repeated' => 'form.type.repeated', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType' => 'form.type.repeated', 'search' => 'form.type.search', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SearchType' => 'form.type.search', 'textarea' => 'form.type.textarea', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextareaType' => 'form.type.textarea', 'text' => 'form.type.text', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType' => 'form.type.text', 'time' => 'form.type.time', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType' => 'form.type.time', 'timezone' => 'form.type.timezone', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimezoneType' => 'form.type.timezone', 'url' => 'form.type.url', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\UrlType' => 'form.type.url', 'button' => 'form.type.button', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ButtonType' => 'form.type.button', 'submit' => 'form.type.submit', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType' => 'form.type.submit', 'reset' => 'form.type.reset', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ResetType' => 'form.type.reset', 'currency' => 'form.type.currency', 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CurrencyType' => 'form.type.currency', 'entity' => 'form.type.entity', 'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType' => 'form.type.entity', 'fos_user_username' => 'fos_user.username_form_type', 'FOS\\UserBundle\\Form\\Type\\UsernameFormType' => 'fos_user.username_form_type', 'fos_user_profile' => 'fos_user.profile.form.type', 'FOS\\UserBundle\\Form\\Type\\ProfileFormType' => 'fos_user.profile.form.type', 'fos_user_registration' => 'fos_user.registration.form.type', 'FOS\\UserBundle\\Form\\Type\\RegistrationFormType' => 'fos_user.registration.form.type', 'fos_user_change_password' => 'fos_user.change_password.form.type', 'FOS\\UserBundle\\Form\\Type\\ChangePasswordFormType' => 'fos_user.change_password.form.type', 'fos_user_resetting' => 'fos_user.resetting.form.type', 'FOS\\UserBundle\\Form\\Type\\ResettingFormType' => 'fos_user.resetting.form.type', 'sonata_type_immutable_array' => 'sonata.core.form.type.array', 'Sonata\\CoreBundle\\Form\\Type\\ImmutableArrayType' => 'sonata.core.form.type.array', 'sonata_type_boolean' => 'sonata.core.form.type.boolean', 'Sonata\\CoreBundle\\Form\\Type\\BooleanType' => 'sonata.core.form.type.boolean', 'sonata_type_collection' => 'sonata.core.form.type.collection', 'Sonata\\CoreBundle\\Form\\Type\\CollectionType' => 'sonata.core.form.type.collection', 'sonata_type_translatable_choice' => 'sonata.core.form.type.translatable_choice', 'Sonata\\CoreBundle\\Form\\Type\\TranslatableChoiceType' => 'sonata.core.form.type.translatable_choice', 'sonata_type_date_range' => 'sonata.core.form.type.date_range', 'Sonata\\CoreBundle\\Form\\Type\\DateRangeType' => 'sonata.core.form.type.date_range', 'sonata_type_datetime_range' => 'sonata.core.form.type.datetime_range', 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangeType' => 'sonata.core.form.type.datetime_range', 'sonata_type_date_picker' => 'sonata.core.form.type.date_picker', 'Sonata\\CoreBundle\\Form\\Type\\DatePickerType' => 'sonata.core.form.type.date_picker', 'sonata_type_datetime_picker' => 'sonata.core.form.type.datetime_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateTimePickerType' => 'sonata.core.form.type.datetime_picker', 'sonata_type_date_range_picker' => 'sonata.core.form.type.date_range_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateRangePickerType' => 'sonata.core.form.type.date_range_picker', 'sonata_type_datetime_range_picker' => 'sonata.core.form.type.datetime_range_picker', 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangePickerType' => 'sonata.core.form.type.datetime_range_picker', 'sonata_type_equal' => 'sonata.core.form.type.equal', 'Sonata\\CoreBundle\\Form\\Type\\EqualType' => 'sonata.core.form.type.equal', 'sonata_type_color_selector' => 'sonata.core.form.type.color_selector', 'Sonata\\CoreBundle\\Form\\Type\\ColorSelectorType' => 'sonata.core.form.type.color_selector', 'sonata_block_service_choice' => 'sonata.block.form.type.block', 'Sonata\\BlockBundle\\Form\\Type\\ServiceListType' => 'sonata.block.form.type.block', 'sonata_type_container_template_choice' => 'sonata.block.form.type.container_template', 'Sonata\\BlockBundle\\Form\\Type\\ContainerTemplateType' => 'sonata.block.form.type.container_template', 'sonata_type_admin' => 'sonata.admin.form.type.admin', 'Sonata\\AdminBundle\\Form\\Type\\AdminType' => 'sonata.admin.form.type.admin', 'sonata_type_model' => 'sonata.admin.form.type.model_choice', 'Sonata\\AdminBundle\\Form\\Type\\ModelType' => 'sonata.admin.form.type.model_choice', 'sonata_type_model_list' => 'sonata.admin.form.type.model_list', 'Sonata\\AdminBundle\\Form\\Type\\ModelListType' => 'sonata.admin.form.type.model_list', 'sonata_type_model_reference' => 'sonata.admin.form.type.model_reference', 'Sonata\\AdminBundle\\Form\\Type\\ModelReferenceType' => 'sonata.admin.form.type.model_reference', 'sonata_type_model_hidden' => 'sonata.admin.form.type.model_hidden', 'Sonata\\AdminBundle\\Form\\Type\\ModelHiddenType' => 'sonata.admin.form.type.model_hidden', 'sonata_type_model_autocomplete' => 'sonata.admin.form.type.model_autocomplete', 'Sonata\\AdminBundle\\Form\\Type\\ModelAutocompleteType' => 'sonata.admin.form.type.model_autocomplete', 'sonata_type_native_collection' => 'sonata.admin.form.type.collection', 'Sonata\\AdminBundle\\Form\\Type\\CollectionType' => 'sonata.admin.form.type.collection', 'sonata_type_choice_field_mask' => 'sonata.admin.doctrine_orm.form.type.choice_field_mask', 'Sonata\\AdminBundle\\Form\\Type\\ChoiceFieldMaskType' => 'sonata.admin.doctrine_orm.form.type.choice_field_mask', 'sonata_type_filter_number' => 'sonata.admin.form.filter.type.number', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\NumberType' => 'sonata.admin.form.filter.type.number', 'sonata_type_filter_choice' => 'sonata.admin.form.filter.type.choice', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\ChoiceType' => 'sonata.admin.form.filter.type.choice', 'sonata_type_filter_default' => 'sonata.admin.form.filter.type.default', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DefaultType' => 'sonata.admin.form.filter.type.default', 'sonata_type_filter_date' => 'sonata.admin.form.filter.type.date', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateType' => 'sonata.admin.form.filter.type.date', 'sonata_type_filter_date_range' => 'sonata.admin.form.filter.type.daterange', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateRangeType' => 'sonata.admin.form.filter.type.daterange', 'sonata_type_filter_datetime' => 'sonata.admin.form.filter.type.datetime', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeType' => 'sonata.admin.form.filter.type.datetime', 'sonata_type_filter_datetime_range' => 'sonata.admin.form.filter.type.datetime_range', 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeRangeType' => 'sonata.admin.form.filter.type.datetime_range'), array('Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.upload.validator', 3 => 'form.type_extension.csrf', 4 => 'form.type_extension.form.data_collector', 5 => 'sonata.admin.form.extension.field', 6 => 'sonata.admin.form.extension.field.mopa', 7 => 'nelmio_api_doc.form.extension.description_form_type_extension'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType' => array(0 => 'form.type_extension.repeated.validator'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType' => array(0 => 'form.type_extension.submit.validator'), 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => array(0 => 'sonata.admin.form.extension.choice')), array(0 => 'form.type_guesser.validator', 1 => 'form.type_guesser.doctrine'), array('form' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType', 'birthday' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType', 'checkbox' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CheckboxType', 'choice' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType', 'collection' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CollectionType', 'country' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CountryType', 'date' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateType', 'datetime' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\DateTimeType', 'email' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\EmailType', 'file' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType', 'hidden' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\HiddenType', 'integer' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\IntegerType', 'language' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LanguageType', 'locale' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\LocaleType', 'money' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\MoneyType', 'number' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType', 'password' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PasswordType', 'percent' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\PercentType', 'radio' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RadioType', 'repeated' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\RepeatedType', 'search' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SearchType', 'textarea' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextareaType', 'text' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType', 'time' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType', 'timezone' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\TimezoneType', 'url' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\UrlType', 'button' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ButtonType', 'submit' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\SubmitType', 'reset' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\ResetType', 'currency' => 'Symfony\\Component\\Form\\Extension\\Core\\Type\\CurrencyType', 'entity' => 'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType', 'sonata_type_immutable_array' => 'Sonata\\CoreBundle\\Form\\Type\\ImmutableArrayType', 'sonata_type_boolean' => 'Sonata\\CoreBundle\\Form\\Type\\BooleanType', 'sonata_type_collection' => 'Sonata\\CoreBundle\\Form\\Type\\CollectionType', 'sonata_type_translatable_choice' => 'Sonata\\CoreBundle\\Form\\Type\\TranslatableChoiceType', 'sonata_type_date_range' => 'Sonata\\CoreBundle\\Form\\Type\\DateRangeType', 'sonata_type_datetime_range' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangeType', 'sonata_type_date_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DatePickerType', 'sonata_type_datetime_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimePickerType', 'sonata_type_date_range_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateRangePickerType', 'sonata_type_datetime_range_picker' => 'Sonata\\CoreBundle\\Form\\Type\\DateTimeRangePickerType', 'sonata_type_equal' => 'Sonata\\CoreBundle\\Form\\Type\\EqualType', 'sonata_type_color_selector' => 'Sonata\\CoreBundle\\Form\\Type\\ColorSelectorType', 'sonata_block_service_choice' => 'Sonata\\BlockBundle\\Form\\Type\\ServiceListType', 'sonata_type_container_template_choice' => 'Sonata\\BlockBundle\\Form\\Type\\ContainerTemplateType', 'sonata_type_admin' => 'Sonata\\AdminBundle\\Form\\Type\\AdminType', 'sonata_type_model' => 'Sonata\\AdminBundle\\Form\\Type\\ModelType', 'sonata_type_model_list' => 'Sonata\\AdminBundle\\Form\\Type\\ModelListType', 'sonata_type_model_reference' => 'Sonata\\AdminBundle\\Form\\Type\\ModelReferenceType', 'sonata_type_model_hidden' => 'Sonata\\AdminBundle\\Form\\Type\\ModelHiddenType', 'sonata_type_model_autocomplete' => 'Sonata\\AdminBundle\\Form\\Type\\ModelAutocompleteType', 'sonata_type_native_collection' => 'Sonata\\AdminBundle\\Form\\Type\\CollectionType', 'sonata_type_choice_field_mask' => 'Sonata\\AdminBundle\\Form\\Type\\ChoiceFieldMaskType', 'sonata_type_filter_number' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\NumberType', 'sonata_type_filter_choice' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\ChoiceType', 'sonata_type_filter_default' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DefaultType', 'sonata_type_filter_date' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateType', 'sonata_type_filter_date_range' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateRangeType', 'sonata_type_filter_datetime' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeType', 'sonata_type_filter_datetime_range' => 'Sonata\\AdminBundle\\Form\\Type\\Filter\\DateTimeRangeType', 'tab' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Type\\TabType'), array('form' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.csrf', 3 => 'form.type_extension.form.data_collector', 4 => 'nelmio_api_doc.form.extension.description_form_type_extension', 5 => 'sonata.admin.form.extension.field', 6 => 'mopa_bootstrap.form.type_extension.help', 7 => 'mopa_bootstrap.form.type_extension.legend', 8 => 'mopa_bootstrap.form.type_extension.error', 9 => 'mopa_bootstrap.form.type_extension.widget', 10 => 'mopa_bootstrap.form.type_extension.horizontal', 11 => 'mopa_bootstrap.form.type_extension.widget_collection', 12 => 'mopa_bootstrap.form.type_extension.tabbed'), 'repeated' => array(0 => 'form.type_extension.repeated.validator'), 'submit' => array(0 => 'form.type_extension.submit.validator'), 'choice' => array(0 => 'sonata.admin.form.extension.choice'), 'button' => array(0 => 'mopa_bootstrap.form.type_extension.button'), 'date' => array(0 => 'mopa_bootstrap.form.type_extension.date')), array());
     }
 
     /**
@@ -1706,7 +1795,7 @@ class appDevDebugProjectContainer extends Container
         if ($lazyLoad) {
             $container = $this;
 
-            return $this->services['fos_rest.serializer'] = new FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30e09779a2b113f6ccb5d6d99caa4d874e99(
+            return $this->services['fos_rest.serializer'] = new FOSRestBundleSerializerJMSSerializerAdapter_000000005d75bef400007f08fdbdb5429779a2b113f6ccb5d6d99caa4d874e99(
                 function (&$wrappedInstance, \ProxyManager\Proxy\LazyLoadingInterface $proxy) use ($container) {
                     $wrappedInstance = $container->getFosRest_SerializerService(false);
 
@@ -1742,6 +1831,20 @@ class appDevDebugProjectContainer extends Container
     protected function getFosRest_ViewResponseListenerService()
     {
         return $this->services['fos_rest.view_response_listener'] = new \FOS\RestBundle\EventListener\ViewResponseListener($this->get('fos_rest.view_handler'), true);
+    }
+
+    /**
+     * Gets the public 'fos_rest.zone_matcher_listener' shared service.
+     *
+     * @return \FOS\RestBundle\EventListener\ZoneMatcherListener
+     */
+    protected function getFosRest_ZoneMatcherListenerService()
+    {
+        $this->services['fos_rest.zone_matcher_listener'] = $instance = new \FOS\RestBundle\EventListener\ZoneMatcherListener();
+
+        $instance->addRequestMatcher(new \Symfony\Component\HttpFoundation\RequestMatcher('^/api/*'));
+
+        return $instance;
     }
 
     /**
@@ -1881,7 +1984,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getFosUser_Security_LoginManagerService()
     {
-        return $this->services['fos_user.security.login_manager'] = new \FOS\UserBundle\Security\LoginManager($this->get('security.token_storage'), $this->get('security.user_checker.main'), $this->get('security.authentication.session_strategy'), $this->get('request_stack'), NULL);
+        return $this->services['fos_user.security.login_manager'] = new \FOS\UserBundle\Security\LoginManager($this->get('security.token_storage'), $this->get('security.user_checker.api_keys'), $this->get('security.authentication.session_strategy'), $this->get('request_stack'), NULL);
     }
 
     /**
@@ -2035,13 +2138,10 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getJmsSerializerService()
     {
-        $a = new \Metadata\MetadataFactory(new \Metadata\Driver\LazyLoadingDriver($this, 'jms_serializer.metadata_driver'), 'Metadata\\ClassHierarchyMetadata', true);
-        $a->setCache(new \Metadata\Cache\FileCache((__DIR__.'/serializer')));
+        $a = new \JMS\Serializer\EventDispatcher\LazyEventDispatcher($this);
+        $a->setListeners(array('serializer.pre_serialize' => array(0 => array(0 => array(0 => 'jms_serializer.stopwatch_subscriber', 1 => 'onPreSerialize'), 1 => NULL, 2 => NULL), 1 => array(0 => array(0 => 'jms_serializer.doctrine_proxy_subscriber', 1 => 'onPreSerializeTypedProxy'), 1 => NULL, 2 => NULL), 2 => array(0 => array(0 => 'jms_serializer.doctrine_proxy_subscriber', 1 => 'onPreSerialize'), 1 => NULL, 2 => NULL)), 'serializer.post_serialize' => array(0 => array(0 => array(0 => 'jms_serializer.stopwatch_subscriber', 1 => 'onPostSerialize'), 1 => NULL, 2 => NULL))));
 
-        $b = new \JMS\Serializer\EventDispatcher\LazyEventDispatcher($this);
-        $b->setListeners(array('serializer.pre_serialize' => array(0 => array(0 => array(0 => 'jms_serializer.stopwatch_subscriber', 1 => 'onPreSerialize'), 1 => NULL, 2 => NULL), 1 => array(0 => array(0 => 'jms_serializer.doctrine_proxy_subscriber', 1 => 'onPreSerializeTypedProxy'), 1 => NULL, 2 => NULL), 2 => array(0 => array(0 => 'jms_serializer.doctrine_proxy_subscriber', 1 => 'onPreSerialize'), 1 => NULL, 2 => NULL)), 'serializer.post_serialize' => array(0 => array(0 => array(0 => 'jms_serializer.stopwatch_subscriber', 1 => 'onPostSerialize'), 1 => NULL, 2 => NULL))));
-
-        $this->services['jms_serializer'] = $instance = new \JMS\Serializer\Serializer($a, $this->get('jms_serializer.handler_registry'), $this->get('jms_serializer.unserialize_object_constructor'), new \PhpCollection\Map(array('json' => $this->get('jms_serializer.json_serialization_visitor'), 'xml' => $this->get('jms_serializer.xml_serialization_visitor'), 'yml' => $this->get('jms_serializer.yaml_serialization_visitor'))), new \PhpCollection\Map(array('json' => $this->get('jms_serializer.json_deserialization_visitor'), 'xml' => $this->get('jms_serializer.xml_deserialization_visitor'))), $b, NULL, $this->get('jms_serializer.expression_evaluator'));
+        $this->services['jms_serializer'] = $instance = new \JMS\Serializer\Serializer($this->get('jms_serializer.metadata_factory'), $this->get('jms_serializer.handler_registry'), $this->get('jms_serializer.unserialize_object_constructor'), new \PhpCollection\Map(array('json' => $this->get('jms_serializer.json_serialization_visitor'), 'xml' => $this->get('jms_serializer.xml_serialization_visitor'), 'yml' => $this->get('jms_serializer.yaml_serialization_visitor'))), new \PhpCollection\Map(array('json' => $this->get('jms_serializer.json_deserialization_visitor'), 'xml' => $this->get('jms_serializer.xml_deserialization_visitor'))), $a, NULL, $this->get('jms_serializer.expression_evaluator'));
 
         $instance->setSerializationContextFactory($this->get('jms_serializer.serialization_context_factory'));
         $instance->setDeserializationContextFactory($this->get('jms_serializer.deserialization_context_factory'));
@@ -2173,7 +2273,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getJmsSerializer_MetadataDriverService()
     {
-        $a = new \Metadata\Driver\FileLocator(array('Blogger\\BlogBundle' => ($this->targetDirs[2].'/config/serializer/Blogger/BlogBundle'), 'Sonata\\BlockBundle' => ($this->targetDirs[3].'/vendor/sonata-project/block-bundle/Resources/config/serializer')));
+        $a = new \Metadata\Driver\FileLocator(array('Blogger\\BlogBundle' => ($this->targetDirs[3].'/src/Blogger/BlogBundle/Resources/config/serializer'), 'Sonata\\BlockBundle' => ($this->targetDirs[3].'/vendor/sonata-project/block-bundle/Resources/config/serializer')));
 
         return $this->services['jms_serializer.metadata_driver'] = new \JMS\Serializer\Metadata\Driver\DoctrineTypeDriver(new \Metadata\Driver\DriverChain(array(0 => new \JMS\Serializer\Metadata\Driver\YamlDriver($a), 1 => new \JMS\Serializer\Metadata\Driver\XmlDriver($a), 2 => new \JMS\Serializer\Metadata\Driver\PhpDriver($a), 3 => new \JMS\Serializer\Metadata\Driver\AnnotationDriver($this->get('annotation_reader')))), $this->get('doctrine'));
     }
@@ -2392,6 +2492,130 @@ class appDevDebugProjectContainer extends Container
     protected function getKnpMenu_Voter_RouterService()
     {
         return $this->services['knp_menu.voter.router'] = new \Knp\Menu\Matcher\Voter\RouteVoter();
+    }
+
+    /**
+     * Gets the public 'lexik\bundle\jwtauthenticationbundle\services\jwsprovider\jwsproviderinterface' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\DefaultJWSProvider
+     */
+    protected function getLexik_Bundle_Jwtauthenticationbundle_Services_Jwsprovider_JwsproviderinterfaceService()
+    {
+        return $this->services['lexik\bundle\jwtauthenticationbundle\services\jwsprovider\jwsproviderinterface'] = new \Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\DefaultJWSProvider($this->get('lexik_jwt_authentication.key_loader'), 'openssl', 'RS256', 3600);
+    }
+
+    /**
+     * Gets the public 'lexik\bundle\jwtauthenticationbundle\tokenextractor\tokenextractorinterface' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\ChainTokenExtractor
+     */
+    protected function getLexik_Bundle_Jwtauthenticationbundle_Tokenextractor_TokenextractorinterfaceService()
+    {
+        return $this->services['lexik\bundle\jwtauthenticationbundle\tokenextractor\tokenextractorinterface'] = new \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\ChainTokenExtractor(array(0 => $this->get('lexik_jwt_authentication.extractor.authorization_header_extractor')));
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.encoder.default' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Encoder\DefaultEncoder
+     */
+    protected function getLexikJwtAuthentication_Encoder_DefaultService()
+    {
+        return $this->services['lexik_jwt_authentication.encoder.default'] = new \Lexik\Bundle\JWTAuthenticationBundle\Encoder\DefaultEncoder($this->get('lexik\bundle\jwtauthenticationbundle\services\jwsprovider\jwsproviderinterface'));
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.encoder.lcobucci' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Encoder\DefaultEncoder
+     */
+    protected function getLexikJwtAuthentication_Encoder_LcobucciService()
+    {
+        return $this->services['lexik_jwt_authentication.encoder.lcobucci'] = new \Lexik\Bundle\JWTAuthenticationBundle\Encoder\DefaultEncoder(new \Lexik\Bundle\JWTAuthenticationBundle\Services\JWSProvider\LcobucciJWSProvider(new \Lexik\Bundle\JWTAuthenticationBundle\Services\KeyLoader\RawKeyLoader(NULL, NULL, ''), 'openssl', 'RS256', 3600));
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.extractor.authorization_header_extractor' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\AuthorizationHeaderTokenExtractor
+     */
+    protected function getLexikJwtAuthentication_Extractor_AuthorizationHeaderExtractorService()
+    {
+        return $this->services['lexik_jwt_authentication.extractor.authorization_header_extractor'] = new \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\AuthorizationHeaderTokenExtractor('Bearer', 'Authorization');
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.extractor.cookie_extractor' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\CookieTokenExtractor
+     */
+    protected function getLexikJwtAuthentication_Extractor_CookieExtractorService()
+    {
+        return $this->services['lexik_jwt_authentication.extractor.cookie_extractor'] = new \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\CookieTokenExtractor('');
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.extractor.query_parameter_extractor' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\QueryParameterTokenExtractor
+     */
+    protected function getLexikJwtAuthentication_Extractor_QueryParameterExtractorService()
+    {
+        return $this->services['lexik_jwt_authentication.extractor.query_parameter_extractor'] = new \Lexik\Bundle\JWTAuthenticationBundle\TokenExtractor\QueryParameterTokenExtractor('');
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.handler.authentication_failure' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationFailureHandler
+     */
+    protected function getLexikJwtAuthentication_Handler_AuthenticationFailureService()
+    {
+        return $this->services['lexik_jwt_authentication.handler.authentication_failure'] = new \Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationFailureHandler($this->get('debug.event_dispatcher'));
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.handler.authentication_success' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationSuccessHandler
+     */
+    protected function getLexikJwtAuthentication_Handler_AuthenticationSuccessService()
+    {
+        return $this->services['lexik_jwt_authentication.handler.authentication_success'] = new \Lexik\Bundle\JWTAuthenticationBundle\Security\Http\Authentication\AuthenticationSuccessHandler($this->get('lexik_jwt_authentication.jwt_manager'), $this->get('debug.event_dispatcher'));
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.jwt_manager' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Services\JWTManager
+     */
+    protected function getLexikJwtAuthentication_JwtManagerService()
+    {
+        $this->services['lexik_jwt_authentication.jwt_manager'] = $instance = new \Lexik\Bundle\JWTAuthenticationBundle\Services\JWTManager($this->get('lexik_jwt_authentication.encoder.default'), $this->get('debug.event_dispatcher'));
+
+        $instance->setUserIdentityField('username');
+
+        return $instance;
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.key_loader' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Services\KeyLoader\OpenSSLKeyLoader
+     */
+    protected function getLexikJwtAuthentication_KeyLoaderService()
+    {
+        return $this->services['lexik_jwt_authentication.key_loader'] = new \Lexik\Bundle\JWTAuthenticationBundle\Services\KeyLoader\OpenSSLKeyLoader(NULL, NULL, '');
+    }
+
+    /**
+     * Gets the public 'lexik_jwt_authentication.security.guard.jwt_token_authenticator' shared service.
+     *
+     * @return \Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JWTTokenAuthenticator
+     */
+    protected function getLexikJwtAuthentication_Security_Guard_JwtTokenAuthenticatorService()
+    {
+        return $this->services['lexik_jwt_authentication.security.guard.jwt_token_authenticator'] = new \Lexik\Bundle\JWTAuthenticationBundle\Security\Guard\JWTTokenAuthenticator($this->get('lexik_jwt_authentication.jwt_manager'), $this->get('debug.event_dispatcher'), $this->get('lexik\bundle\jwtauthenticationbundle\tokenextractor\tokenextractorinterface'));
     }
 
     /**
@@ -2647,6 +2871,210 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
+     * Gets the public 'nelmio_api_doc.doc_comment_extractor' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Util\DocCommentExtractor
+     */
+    protected function getNelmioApiDoc_DocCommentExtractorService()
+    {
+        return $this->services['nelmio_api_doc.doc_comment_extractor'] = new \Nelmio\ApiDocBundle\Util\DocCommentExtractor();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.event_listener.request' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\EventListener\RequestListener
+     */
+    protected function getNelmioApiDoc_EventListener_RequestService()
+    {
+        return $this->services['nelmio_api_doc.event_listener.request'] = new \Nelmio\ApiDocBundle\EventListener\RequestListener($this->get('nelmio_api_doc.extractor.api_doc_extractor'), $this->get('nelmio_api_doc.formatter.html_formatter'), '_doc');
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.extractor.api_doc_extractor' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Extractor\ApiDocExtractor
+     */
+    protected function getNelmioApiDoc_Extractor_ApiDocExtractorService()
+    {
+        $a = $this->get('nelmio_api_doc.doc_comment_extractor');
+
+        $this->services['nelmio_api_doc.extractor.api_doc_extractor'] = $instance = new \Nelmio\ApiDocBundle\Extractor\ApiDocExtractor($this, $this->get('router'), $this->get('annotation_reader'), $a, new \Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser($this->get('kernel')), array(0 => new \Nelmio\ApiDocBundle\Extractor\Handler\FosRestHandler(), 1 => new \Nelmio\ApiDocBundle\Extractor\Handler\JmsSecurityExtraHandler(), 2 => new \Nelmio\ApiDocBundle\Extractor\Handler\SensioFrameworkExtraHandler(), 3 => new \Nelmio\ApiDocBundle\Extractor\Handler\PhpDocHandler($a)), array());
+
+        $instance->addParser($this->get('nelmio_api_doc.parser.json_serializable_parser'));
+        $instance->addParser($this->get('nelmio_api_doc.parser.collection_parser'));
+        $instance->addParser($this->get('nelmio_api_doc.parser.form_errors_parser'));
+        $instance->addParser($this->get('nelmio_api_doc.parser.form_type_parser'));
+        $instance->addParser($this->get('nelmio_api_doc.parser.validation_parser'));
+        $instance->addParser($this->get('nelmio_api_doc.parser.jms_metadata_parser'));
+
+        return $instance;
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.form.extension.description_form_type_extension' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Form\Extension\DescriptionFormTypeExtension
+     */
+    protected function getNelmioApiDoc_Form_Extension_DescriptionFormTypeExtensionService()
+    {
+        return $this->services['nelmio_api_doc.form.extension.description_form_type_extension'] = new \Nelmio\ApiDocBundle\Form\Extension\DescriptionFormTypeExtension();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.formatter.html_formatter' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Formatter\HtmlFormatter
+     */
+    protected function getNelmioApiDoc_Formatter_HtmlFormatterService()
+    {
+        $this->services['nelmio_api_doc.formatter.html_formatter'] = $instance = new \Nelmio\ApiDocBundle\Formatter\HtmlFormatter();
+
+        $instance->setTemplatingEngine($this->get('templating'));
+        $instance->setMotdTemplate('NelmioApiDocBundle::Components/motd.html.twig');
+        $instance->setApiName('API documentation');
+        $instance->setEnableSandbox(true);
+        $instance->setEndpoint(NULL);
+        $instance->setRequestFormatMethod('format_param');
+        $instance->setRequestFormats(array('json' => 'application/json', 'xml' => 'application/xml'));
+        $instance->setDefaultRequestFormat('json');
+        $instance->setAcceptType(NULL);
+        $instance->setBodyFormats(array(0 => 'form', 1 => 'json'));
+        $instance->setDefaultBodyFormat('form');
+        $instance->setAuthentication(NULL);
+        $instance->setDefaultSectionsOpened(true);
+
+        return $instance;
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.formatter.markdown_formatter' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Formatter\MarkdownFormatter
+     */
+    protected function getNelmioApiDoc_Formatter_MarkdownFormatterService()
+    {
+        return $this->services['nelmio_api_doc.formatter.markdown_formatter'] = new \Nelmio\ApiDocBundle\Formatter\MarkdownFormatter();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.formatter.simple_formatter' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Formatter\SimpleFormatter
+     */
+    protected function getNelmioApiDoc_Formatter_SimpleFormatterService()
+    {
+        return $this->services['nelmio_api_doc.formatter.simple_formatter'] = new \Nelmio\ApiDocBundle\Formatter\SimpleFormatter();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.formatter.swagger_formatter' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Formatter\SwaggerFormatter
+     */
+    protected function getNelmioApiDoc_Formatter_SwaggerFormatterService()
+    {
+        $this->services['nelmio_api_doc.formatter.swagger_formatter'] = $instance = new \Nelmio\ApiDocBundle\Formatter\SwaggerFormatter('dot_notation');
+
+        $instance->setBasePath('/api');
+        $instance->setApiVersion('0.1');
+        $instance->setSwaggerVersion('1.2');
+        $instance->setInfo(array('title' => 'Symfony2', 'description' => 'My awesome Symfony2 app!', 'TermsOfServiceUrl' => NULL, 'contact' => NULL, 'license' => NULL, 'licenseUrl' => NULL));
+
+        return $instance;
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.collection_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\CollectionParser
+     */
+    protected function getNelmioApiDoc_Parser_CollectionParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.collection_parser'] = new \Nelmio\ApiDocBundle\Parser\CollectionParser();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.form_errors_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\FormErrorsParser
+     */
+    protected function getNelmioApiDoc_Parser_FormErrorsParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.form_errors_parser'] = new \Nelmio\ApiDocBundle\Parser\FormErrorsParser();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.form_type_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\FormTypeParser
+     */
+    protected function getNelmioApiDoc_Parser_FormTypeParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.form_type_parser'] = new \Nelmio\ApiDocBundle\Parser\FormTypeParser($this->get('form.factory'), true);
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.jms_metadata_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\JmsMetadataParser
+     */
+    protected function getNelmioApiDoc_Parser_JmsMetadataParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.jms_metadata_parser'] = new \Nelmio\ApiDocBundle\Parser\JmsMetadataParser($this->get('jms_serializer.metadata_factory'), $this->get('jms_serializer.naming_strategy'), $this->get('nelmio_api_doc.doc_comment_extractor'));
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.json_serializable_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\JsonSerializableParser
+     */
+    protected function getNelmioApiDoc_Parser_JsonSerializableParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.json_serializable_parser'] = new \Nelmio\ApiDocBundle\Parser\JsonSerializableParser();
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.parser.validation_parser' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Parser\ValidationParser
+     */
+    protected function getNelmioApiDoc_Parser_ValidationParserService()
+    {
+        return $this->services['nelmio_api_doc.parser.validation_parser'] = new \Nelmio\ApiDocBundle\Parser\ValidationParser($this->get('validator'));
+    }
+
+    /**
+     * Gets the public 'nelmio_api_doc.twig.extension.extra_markdown' shared service.
+     *
+     * @return \Nelmio\ApiDocBundle\Twig\Extension\MarkdownExtension
+     */
+    protected function getNelmioApiDoc_Twig_Extension_ExtraMarkdownService()
+    {
+        return $this->services['nelmio_api_doc.twig.extension.extra_markdown'] = new \Nelmio\ApiDocBundle\Twig\Extension\MarkdownExtension();
+    }
+
+    /**
+     * Gets the public 'nelmio_cors.cors_listener' shared service.
+     *
+     * @return \Nelmio\CorsBundle\EventListener\CorsListener
+     */
+    protected function getNelmioCors_CorsListenerService()
+    {
+        return $this->services['nelmio_cors.cors_listener'] = new \Nelmio\CorsBundle\EventListener\CorsListener($this->get('debug.event_dispatcher'), new \Nelmio\CorsBundle\Options\Resolver(array(0 => $this->get('nelmio_cors.options_provider.config'))));
+    }
+
+    /**
+     * Gets the public 'nelmio_cors.options_provider.config' shared service.
+     *
+     * @return \Nelmio\CorsBundle\Options\ConfigProvider
+     */
+    protected function getNelmioCors_OptionsProvider_ConfigService()
+    {
+        return $this->services['nelmio_cors.options_provider.config'] = new \Nelmio\CorsBundle\Options\ConfigProvider(array('^/api/*' => array('allow_origin' => true, 'allow_headers' => true, 'allow_methods' => array(0 => 'POST', 1 => 'PUT', 2 => 'GET', 3 => 'DELETE', 4 => 'OPTIONS'), 'max_age' => 3600)), array('allow_origin' => array(), 'allow_credentials' => false, 'allow_headers' => array(), 'expose_headers' => array(), 'allow_methods' => array(), 'max_age' => 0, 'hosts' => array(), 'origin_regex' => false, 'forced_allow_origin_value' => NULL));
+    }
+
+    /**
      * Gets the public 'profiler' shared service.
      *
      * @return \Symfony\Component\HttpKernel\Profiler\Profiler
@@ -2872,7 +3300,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_EncoderFactoryService()
     {
-        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('FOS\\UserBundle\\Model\\UserInterface' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13))));
+        return $this->services['security.encoder_factory'] = new \Symfony\Component\Security\Core\Encoder\EncoderFactory(array('FOS\\UserBundle\\Model\\UserInterface' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13)), 'Blogger\\BlogBundle\\Security\\User\\WebserviceUser' => array('class' => 'Symfony\\Component\\Security\\Core\\Encoder\\BCryptPasswordEncoder', 'arguments' => array(0 => 13))));
     }
 
     /**
@@ -2882,7 +3310,21 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_FirewallService()
     {
-        return $this->services['security.firewall'] = new \Symfony\Component\Security\Http\Firewall(new \Symfony\Bundle\SecurityBundle\Security\FirewallMap($this, array('security.firewall.map.context.dev' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/(_(profiler|wdt)|css|images|js)/'), 'security.firewall.map.context.main' => NULL)), $this->get('debug.event_dispatcher'));
+        return $this->services['security.firewall'] = new \Symfony\Component\Security\Http\Firewall(new \Symfony\Bundle\SecurityBundle\Security\FirewallMap($this, array('security.firewall.map.context.dev' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/(_(profiler|wdt)|css|images|js)/'), 'security.firewall.map.context.api_keys' => new \Symfony\Component\HttpFoundation\RequestMatcher('^/api'), 'security.firewall.map.context.main' => NULL)), $this->get('debug.event_dispatcher'));
+    }
+
+    /**
+     * Gets the public 'security.firewall.map.context.api_keys' shared service.
+     *
+     * @return \Symfony\Bundle\SecurityBundle\Security\FirewallContext
+     */
+    protected function getSecurity_Firewall_Map_Context_ApiKeysService()
+    {
+        $a = $this->get('security.token_storage');
+        $b = $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE);
+        $c = $this->get('app.token_authenticator');
+
+        return $this->services['security.firewall.map.context.api_keys'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => $this->get('security.channel_listener'), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($a, array(0 => $this->get('security.user.provider.concrete.in_memory'), 1 => $this->get('fos_user.user_provider.username'), 2 => $this->get('api_key_provider')), 'api_keys', $b, $this->get('debug.event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE)), 2 => new \Symfony\Component\Security\Guard\Firewall\GuardAuthenticationListener($this->get('security.authentication.guard_handler'), $this->get('security.authentication.manager'), 'api_keys', array(0 => $c), $b), 3 => $this->get('security.access_listener')), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($a, $this->get('security.authentication.trust_resolver'), $this->get('security.http_utils'), 'api_keys', $c, NULL, NULL, $b, false));
     }
 
     /**
@@ -2902,46 +3344,24 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getSecurity_Firewall_Map_Context_MainService()
     {
-        $a = $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE);
-        $b = $this->get('security.token_storage');
+        $a = $this->get('security.token_storage');
+        $b = $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE);
         $c = $this->get('debug.event_dispatcher', ContainerInterface::NULL_ON_INVALID_REFERENCE);
-        $d = $this->get('router', ContainerInterface::NULL_ON_INVALID_REFERENCE);
+        $d = $this->get('security.http_utils');
         $e = $this->get('http_kernel');
         $f = $this->get('security.authentication.manager');
 
-        $g = new \Symfony\Component\HttpFoundation\RequestMatcher('^/login$');
+        $g = new \Symfony\Component\Security\Http\Firewall\LogoutListener($a, $d, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($d, '/'), array('csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'logout', 'logout_path' => '/logout'));
+        $g->addHandler(new \Symfony\Component\Security\Http\Logout\SessionLogoutHandler());
 
-        $h = new \Symfony\Component\HttpFoundation\RequestMatcher('^/register');
+        $h = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($d, array());
+        $h->setOptions(array('always_use_default_target_path' => false, 'default_target_path' => '/', 'login_path' => '/login', 'target_path_parameter' => '_target_path', 'use_referer' => false));
+        $h->setProviderKey('main');
 
-        $i = new \Symfony\Component\HttpFoundation\RequestMatcher('^/resetting');
+        $i = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $d, array(), $b);
+        $i->setOptions(array('login_path' => '/login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'));
 
-        $j = new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin');
-
-        $k = new \Symfony\Component\HttpFoundation\RequestMatcher('^/comment/');
-
-        $l = new \Symfony\Component\HttpFoundation\RequestMatcher('^/comment/delete/');
-
-        $m = new \Symfony\Component\Security\Http\AccessMap();
-        $m->add($g, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $m->add($h, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $m->add($i, array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-        $m->add($j, array(0 => 'ROLE_ADMIN'), NULL);
-        $m->add($k, array(0 => 'IS_AUTHENTICATED_FULLY'), NULL);
-        $m->add($l, array(0 => 'ROLE_ADMIN'), NULL);
-
-        $n = new \Symfony\Component\Security\Http\HttpUtils($d, $d);
-
-        $o = new \Symfony\Component\Security\Http\Firewall\LogoutListener($b, $n, new \Symfony\Component\Security\Http\Logout\DefaultLogoutSuccessHandler($n, '/'), array('csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'logout', 'logout_path' => '/logout'));
-        $o->addHandler(new \Symfony\Component\Security\Http\Logout\SessionLogoutHandler());
-
-        $p = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationSuccessHandler($n, array());
-        $p->setOptions(array('always_use_default_target_path' => false, 'default_target_path' => '/', 'login_path' => '/login', 'target_path_parameter' => '_target_path', 'use_referer' => false));
-        $p->setProviderKey('main');
-
-        $q = new \Symfony\Component\Security\Http\Authentication\DefaultAuthenticationFailureHandler($e, $n, array(), $a);
-        $q->setOptions(array('login_path' => '/login', 'failure_path' => NULL, 'failure_forward' => false, 'failure_path_parameter' => '_failure_path'));
-
-        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => new \Symfony\Component\Security\Http\Firewall\ChannelListener($m, new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $a), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($b, array(0 => new \Symfony\Component\Security\Core\User\InMemoryUserProvider(), 1 => $this->get('fos_user.user_provider.username')), 'main', $a, $c), 2 => $o, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($b, $f, $this->get('security.authentication.session_strategy'), $n, 'main', $p, $q, array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $a, $c, $this->get('security.csrf.token_manager')), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($b, '5996b6be242be4.64528899', $a, $f), 5 => new \Symfony\Component\Security\Http\Firewall\AccessListener($b, $this->get('security.access.decision_manager'), $m, $f)), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($b, $this->get('security.authentication.trust_resolver'), $n, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $n, '/login', false), NULL, NULL, $a, false));
+        return $this->services['security.firewall.map.context.main'] = new \Symfony\Bundle\SecurityBundle\Security\FirewallContext(array(0 => $this->get('security.channel_listener'), 1 => new \Symfony\Component\Security\Http\Firewall\ContextListener($a, array(0 => $this->get('security.user.provider.concrete.in_memory'), 1 => $this->get('fos_user.user_provider.username'), 2 => $this->get('api_key_provider')), 'main', $b, $c), 2 => $g, 3 => new \Symfony\Component\Security\Http\Firewall\UsernamePasswordFormAuthenticationListener($a, $f, $this->get('security.authentication.session_strategy'), $d, 'main', $h, $i, array('check_path' => '/login_check', 'use_forward' => false, 'require_previous_session' => true, 'username_parameter' => '_username', 'password_parameter' => '_password', 'csrf_parameter' => '_csrf_token', 'csrf_token_id' => 'authenticate', 'post_only' => true), $b, $c, $this->get('security.csrf.token_manager')), 4 => new \Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener($a, '599fb5b78eada0.58124314', $b, $f), 5 => $this->get('security.access_listener')), new \Symfony\Component\Security\Http\Firewall\ExceptionListener($a, $this->get('security.authentication.trust_resolver'), $d, 'main', new \Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint($e, $d, '/login', false), NULL, NULL, $b, false));
     }
 
     /**
@@ -2989,13 +3409,13 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
-     * Gets the public 'security.user_checker.main' shared service.
+     * Gets the public 'security.user_checker.api_keys' shared service.
      *
      * @return \Symfony\Component\Security\Core\User\UserChecker
      */
-    protected function getSecurity_UserChecker_MainService()
+    protected function getSecurity_UserChecker_ApiKeysService()
     {
-        return $this->services['security.user_checker.main'] = new \Symfony\Component\Security\Core\User\UserChecker();
+        return $this->services['security.user_checker.api_keys'] = new \Symfony\Component\Security\Core\User\UserChecker();
     }
 
     /**
@@ -5049,6 +5469,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addExtension(new \Knp\Menu\Twig\MenuExtension(new \Knp\Menu\Twig\Helper($this->get('knp_menu.renderer_provider'), $this->get('knp_menu.menu_provider'), $g, $e), $e, $g));
         $instance->addExtension($this->get('sonata.admin.twig.extension'));
         $instance->addExtension(new \JMS\Serializer\Twig\SerializerExtension($this->get('jms_serializer')));
+        $instance->addExtension($this->get('nelmio_api_doc.twig.extension.extra_markdown'));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\DumpExtension($this->get('var_dumper.cloner')));
         $instance->addExtension(new \Symfony\Bundle\WebProfilerBundle\Twig\WebProfilerExtension());
         $instance->addGlobal('app', $h);
@@ -5111,6 +5532,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath(($this->targetDirs[3].'/vendor/knplabs/knp-menu-bundle/Resources/views'), 'KnpMenu');
         $instance->addPath(($this->targetDirs[3].'/vendor/sonata-project/doctrine-orm-admin-bundle/Resources/views'), 'SonataDoctrineORMAdmin');
         $instance->addPath(($this->targetDirs[3].'/vendor/sonata-project/admin-bundle/Resources/views'), 'SonataAdmin');
+        $instance->addPath(($this->targetDirs[3].'/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/views'), 'NelmioApiDoc');
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views'), 'Debug');
         $instance->addPath(($this->targetDirs[3].'/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views'), 'WebProfiler');
         $instance->addPath(($this->targetDirs[3].'/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views'), 'SensioDistribution');
@@ -5139,6 +5561,56 @@ class appDevDebugProjectContainer extends Container
     protected function getTwig_Translation_ExtractorService()
     {
         return $this->services['twig.translation.extractor'] = new \Symfony\Bridge\Twig\Translation\TwigExtractor($this->get('twig'));
+    }
+
+    /**
+     * Gets the public 'uecode.api_key.extractor' shared service.
+     *
+     * @return \Uecode\Bundle\ApiKeyBundle\Extractor\QueryExtractor
+     */
+    protected function getUecode_ApiKey_ExtractorService()
+    {
+        return $this->services['uecode.api_key.extractor'] = new \Uecode\Bundle\ApiKeyBundle\Extractor\QueryExtractor('api_key');
+    }
+
+    /**
+     * Gets the public 'uecode.api_key.listener.api_key' shared service.
+     *
+     * @return \Uecode\Bundle\ApiKeyBundle\Security\Firewall\ApiKeyListener
+     */
+    protected function getUecode_ApiKey_Listener_ApiKeyService()
+    {
+        return $this->services['uecode.api_key.listener.api_key'] = new \Uecode\Bundle\ApiKeyBundle\Security\Firewall\ApiKeyListener($this->get('security.token_storage'), $this->get('security.authentication.manager'), $this->get('uecode.api_key.extractor'));
+    }
+
+    /**
+     * Gets the public 'uecode.api_key.provider.api_key' shared service.
+     *
+     * @return \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\ApiKeyProvider
+     */
+    protected function getUecode_ApiKey_Provider_ApiKeyService()
+    {
+        return $this->services['uecode.api_key.provider.api_key'] = new \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\ApiKeyProvider('');
+    }
+
+    /**
+     * Gets the public 'uecode.api_key.provider.email_user_provider' shared service.
+     *
+     * @return \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\EmailUserProvider
+     */
+    protected function getUecode_ApiKey_Provider_EmailUserProviderService()
+    {
+        return $this->services['uecode.api_key.provider.email_user_provider'] = new \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\EmailUserProvider($this->get('fos_user.user_manager'));
+    }
+
+    /**
+     * Gets the public 'uecode.api_key.provider.user_provider' shared service.
+     *
+     * @return \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\UserProvider
+     */
+    protected function getUecode_ApiKey_Provider_UserProviderService()
+    {
+        return $this->services['uecode.api_key.provider.user_provider'] = new \Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\UserProvider($this->get('fos_user.user_manager'));
     }
 
     /**
@@ -5374,6 +5846,20 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
+     * Gets the private 'jms_serializer.metadata_factory' shared service.
+     *
+     * @return \Metadata\MetadataFactory
+     */
+    protected function getJmsSerializer_MetadataFactoryService()
+    {
+        $this->services['jms_serializer.metadata_factory'] = $instance = new \Metadata\MetadataFactory(new \Metadata\Driver\LazyLoadingDriver($this, 'jms_serializer.metadata_driver'), 'Metadata\\ClassHierarchyMetadata', true);
+
+        $instance->setCache(new \Metadata\Cache\FileCache((__DIR__.'/jms_serializer')));
+
+        return $instance;
+    }
+
+    /**
      * Gets the private 'jms_serializer.unserialize_object_constructor' shared service.
      *
      * @return \JMS\Serializer\Construction\UnserializeObjectConstructor
@@ -5421,13 +5907,46 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
+     * Gets the private 'security.access_listener' shared service.
+     *
+     * @return \Symfony\Component\Security\Http\Firewall\AccessListener
+     */
+    protected function getSecurity_AccessListenerService()
+    {
+        return $this->services['security.access_listener'] = new \Symfony\Component\Security\Http\Firewall\AccessListener($this->get('security.token_storage'), $this->get('security.access.decision_manager'), $this->get('security.access_map'), $this->get('security.authentication.manager'));
+    }
+
+    /**
+     * Gets the private 'security.access_map' shared service.
+     *
+     * @return \Symfony\Component\Security\Http\AccessMap
+     */
+    protected function getSecurity_AccessMapService()
+    {
+        $this->services['security.access_map'] = $instance = new \Symfony\Component\Security\Http\AccessMap();
+
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/login$'), array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/register'), array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/resetting'), array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin'), array(0 => 'ROLE_ADMIN'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/comment/'), array(0 => 'IS_AUTHENTICATED_FULLY'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/comment/delete/'), array(0 => 'ROLE_ADMIN'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/api/login'), array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
+        $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/api'), array(0 => 'IS_AUTHENTICATED_FULLY'), NULL);
+
+        return $instance;
+    }
+
+    /**
      * Gets the private 'security.authentication.manager' shared service.
      *
      * @return \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager
      */
     protected function getSecurity_Authentication_ManagerService()
     {
-        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $this->get('security.user_checker.main'), 'main', $this->get('security.encoder_factory'), true), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('5996b6be242be4.64528899')), true);
+        $a = $this->get('security.user_checker.api_keys');
+
+        $this->services['security.authentication.manager'] = $instance = new \Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager(array(0 => new \Symfony\Component\Security\Guard\Provider\GuardAuthenticationProvider(array(0 => $this->get('app.token_authenticator')), $this->get('api_key_provider'), 'api_keys', $a), 1 => new \Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider($this->get('fos_user.user_provider.username'), $a, 'main', $this->get('security.encoder_factory'), true), 2 => new \Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider('599fb5b78eada0.58124314')), true);
 
         $instance->setEventDispatcher($this->get('debug.event_dispatcher'));
 
@@ -5455,6 +5974,28 @@ class appDevDebugProjectContainer extends Container
     }
 
     /**
+     * Gets the private 'security.channel_listener' shared service.
+     *
+     * @return \Symfony\Component\Security\Http\Firewall\ChannelListener
+     */
+    protected function getSecurity_ChannelListenerService()
+    {
+        return $this->services['security.channel_listener'] = new \Symfony\Component\Security\Http\Firewall\ChannelListener($this->get('security.access_map'), new \Symfony\Component\Security\Http\EntryPoint\RetryAuthenticationEntryPoint(80, 443), $this->get('monolog.logger.security', ContainerInterface::NULL_ON_INVALID_REFERENCE));
+    }
+
+    /**
+     * Gets the private 'security.http_utils' shared service.
+     *
+     * @return \Symfony\Component\Security\Http\HttpUtils
+     */
+    protected function getSecurity_HttpUtilsService()
+    {
+        $a = $this->get('router', ContainerInterface::NULL_ON_INVALID_REFERENCE);
+
+        return $this->services['security.http_utils'] = new \Symfony\Component\Security\Http\HttpUtils($a, $a);
+    }
+
+    /**
      * Gets the private 'security.logout_url_generator' shared service.
      *
      * @return \Symfony\Component\Security\Http\Logout\LogoutUrlGenerator
@@ -5476,6 +6017,16 @@ class appDevDebugProjectContainer extends Container
     protected function getSecurity_RoleHierarchyService()
     {
         return $this->services['security.role_hierarchy'] = new \Symfony\Component\Security\Core\Role\RoleHierarchy(array('ROLE_ADMIN' => array(0 => 'ROLE_USER'), 'ROLE_SUPER_ADMIN' => array(0 => 'ROLE_ADMIN'), 'ROLE_ADMINISTAROT' => array(0 => 'ROLE_ADMINISTAROT')));
+    }
+
+    /**
+     * Gets the private 'security.user.provider.concrete.in_memory' shared service.
+     *
+     * @return \Symfony\Component\Security\Core\User\InMemoryUserProvider
+     */
+    protected function getSecurity_User_Provider_Concrete_InMemoryService()
+    {
+        return $this->services['security.user.provider.concrete.in_memory'] = new \Symfony\Component\Security\Core\User\InMemoryUserProvider();
     }
 
     /**
@@ -5618,6 +6169,10 @@ class appDevDebugProjectContainer extends Container
                 'SonataAdminBundle' => 'Sonata\\AdminBundle\\SonataAdminBundle',
                 'FOSRestBundle' => 'FOS\\RestBundle\\FOSRestBundle',
                 'JMSSerializerBundle' => 'JMS\\SerializerBundle\\JMSSerializerBundle',
+                'NelmioApiDocBundle' => 'Nelmio\\ApiDocBundle\\NelmioApiDocBundle',
+                'NelmioCorsBundle' => 'Nelmio\\CorsBundle\\NelmioCorsBundle',
+                'UecodeApiKeyBundle' => 'Uecode\\Bundle\\ApiKeyBundle\\UecodeApiKeyBundle',
+                'LexikJWTAuthenticationBundle' => 'Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle',
                 'DebugBundle' => 'Symfony\\Bundle\\DebugBundle\\DebugBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
@@ -5718,6 +6273,26 @@ class appDevDebugProjectContainer extends Container
                     'parent' => NULL,
                     'path' => ($this->targetDirs[3].'/vendor/jms/serializer-bundle'),
                     'namespace' => 'JMS\\SerializerBundle',
+                ),
+                'NelmioApiDocBundle' => array(
+                    'parent' => NULL,
+                    'path' => ($this->targetDirs[3].'/vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle'),
+                    'namespace' => 'Nelmio\\ApiDocBundle',
+                ),
+                'NelmioCorsBundle' => array(
+                    'parent' => NULL,
+                    'path' => ($this->targetDirs[3].'/vendor/nelmio/cors-bundle'),
+                    'namespace' => 'Nelmio\\CorsBundle',
+                ),
+                'UecodeApiKeyBundle' => array(
+                    'parent' => NULL,
+                    'path' => ($this->targetDirs[3].'/vendor/uecode/api-key-bundle/src/Uecode/Bundle/ApiKeyBundle'),
+                    'namespace' => 'Uecode\\Bundle\\ApiKeyBundle',
+                ),
+                'LexikJWTAuthenticationBundle' => array(
+                    'parent' => NULL,
+                    'path' => ($this->targetDirs[3].'/vendor/lexik/jwt-authentication-bundle'),
+                    'namespace' => 'Lexik\\Bundle\\JWTAuthenticationBundle',
                 ),
                 'DebugBundle' => array(
                     'parent' => NULL,
@@ -6655,6 +7230,111 @@ class appDevDebugProjectContainer extends Container
             'jms_serializer.expression_language.function_provider.class' => 'JMS\\SerializerBundle\\ExpressionLanguage\\BasicSerializerFunctionsProvider',
             'jms_serializer.accessor_strategy.default.class' => 'JMS\\Serializer\\Accessor\\DefaultAccessorStrategy',
             'jms_serializer.accessor_strategy.expression.class' => 'JMS\\Serializer\\Accessor\\ExpressionAccessorStrategy',
+            'nelmio_api_doc.motd.template' => 'NelmioApiDocBundle::Components/motd.html.twig',
+            'nelmio_api_doc.exclude_sections' => array(
+
+            ),
+            'nelmio_api_doc.default_sections_opened' => true,
+            'nelmio_api_doc.api_name' => 'API documentation',
+            'nelmio_api_doc.sandbox.enabled' => true,
+            'nelmio_api_doc.sandbox.endpoint' => NULL,
+            'nelmio_api_doc.sandbox.accept_type' => NULL,
+            'nelmio_api_doc.sandbox.body_format.formats' => array(
+                0 => 'form',
+                1 => 'json',
+            ),
+            'nelmio_api_doc.sandbox.body_format.default_format' => 'form',
+            'nelmio_api_doc.sandbox.request_format.method' => 'format_param',
+            'nelmio_api_doc.sandbox.request_format.default_format' => 'json',
+            'nelmio_api_doc.sandbox.request_format.formats' => array(
+                'json' => 'application/json',
+                'xml' => 'application/xml',
+            ),
+            'nelmio_api_doc.sandbox.entity_to_choice' => true,
+            'nelmio_api_doc.formatter.abstract_formatter.class' => 'Nelmio\\ApiDocBundle\\Formatter\\AbstractFormatter',
+            'nelmio_api_doc.formatter.markdown_formatter.class' => 'Nelmio\\ApiDocBundle\\Formatter\\MarkdownFormatter',
+            'nelmio_api_doc.formatter.simple_formatter.class' => 'Nelmio\\ApiDocBundle\\Formatter\\SimpleFormatter',
+            'nelmio_api_doc.formatter.html_formatter.class' => 'Nelmio\\ApiDocBundle\\Formatter\\HtmlFormatter',
+            'nelmio_api_doc.formatter.swagger_formatter.class' => 'Nelmio\\ApiDocBundle\\Formatter\\SwaggerFormatter',
+            'nelmio_api_doc.sandbox.authentication' => NULL,
+            'nelmio_api_doc.extractor.api_doc_extractor.class' => 'Nelmio\\ApiDocBundle\\Extractor\\ApiDocExtractor',
+            'nelmio_api_doc.form.extension.description_form_type_extension.class' => 'Nelmio\\ApiDocBundle\\Form\\Extension\\DescriptionFormTypeExtension',
+            'nelmio_api_doc.twig.extension.extra_markdown.class' => 'Nelmio\\ApiDocBundle\\Twig\\Extension\\MarkdownExtension',
+            'nelmio_api_doc.doc_comment_extractor.class' => 'Nelmio\\ApiDocBundle\\Util\\DocCommentExtractor',
+            'nelmio_api_doc.extractor.handler.fos_rest.class' => 'Nelmio\\ApiDocBundle\\Extractor\\Handler\\FosRestHandler',
+            'nelmio_api_doc.extractor.handler.jms_security.class' => 'Nelmio\\ApiDocBundle\\Extractor\\Handler\\JmsSecurityExtraHandler',
+            'nelmio_api_doc.extractor.handler.sensio_framework_extra.class' => 'Nelmio\\ApiDocBundle\\Extractor\\Handler\\SensioFrameworkExtraHandler',
+            'nelmio_api_doc.extractor.handler.phpdoc.class' => 'Nelmio\\ApiDocBundle\\Extractor\\Handler\\PhpDocHandler',
+            'nelmio_api_doc.parser.collection_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\CollectionParser',
+            'nelmio_api_doc.parser.form_errors_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\FormErrorsParser',
+            'nelmio_api_doc.parser.json_serializable_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\JsonSerializableParser',
+            'nelmio_api_doc.request_listener.parameter' => '_doc',
+            'nelmio_api_doc.event_listener.request.class' => 'Nelmio\\ApiDocBundle\\EventListener\\RequestListener',
+            'nelmio_api_doc.swagger.base_path' => '/api',
+            'nelmio_api_doc.swagger.swagger_version' => '1.2',
+            'nelmio_api_doc.swagger.api_version' => '0.1',
+            'nelmio_api_doc.swagger.info' => array(
+                'title' => 'Symfony2',
+                'description' => 'My awesome Symfony2 app!',
+                'TermsOfServiceUrl' => NULL,
+                'contact' => NULL,
+                'license' => NULL,
+                'licenseUrl' => NULL,
+            ),
+            'nelmio_api_doc.swagger.model_naming_strategy' => 'dot_notation',
+            'nelmio_cors.map' => array(
+                '^/api/*' => array(
+                    'allow_origin' => true,
+                    'allow_headers' => true,
+                    'allow_methods' => array(
+                        0 => 'POST',
+                        1 => 'PUT',
+                        2 => 'GET',
+                        3 => 'DELETE',
+                        4 => 'OPTIONS',
+                    ),
+                    'max_age' => 3600,
+                ),
+            ),
+            'nelmio_cors.defaults' => array(
+                'allow_origin' => array(
+
+                ),
+                'allow_credentials' => false,
+                'allow_headers' => array(
+
+                ),
+                'expose_headers' => array(
+
+                ),
+                'allow_methods' => array(
+
+                ),
+                'max_age' => 0,
+                'hosts' => array(
+
+                ),
+                'origin_regex' => false,
+                'forced_allow_origin_value' => NULL,
+            ),
+            'nelmio_cors.cors_listener.class' => 'Nelmio\\CorsBundle\\EventListener\\CorsListener',
+            'nelmio_cors.options_resolver.class' => 'Nelmio\\CorsBundle\\Options\\Resolver',
+            'nelmio_cors.options_provider.config.class' => 'Nelmio\\CorsBundle\\Options\\ConfigProvider',
+            'uecode.api_key.provider.user_provider.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Security\\Authentication\\Provider\\UserProvider',
+            'uecode.api_key.provider.email_user_provider.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Security\\Authentication\\Provider\\EmailUserProvider',
+            'uecode.api_key.provider.api_key.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Security\\Authentication\\Provider\\ApiKeyProvider',
+            'uecode.api_key.listener.api_key.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Security\\Firewall\\ApiKeyListener',
+            'uecode.api_key.extractor.query.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Extractor\\QueryExtractor',
+            'uecode.api_key.extractor.header.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Extractor\\HeaderExtractor',
+            'uecode.api_key.generator.class' => 'Uecode\\Bundle\\ApiKeyBundle\\Util\\ApiKeyGenerator',
+            'uecode.api_key.parameter_name' => 'api_key',
+            'lexik_jwt_authentication.private_key_path' => NULL,
+            'lexik_jwt_authentication.public_key_path' => NULL,
+            'lexik_jwt_authentication.pass_phrase' => '',
+            'lexik_jwt_authentication.token_ttl' => 3600,
+            'lexik_jwt_authentication.user_identity_field' => 'username',
+            'lexik_jwt_authentication.encoder.signature_algorithm' => 'RS256',
+            'lexik_jwt_authentication.encoder.crypto_engine' => 'openssl',
             'web_profiler.controller.profiler.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController',
             'web_profiler.controller.router.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\RouterController',
             'web_profiler.controller.exception.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ExceptionController',
@@ -6820,28 +7500,32 @@ class appDevDebugProjectContainer extends Container
                 7 => 'sonata.admin.form.extension.field',
                 8 => 'sonata.admin.form.extension.field.mopa',
                 9 => 'sonata.admin.form.extension.choice',
+                10 => 'nelmio_api_doc.form.extension.description_form_type_extension',
             ),
+            'nelmio_api_doc.parser.form_type_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\FormTypeParser',
+            'nelmio_api_doc.parser.validation_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\ValidationParser',
+            'nelmio_api_doc.parser.jms_metadata_parser.class' => 'Nelmio\\ApiDocBundle\\Parser\\JmsMetadataParser',
         );
     }
 }
 
-class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d6d99caa4d874e99 extends \Doctrine\ORM\EntityManager implements \ProxyManager\Proxy\VirtualProxyInterface
+class DoctrineORMEntityManager_000000005d75a49a00007f08fdbdb5429779a2b113f6ccb5d6d99caa4d874e99 extends \Doctrine\ORM\EntityManager implements \ProxyManager\Proxy\VirtualProxyInterface
 {
 
     /**
      * @var \Closure|null initializer responsible for generating the wrapped object
      */
-    private $valueHolder5996b6bea1d57384741686 = null;
+    private $valueHolder599fb5b81a7d0161526055 = null;
 
     /**
      * @var \Closure|null initializer responsible for generating the wrapped object
      */
-    private $initializer5996b6bea1d6b808519016 = null;
+    private $initializer599fb5b81a7e0575194173 = null;
 
     /**
      * @var bool[] map of public properties of the parent class
      */
-    private static $publicProperties5996b6bea1d24724949877 = array(
+    private static $publicProperties599fb5b81a7ab785962755 = array(
         
     );
 
@@ -6850,9 +7534,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getConnection()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getConnection', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getConnection', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getConnection();
+        return $this->valueHolder599fb5b81a7d0161526055->getConnection();
     }
 
     /**
@@ -6860,9 +7544,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getMetadataFactory()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getMetadataFactory', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getMetadataFactory', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getMetadataFactory();
+        return $this->valueHolder599fb5b81a7d0161526055->getMetadataFactory();
     }
 
     /**
@@ -6870,9 +7554,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getExpressionBuilder()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getExpressionBuilder', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getExpressionBuilder', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getExpressionBuilder();
+        return $this->valueHolder599fb5b81a7d0161526055->getExpressionBuilder();
     }
 
     /**
@@ -6880,9 +7564,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function beginTransaction()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'beginTransaction', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'beginTransaction', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->beginTransaction();
+        return $this->valueHolder599fb5b81a7d0161526055->beginTransaction();
     }
 
     /**
@@ -6890,9 +7574,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getCache()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getCache', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getCache', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getCache();
+        return $this->valueHolder599fb5b81a7d0161526055->getCache();
     }
 
     /**
@@ -6900,9 +7584,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function transactional($func)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'transactional', array('func' => $func), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'transactional', array('func' => $func), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->transactional($func);
+        return $this->valueHolder599fb5b81a7d0161526055->transactional($func);
     }
 
     /**
@@ -6910,9 +7594,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function commit()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'commit', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'commit', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->commit();
+        return $this->valueHolder599fb5b81a7d0161526055->commit();
     }
 
     /**
@@ -6920,9 +7604,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function rollback()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'rollback', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'rollback', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->rollback();
+        return $this->valueHolder599fb5b81a7d0161526055->rollback();
     }
 
     /**
@@ -6930,9 +7614,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getClassMetadata($className)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getClassMetadata', array('className' => $className), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getClassMetadata', array('className' => $className), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getClassMetadata($className);
+        return $this->valueHolder599fb5b81a7d0161526055->getClassMetadata($className);
     }
 
     /**
@@ -6940,9 +7624,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function createQuery($dql = '')
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'createQuery', array('dql' => $dql), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'createQuery', array('dql' => $dql), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->createQuery($dql);
+        return $this->valueHolder599fb5b81a7d0161526055->createQuery($dql);
     }
 
     /**
@@ -6950,9 +7634,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function createNamedQuery($name)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'createNamedQuery', array('name' => $name), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'createNamedQuery', array('name' => $name), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->createNamedQuery($name);
+        return $this->valueHolder599fb5b81a7d0161526055->createNamedQuery($name);
     }
 
     /**
@@ -6960,9 +7644,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function createNativeQuery($sql, \Doctrine\ORM\Query\ResultSetMapping $rsm)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'createNativeQuery', array('sql' => $sql, 'rsm' => $rsm), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'createNativeQuery', array('sql' => $sql, 'rsm' => $rsm), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->createNativeQuery($sql, $rsm);
+        return $this->valueHolder599fb5b81a7d0161526055->createNativeQuery($sql, $rsm);
     }
 
     /**
@@ -6970,9 +7654,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function createNamedNativeQuery($name)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'createNamedNativeQuery', array('name' => $name), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'createNamedNativeQuery', array('name' => $name), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->createNamedNativeQuery($name);
+        return $this->valueHolder599fb5b81a7d0161526055->createNamedNativeQuery($name);
     }
 
     /**
@@ -6980,9 +7664,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function createQueryBuilder()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'createQueryBuilder', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'createQueryBuilder', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->createQueryBuilder();
+        return $this->valueHolder599fb5b81a7d0161526055->createQueryBuilder();
     }
 
     /**
@@ -6990,9 +7674,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function flush($entity = null)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'flush', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'flush', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->flush($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->flush($entity);
     }
 
     /**
@@ -7000,9 +7684,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function find($entityName, $id, $lockMode = null, $lockVersion = null)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'find', array('entityName' => $entityName, 'id' => $id, 'lockMode' => $lockMode, 'lockVersion' => $lockVersion), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'find', array('entityName' => $entityName, 'id' => $id, 'lockMode' => $lockMode, 'lockVersion' => $lockVersion), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->find($entityName, $id, $lockMode, $lockVersion);
+        return $this->valueHolder599fb5b81a7d0161526055->find($entityName, $id, $lockMode, $lockVersion);
     }
 
     /**
@@ -7010,9 +7694,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getReference($entityName, $id)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getReference', array('entityName' => $entityName, 'id' => $id), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getReference', array('entityName' => $entityName, 'id' => $id), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getReference($entityName, $id);
+        return $this->valueHolder599fb5b81a7d0161526055->getReference($entityName, $id);
     }
 
     /**
@@ -7020,9 +7704,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getPartialReference($entityName, $identifier)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getPartialReference', array('entityName' => $entityName, 'identifier' => $identifier), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getPartialReference', array('entityName' => $entityName, 'identifier' => $identifier), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getPartialReference($entityName, $identifier);
+        return $this->valueHolder599fb5b81a7d0161526055->getPartialReference($entityName, $identifier);
     }
 
     /**
@@ -7030,9 +7714,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function clear($entityName = null)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'clear', array('entityName' => $entityName), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'clear', array('entityName' => $entityName), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->clear($entityName);
+        return $this->valueHolder599fb5b81a7d0161526055->clear($entityName);
     }
 
     /**
@@ -7040,9 +7724,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function close()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'close', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'close', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->close();
+        return $this->valueHolder599fb5b81a7d0161526055->close();
     }
 
     /**
@@ -7050,9 +7734,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function persist($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'persist', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'persist', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->persist($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->persist($entity);
     }
 
     /**
@@ -7060,9 +7744,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function remove($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'remove', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'remove', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->remove($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->remove($entity);
     }
 
     /**
@@ -7070,9 +7754,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function refresh($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'refresh', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'refresh', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->refresh($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->refresh($entity);
     }
 
     /**
@@ -7080,9 +7764,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function detach($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'detach', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'detach', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->detach($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->detach($entity);
     }
 
     /**
@@ -7090,9 +7774,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function merge($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'merge', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'merge', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->merge($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->merge($entity);
     }
 
     /**
@@ -7100,9 +7784,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function copy($entity, $deep = false)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'copy', array('entity' => $entity, 'deep' => $deep), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'copy', array('entity' => $entity, 'deep' => $deep), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->copy($entity, $deep);
+        return $this->valueHolder599fb5b81a7d0161526055->copy($entity, $deep);
     }
 
     /**
@@ -7110,9 +7794,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function lock($entity, $lockMode, $lockVersion = null)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'lock', array('entity' => $entity, 'lockMode' => $lockMode, 'lockVersion' => $lockVersion), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'lock', array('entity' => $entity, 'lockMode' => $lockMode, 'lockVersion' => $lockVersion), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->lock($entity, $lockMode, $lockVersion);
+        return $this->valueHolder599fb5b81a7d0161526055->lock($entity, $lockMode, $lockVersion);
     }
 
     /**
@@ -7120,9 +7804,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getRepository($entityName)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getRepository', array('entityName' => $entityName), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getRepository', array('entityName' => $entityName), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getRepository($entityName);
+        return $this->valueHolder599fb5b81a7d0161526055->getRepository($entityName);
     }
 
     /**
@@ -7130,9 +7814,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function contains($entity)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'contains', array('entity' => $entity), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'contains', array('entity' => $entity), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->contains($entity);
+        return $this->valueHolder599fb5b81a7d0161526055->contains($entity);
     }
 
     /**
@@ -7140,9 +7824,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getEventManager()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getEventManager', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getEventManager', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getEventManager();
+        return $this->valueHolder599fb5b81a7d0161526055->getEventManager();
     }
 
     /**
@@ -7150,9 +7834,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getConfiguration()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getConfiguration', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getConfiguration', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getConfiguration();
+        return $this->valueHolder599fb5b81a7d0161526055->getConfiguration();
     }
 
     /**
@@ -7160,9 +7844,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function isOpen()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'isOpen', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'isOpen', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->isOpen();
+        return $this->valueHolder599fb5b81a7d0161526055->isOpen();
     }
 
     /**
@@ -7170,9 +7854,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getUnitOfWork()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getUnitOfWork', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getUnitOfWork', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getUnitOfWork();
+        return $this->valueHolder599fb5b81a7d0161526055->getUnitOfWork();
     }
 
     /**
@@ -7180,9 +7864,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getHydrator($hydrationMode)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getHydrator', array('hydrationMode' => $hydrationMode), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getHydrator', array('hydrationMode' => $hydrationMode), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getHydrator($hydrationMode);
+        return $this->valueHolder599fb5b81a7d0161526055->getHydrator($hydrationMode);
     }
 
     /**
@@ -7190,9 +7874,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function newHydrator($hydrationMode)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'newHydrator', array('hydrationMode' => $hydrationMode), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'newHydrator', array('hydrationMode' => $hydrationMode), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->newHydrator($hydrationMode);
+        return $this->valueHolder599fb5b81a7d0161526055->newHydrator($hydrationMode);
     }
 
     /**
@@ -7200,9 +7884,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getProxyFactory()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getProxyFactory', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getProxyFactory', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getProxyFactory();
+        return $this->valueHolder599fb5b81a7d0161526055->getProxyFactory();
     }
 
     /**
@@ -7210,9 +7894,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function initializeObject($obj)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'initializeObject', array('obj' => $obj), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'initializeObject', array('obj' => $obj), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->initializeObject($obj);
+        return $this->valueHolder599fb5b81a7d0161526055->initializeObject($obj);
     }
 
     /**
@@ -7220,9 +7904,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getFilters()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'getFilters', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'getFilters', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->getFilters();
+        return $this->valueHolder599fb5b81a7d0161526055->getFilters();
     }
 
     /**
@@ -7230,9 +7914,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function isFiltersStateClean()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'isFiltersStateClean', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'isFiltersStateClean', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->isFiltersStateClean();
+        return $this->valueHolder599fb5b81a7d0161526055->isFiltersStateClean();
     }
 
     /**
@@ -7240,9 +7924,9 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function hasFilters()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'hasFilters', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'hasFilters', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return $this->valueHolder5996b6bea1d57384741686->hasFilters();
+        return $this->valueHolder599fb5b81a7d0161526055->hasFilters();
     }
 
     /**
@@ -7252,7 +7936,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function __construct($initializer)
     {
-        $this->initializer5996b6bea1d6b808519016 = $initializer;
+        $this->initializer599fb5b81a7e0575194173 = $initializer;
     }
 
     /**
@@ -7260,16 +7944,16 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function & __get($name)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__get', array('name' => $name), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__get', array('name' => $name), $this->initializer599fb5b81a7e0575194173);
 
-        if (isset(self::$publicProperties5996b6bea1d24724949877[$name])) {
-            return $this->valueHolder5996b6bea1d57384741686->$name;
+        if (isset(self::$publicProperties599fb5b81a7ab785962755[$name])) {
+            return $this->valueHolder599fb5b81a7d0161526055->$name;
         }
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6bea1d57384741686;
+            $targetObject = $this->valueHolder599fb5b81a7d0161526055;
 
             $backtrace = debug_backtrace(false);
             trigger_error('Undefined property: ' . get_parent_class($this) . '::$' . $name . ' in ' . $backtrace[0]['file'] . ' on line ' . $backtrace[0]['line'], \E_USER_NOTICE);
@@ -7277,7 +7961,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6bea1d57384741686;
+        $targetObject = $this->valueHolder599fb5b81a7d0161526055;
         $accessor = function & () use ($targetObject, $name) {
             return $targetObject->$name;
         };
@@ -7295,18 +7979,18 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function __set($name, $value)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__set', array('name' => $name, 'value' => $value), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__set', array('name' => $name, 'value' => $value), $this->initializer599fb5b81a7e0575194173);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6bea1d57384741686;
+            $targetObject = $this->valueHolder599fb5b81a7d0161526055;
 
             return $targetObject->$name = $value;;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6bea1d57384741686;
+        $targetObject = $this->valueHolder599fb5b81a7d0161526055;
         $accessor = function & () use ($targetObject, $name, $value) {
             return $targetObject->$name = $value;
         };
@@ -7323,18 +8007,18 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function __isset($name)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__isset', array('name' => $name), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__isset', array('name' => $name), $this->initializer599fb5b81a7e0575194173);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6bea1d57384741686;
+            $targetObject = $this->valueHolder599fb5b81a7d0161526055;
 
             return isset($targetObject->$name);;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6bea1d57384741686;
+        $targetObject = $this->valueHolder599fb5b81a7d0161526055;
         $accessor = function () use ($targetObject, $name) {
             return isset($targetObject->$name);
         };
@@ -7351,18 +8035,18 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function __unset($name)
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__unset', array('name' => $name), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__unset', array('name' => $name), $this->initializer599fb5b81a7e0575194173);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6bea1d57384741686;
+            $targetObject = $this->valueHolder599fb5b81a7d0161526055;
 
             unset($targetObject->$name);;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6bea1d57384741686;
+        $targetObject = $this->valueHolder599fb5b81a7d0161526055;
         $accessor = function () use ($targetObject, $name) {
             unset($targetObject->$name);
         };
@@ -7376,16 +8060,16 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
 
     public function __clone()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__clone', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__clone', array(), $this->initializer599fb5b81a7e0575194173);
 
-        $this->valueHolder5996b6bea1d57384741686 = clone $this->valueHolder5996b6bea1d57384741686;
+        $this->valueHolder599fb5b81a7d0161526055 = clone $this->valueHolder599fb5b81a7d0161526055;
     }
 
     public function __sleep()
     {
-        $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, '__sleep', array(), $this->initializer5996b6bea1d6b808519016);
+        $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, '__sleep', array(), $this->initializer599fb5b81a7e0575194173);
 
-        return array('valueHolder5996b6bea1d57384741686');
+        return array('valueHolder599fb5b81a7d0161526055');
     }
 
     public function __wakeup()
@@ -7397,7 +8081,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function setProxyInitializer(\Closure $initializer = null)
     {
-        $this->initializer5996b6bea1d6b808519016 = $initializer;
+        $this->initializer599fb5b81a7e0575194173 = $initializer;
     }
 
     /**
@@ -7405,7 +8089,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getProxyInitializer()
     {
-        return $this->initializer5996b6bea1d6b808519016;
+        return $this->initializer599fb5b81a7e0575194173;
     }
 
     /**
@@ -7413,7 +8097,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function initializeProxy()
     {
-        return $this->initializer5996b6bea1d6b808519016 && $this->initializer5996b6bea1d6b808519016->__invoke($this->valueHolder5996b6bea1d57384741686, $this, 'initializeProxy', array(), $this->initializer5996b6bea1d6b808519016);
+        return $this->initializer599fb5b81a7e0575194173 && $this->initializer599fb5b81a7e0575194173->__invoke($this->valueHolder599fb5b81a7d0161526055, $this, 'initializeProxy', array(), $this->initializer599fb5b81a7e0575194173);
     }
 
     /**
@@ -7421,7 +8105,7 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function isProxyInitialized()
     {
-        return null !== $this->valueHolder5996b6bea1d57384741686;
+        return null !== $this->valueHolder599fb5b81a7d0161526055;
     }
 
     /**
@@ -7429,29 +8113,29 @@ class DoctrineORMEntityManager_000000007dcc534a000055e11dec30e09779a2b113f6ccb5d
      */
     public function getWrappedValueHolderValue()
     {
-        return $this->valueHolder5996b6bea1d57384741686;
+        return $this->valueHolder599fb5b81a7d0161526055;
     }
 
 
 }
 
-class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30e09779a2b113f6ccb5d6d99caa4d874e99 extends \FOS\RestBundle\Serializer\JMSSerializerAdapter implements \ProxyManager\Proxy\VirtualProxyInterface
+class FOSRestBundleSerializerJMSSerializerAdapter_000000005d75bef400007f08fdbdb5429779a2b113f6ccb5d6d99caa4d874e99 extends \FOS\RestBundle\Serializer\JMSSerializerAdapter implements \ProxyManager\Proxy\VirtualProxyInterface
 {
 
     /**
      * @var \Closure|null initializer responsible for generating the wrapped object
      */
-    private $valueHolder5996b6beaa147232446332 = null;
+    private $valueHolder599fb5b823570932407561 = null;
 
     /**
      * @var \Closure|null initializer responsible for generating the wrapped object
      */
-    private $initializer5996b6beaa157180405672 = null;
+    private $initializer599fb5b82357d982388434 = null;
 
     /**
      * @var bool[] map of public properties of the parent class
      */
-    private static $publicProperties5996b6beaa123521497072 = array(
+    private static $publicProperties599fb5b823554246471652 = array(
         
     );
 
@@ -7460,9 +8144,9 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function serialize($data, $format, \FOS\RestBundle\Context\Context $context)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, 'serialize', array('data' => $data, 'format' => $format, 'context' => $context), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, 'serialize', array('data' => $data, 'format' => $format, 'context' => $context), $this->initializer599fb5b82357d982388434);
 
-        return $this->valueHolder5996b6beaa147232446332->serialize($data, $format, $context);
+        return $this->valueHolder599fb5b823570932407561->serialize($data, $format, $context);
     }
 
     /**
@@ -7470,9 +8154,9 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function deserialize($data, $type, $format, \FOS\RestBundle\Context\Context $context)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, 'deserialize', array('data' => $data, 'type' => $type, 'format' => $format, 'context' => $context), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, 'deserialize', array('data' => $data, 'type' => $type, 'format' => $format, 'context' => $context), $this->initializer599fb5b82357d982388434);
 
-        return $this->valueHolder5996b6beaa147232446332->deserialize($data, $type, $format, $context);
+        return $this->valueHolder599fb5b823570932407561->deserialize($data, $type, $format, $context);
     }
 
     /**
@@ -7482,7 +8166,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function __construct($initializer)
     {
-        $this->initializer5996b6beaa157180405672 = $initializer;
+        $this->initializer599fb5b82357d982388434 = $initializer;
     }
 
     /**
@@ -7490,16 +8174,16 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function & __get($name)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__get', array('name' => $name), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__get', array('name' => $name), $this->initializer599fb5b82357d982388434);
 
-        if (isset(self::$publicProperties5996b6beaa123521497072[$name])) {
-            return $this->valueHolder5996b6beaa147232446332->$name;
+        if (isset(self::$publicProperties599fb5b823554246471652[$name])) {
+            return $this->valueHolder599fb5b823570932407561->$name;
         }
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6beaa147232446332;
+            $targetObject = $this->valueHolder599fb5b823570932407561;
 
             $backtrace = debug_backtrace(false);
             trigger_error('Undefined property: ' . get_parent_class($this) . '::$' . $name . ' in ' . $backtrace[0]['file'] . ' on line ' . $backtrace[0]['line'], \E_USER_NOTICE);
@@ -7507,7 +8191,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6beaa147232446332;
+        $targetObject = $this->valueHolder599fb5b823570932407561;
         $accessor = function & () use ($targetObject, $name) {
             return $targetObject->$name;
         };
@@ -7525,18 +8209,18 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function __set($name, $value)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__set', array('name' => $name, 'value' => $value), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__set', array('name' => $name, 'value' => $value), $this->initializer599fb5b82357d982388434);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6beaa147232446332;
+            $targetObject = $this->valueHolder599fb5b823570932407561;
 
             return $targetObject->$name = $value;;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6beaa147232446332;
+        $targetObject = $this->valueHolder599fb5b823570932407561;
         $accessor = function & () use ($targetObject, $name, $value) {
             return $targetObject->$name = $value;
         };
@@ -7553,18 +8237,18 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function __isset($name)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__isset', array('name' => $name), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__isset', array('name' => $name), $this->initializer599fb5b82357d982388434);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6beaa147232446332;
+            $targetObject = $this->valueHolder599fb5b823570932407561;
 
             return isset($targetObject->$name);;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6beaa147232446332;
+        $targetObject = $this->valueHolder599fb5b823570932407561;
         $accessor = function () use ($targetObject, $name) {
             return isset($targetObject->$name);
         };
@@ -7581,18 +8265,18 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function __unset($name)
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__unset', array('name' => $name), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__unset', array('name' => $name), $this->initializer599fb5b82357d982388434);
 
         $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
 
         if (! $realInstanceReflection->hasProperty($name)) {
-            $targetObject = $this->valueHolder5996b6beaa147232446332;
+            $targetObject = $this->valueHolder599fb5b823570932407561;
 
             unset($targetObject->$name);;
             return;
         }
 
-        $targetObject = $this->valueHolder5996b6beaa147232446332;
+        $targetObject = $this->valueHolder599fb5b823570932407561;
         $accessor = function () use ($targetObject, $name) {
             unset($targetObject->$name);
         };
@@ -7606,16 +8290,16 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
 
     public function __clone()
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__clone', array(), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__clone', array(), $this->initializer599fb5b82357d982388434);
 
-        $this->valueHolder5996b6beaa147232446332 = clone $this->valueHolder5996b6beaa147232446332;
+        $this->valueHolder599fb5b823570932407561 = clone $this->valueHolder599fb5b823570932407561;
     }
 
     public function __sleep()
     {
-        $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, '__sleep', array(), $this->initializer5996b6beaa157180405672);
+        $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, '__sleep', array(), $this->initializer599fb5b82357d982388434);
 
-        return array('valueHolder5996b6beaa147232446332');
+        return array('valueHolder599fb5b823570932407561');
     }
 
     public function __wakeup()
@@ -7627,7 +8311,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function setProxyInitializer(\Closure $initializer = null)
     {
-        $this->initializer5996b6beaa157180405672 = $initializer;
+        $this->initializer599fb5b82357d982388434 = $initializer;
     }
 
     /**
@@ -7635,7 +8319,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function getProxyInitializer()
     {
-        return $this->initializer5996b6beaa157180405672;
+        return $this->initializer599fb5b82357d982388434;
     }
 
     /**
@@ -7643,7 +8327,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function initializeProxy()
     {
-        return $this->initializer5996b6beaa157180405672 && $this->initializer5996b6beaa157180405672->__invoke($this->valueHolder5996b6beaa147232446332, $this, 'initializeProxy', array(), $this->initializer5996b6beaa157180405672);
+        return $this->initializer599fb5b82357d982388434 && $this->initializer599fb5b82357d982388434->__invoke($this->valueHolder599fb5b823570932407561, $this, 'initializeProxy', array(), $this->initializer599fb5b82357d982388434);
     }
 
     /**
@@ -7651,7 +8335,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function isProxyInitialized()
     {
-        return null !== $this->valueHolder5996b6beaa147232446332;
+        return null !== $this->valueHolder599fb5b823570932407561;
     }
 
     /**
@@ -7659,7 +8343,7 @@ class FOSRestBundleSerializerJMSSerializerAdapter_000000007dcc5724000055e11dec30
      */
     public function getWrappedValueHolderValue()
     {
-        return $this->valueHolder5996b6beaa147232446332;
+        return $this->valueHolder599fb5b823570932407561;
     }
 
 

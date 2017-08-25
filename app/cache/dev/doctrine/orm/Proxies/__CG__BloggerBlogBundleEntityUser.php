@@ -64,10 +64,10 @@ class User extends \Blogger\BlogBundle\Entity\User implements \Doctrine\ORM\Prox
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+            return ['__isInitialized__', 'id', 'apiKey', 'stripe', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
         }
 
-        return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+        return ['__isInitialized__', 'id', 'apiKey', 'stripe', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
     }
 
     /**
@@ -173,6 +173,39 @@ class User extends \Blogger\BlogBundle\Entity\User implements \Doctrine\ORM\Prox
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function setStripe($stripe)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setStripe', [$stripe]);
+
+        return parent::setStripe($stripe);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getStripe()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getStripe', []);
+
+        return parent::getStripe();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getApiKey()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getApiKey', []);
+
+        return parent::getApiKey();
+    }
+
     /**
      * {@inheritDoc}
      */

@@ -91,6 +91,17 @@ services:
         class:     Blogger\BlogBundle\DependencyInjection\ResizeImage
         arguments: []
 
+    api_key:
+        class:     Blogger\BlogBundle\DependencyInjection\ApiKey
+        arguments: []
+
+#    apikey_authenticator:
+#        class:  Blogger\BlogBundle\Security\ApiKeyAuthenticator
+#        public: false
+
+#uecode_api_key:
+#    delivery: query
+
 sonata_block:
     default_contexts: [cms]
     blocks:
@@ -108,6 +119,8 @@ sonata_admin:
                         - admin.comment
                         - admin.user
 
+nelmio_api_doc: ~
+
 fos_rest:
     body_listener: true
     view:
@@ -117,6 +130,9 @@ fos_rest:
     format_listener:
         rules:
             - { path: ^/api, priorities: json, fallback_format: json, prefer_extension: true }
+#            - { path: '^/', stop: true }
+    zone:
+        - { path: ^/api/* }
 
 
 jms_serializer:
@@ -124,16 +140,30 @@ jms_serializer:
         separator:  _
         lower_case: true
 
-    metadata:
-        cache: file
-        debug: "%kernel.debug%"
-        file_cache:
-            dir: "%kernel.cache_dir%/serializer"
-        directories:
+nelmio_cors:
+    paths:
+        '^/api/*':
+            allow_origin: ['*']
+            allow_headers: ['*']
+            allow_methods: ['POST', 'PUT', 'GET', 'DELETE','OPTIONS']
+            max_age: 3600
+
+#lexik_jwt_authentication:
+#    private_key_path: '%jwt_private_key_path%'
+#    public_key_path:  '%jwt_public_key_path%'
+#    pass_phrase:      '%jwt_key_pass_phrase%'
+#    token_ttl:        '%jwt_token_ttl%'
+
+#    metadata:
+#        cache: file
+#        debug: "%kernel.debug%"
+#        file_cache:
+#            dir: "%kernel.cache_dir%/serializer"
+#        directories:
 #            FOSUserBundle:
 #                namespace_prefix: FOS\UserBundle
 #                path: %kernel.root_dir%/config/serializer/FosUserBundle
-            Blogger/BlogBundle:
-                namespace_prefix: Blogger\BlogBundle
-                path: %kernel.root_dir%/config/serializer/Blogger/BlogBundle
-        auto_detection: true
+#            Blogger/BlogBundle:
+#                namespace_prefix: Blogger\BlogBundle
+#                path: %kernel.root_dir%/config/serializer/Blogger/BlogBundle
+#        auto_detection: true

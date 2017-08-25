@@ -72,3 +72,39 @@ BloggerBlogBundle_blog_update:
     defaults: { _controller: "BloggerBlogBundle:Admin:update" }
     requirements:
         methods:  POST
+
+BloggerBlogBundle_stripe:
+    path:  /stripe
+    defaults: { _controller: "BloggerBlogBundle:Stripe:index" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_stripe_post:
+    path:  /stripe/post
+    defaults: { _controller: "BloggerBlogBundle:Stripe:stripe" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_stripe_plan:
+    path:  /stripe/plan
+    defaults: { _controller: "BloggerBlogBundle:Stripe:plan" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_stripe_user:
+    path:  /stripe/user
+    defaults: { _controller: "BloggerBlogBundle:Stripe:user" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_stripe_subscription:
+    path:  /stripe/subscription
+    defaults: { _controller: "BloggerBlogBundle:Stripe:subscription" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_stripe_hook:
+    path:  /stripe/hook
+    defaults: { _controller: "BloggerBlogBundle:Stripe:hook" }
+    requirements:
+        methods:  GET

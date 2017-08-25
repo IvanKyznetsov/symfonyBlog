@@ -1,0 +1,31 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/admin.html.twig #}
+{% extends 'BloggerBlogBundle::layout.html.twig' %}
+
+{% block title %}Stripe{% endblock%}
+
+{% block body %}
+   <form action="{{ path("BloggerBlogBundle_stripe_post") }}" method="POST">
+      <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_1JKOOisJ7GG0v5SxcAf4zrqY"
+              data-amount="999"
+              data-name="Stripe.com"
+              data-description="Widget"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto"
+              data-zip-code="true">
+      </script>
+   </form>
+    <div class="plan">
+       <a href="{{ path("BloggerBlogBundle_stripe_plan") }}">Создать план</a>
+    </div>
+    <div class="plan">
+        <a href="{{ path("BloggerBlogBundle_stripe_user") }}">Создать пользователя</a>
+    </div>
+    <div class="plan">
+        <a href="{{ path("BloggerBlogBundle_stripe_subscription") }}">Оформить подписку</a>
+    </div>
+    <div class="plan">
+        <a href="{{ path("BloggerBlogBundle_stripe_hook") }}">Hook</a>
+    </div>
+{% endblock %}

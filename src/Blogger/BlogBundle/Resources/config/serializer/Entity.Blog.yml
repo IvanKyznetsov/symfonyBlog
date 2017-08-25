@@ -1,7 +1,9 @@
-Blogger/BlogBundle/Entity/Blog:
+Blogger\BlogBundle\Entity\Blog:
     exclusion_policy: ALL
     properties:
         title:
             expose: true
         author:
             expose: true
+#        comments:
+#            expose: true

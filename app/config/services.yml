@@ -1,5 +1,14 @@
 # Learn more about services, parameters and containers at
 # https://symfony.com/doc/current/service_container.html
+services:
+    app.token_authenticator:
+            class: Blogger\BlogBundle\Security\TokenAuthenticator
+    api_key_provider:
+        class: Blogger\BlogBundle\Security\User\WebserviceUserProvider
+        arguments: [ "@doctrine.orm.entity_manager" ]
+#    api_key_user_provider:
+#        class: Blogger\BlogBundle\Security\ApiKeyUserProvider
+
 parameters:
     #parameter_name: value
 

@@ -24,6 +24,7 @@
             {% block navigation %}
                 <nav>
                     <ul class="navigation">
+                        <li><a href="{{ path('BloggerBlogBundle_stripe') }}">Stripe</a></li>
                         {% if (is_granted('ROLE_ADMIN')) %}
                             <li><a href="{{ path('BloggerBlogBundle_admin') }}">Administrator</a></li>
                         {% endif %}

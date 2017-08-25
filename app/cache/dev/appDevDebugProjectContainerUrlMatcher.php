@@ -210,54 +210,90 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'BloggerBlogBundle_blog_update')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\AdminController::updateAction',));
             }
 
-            if (0 === strpos($pathinfo, '/admins')) {
-                // sonata_admin_redirect
-                if (rtrim($pathinfo, '/') === '/admins') {
-                    if (substr($pathinfo, -1) !== '/') {
-                        return $this->redirect($pathinfo.'/', 'sonata_admin_redirect');
-                    }
+        }
 
-                    return array (  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController::redirectAction',  'route' => 'sonata_admin_dashboard',  'permanent' => 'true',  '_route' => 'sonata_admin_redirect',);
+        if (0 === strpos($pathinfo, '/stripe')) {
+            // BloggerBlogBundle_stripe
+            if ($pathinfo === '/stripe') {
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::indexAction',  '_route' => 'BloggerBlogBundle_stripe',);
+            }
+
+            if (0 === strpos($pathinfo, '/stripe/p')) {
+                // BloggerBlogBundle_stripe_post
+                if ($pathinfo === '/stripe/post') {
+                    return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::stripeAction',  '_route' => 'BloggerBlogBundle_stripe_post',);
                 }
 
-                // sonata_admin_dashboard
-                if ($pathinfo === '/admins/dashboard') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::dashboardAction',  '_route' => 'sonata_admin_dashboard',);
+                // BloggerBlogBundle_stripe_plan
+                if ($pathinfo === '/stripe/plan') {
+                    return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::planAction',  '_route' => 'BloggerBlogBundle_stripe_plan',);
                 }
 
-                if (0 === strpos($pathinfo, '/admins/core')) {
-                    // sonata_admin_retrieve_form_element
-                    if ($pathinfo === '/admins/core/get-form-field-element') {
-                        return array (  '_controller' => 'sonata.admin.controller.admin:retrieveFormFieldElementAction',  '_route' => 'sonata_admin_retrieve_form_element',);
-                    }
+            }
 
-                    // sonata_admin_append_form_element
-                    if ($pathinfo === '/admins/core/append-form-field-element') {
-                        return array (  '_controller' => 'sonata.admin.controller.admin:appendFormFieldElementAction',  '_route' => 'sonata_admin_append_form_element',);
-                    }
+            // BloggerBlogBundle_stripe_user
+            if ($pathinfo === '/stripe/user') {
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::userAction',  '_route' => 'BloggerBlogBundle_stripe_user',);
+            }
 
-                    // sonata_admin_short_object_information
-                    if (0 === strpos($pathinfo, '/admins/core/get-short-object-description') && preg_match('#^/admins/core/get\\-short\\-object\\-description(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'sonata_admin_short_object_information')), array (  '_controller' => 'sonata.admin.controller.admin:getShortObjectDescriptionAction',  '_format' => 'html',));
-                    }
+            // BloggerBlogBundle_stripe_subscription
+            if ($pathinfo === '/stripe/subscription') {
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::subscriptionAction',  '_route' => 'BloggerBlogBundle_stripe_subscription',);
+            }
 
-                    // sonata_admin_set_object_field_value
-                    if ($pathinfo === '/admins/core/set-object-field-value') {
-                        return array (  '_controller' => 'sonata.admin.controller.admin:setObjectFieldValueAction',  '_route' => 'sonata_admin_set_object_field_value',);
-                    }
+            // BloggerBlogBundle_stripe_hook
+            if ($pathinfo === '/stripe/hook') {
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::hookAction',  '_route' => 'BloggerBlogBundle_stripe_hook',);
+            }
 
+        }
+
+        if (0 === strpos($pathinfo, '/admins')) {
+            // sonata_admin_redirect
+            if (rtrim($pathinfo, '/') === '/admins') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'sonata_admin_redirect');
                 }
 
-                // sonata_admin_search
-                if ($pathinfo === '/admins/search') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::searchAction',  '_route' => 'sonata_admin_search',);
+                return array (  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController::redirectAction',  'route' => 'sonata_admin_dashboard',  'permanent' => 'true',  '_route' => 'sonata_admin_redirect',);
+            }
+
+            // sonata_admin_dashboard
+            if ($pathinfo === '/admins/dashboard') {
+                return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::dashboardAction',  '_route' => 'sonata_admin_dashboard',);
+            }
+
+            if (0 === strpos($pathinfo, '/admins/core')) {
+                // sonata_admin_retrieve_form_element
+                if ($pathinfo === '/admins/core/get-form-field-element') {
+                    return array (  '_controller' => 'sonata.admin.controller.admin:retrieveFormFieldElementAction',  '_route' => 'sonata_admin_retrieve_form_element',);
                 }
 
-                // sonata_admin_retrieve_autocomplete_items
-                if ($pathinfo === '/admins/core/get-autocomplete-items') {
-                    return array (  '_controller' => 'sonata.admin.controller.admin:retrieveAutocompleteItemsAction',  '_route' => 'sonata_admin_retrieve_autocomplete_items',);
+                // sonata_admin_append_form_element
+                if ($pathinfo === '/admins/core/append-form-field-element') {
+                    return array (  '_controller' => 'sonata.admin.controller.admin:appendFormFieldElementAction',  '_route' => 'sonata_admin_append_form_element',);
                 }
 
+                // sonata_admin_short_object_information
+                if (0 === strpos($pathinfo, '/admins/core/get-short-object-description') && preg_match('#^/admins/core/get\\-short\\-object\\-description(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'sonata_admin_short_object_information')), array (  '_controller' => 'sonata.admin.controller.admin:getShortObjectDescriptionAction',  '_format' => 'html',));
+                }
+
+                // sonata_admin_set_object_field_value
+                if ($pathinfo === '/admins/core/set-object-field-value') {
+                    return array (  '_controller' => 'sonata.admin.controller.admin:setObjectFieldValueAction',  '_route' => 'sonata_admin_set_object_field_value',);
+                }
+
+            }
+
+            // sonata_admin_search
+            if ($pathinfo === '/admins/search') {
+                return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::searchAction',  '_route' => 'sonata_admin_search',);
+            }
+
+            // sonata_admin_retrieve_autocomplete_items
+            if ($pathinfo === '/admins/core/get-autocomplete-items') {
+                return array (  '_controller' => 'sonata.admin.controller.admin:retrieveAutocompleteItemsAction',  '_route' => 'sonata_admin_retrieve_autocomplete_items',);
             }
 
         }
@@ -589,29 +625,114 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 }
                 not_api_blogs_show:
 
-                if (0 === strpos($pathinfo, '/api/blogs')) {
-                    // api_blogs_get_blogs
-                    if (preg_match('#^/api/blogs(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
-                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                            $allow = array_merge($allow, array('GET', 'HEAD'));
-                            goto not_api_blogs_get_blogs;
+                if (0 === strpos($pathinfo, '/api/bl')) {
+                    if (0 === strpos($pathinfo, '/api/blogs')) {
+                        // api_blogs_get_blogs
+                        if (preg_match('#^/api/blogs(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                                $allow = array_merge($allow, array('GET', 'HEAD'));
+                                goto not_api_blogs_get_blogs;
+                            }
+
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blogs')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogsAction',  '_format' => NULL,));
+                        }
+                        not_api_blogs_get_blogs:
+
+                        // api_blogs_get_blog
+                        if (preg_match('#^/api/blogs/(?P<id>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                                $allow = array_merge($allow, array('GET', 'HEAD'));
+                                goto not_api_blogs_get_blog;
+                            }
+
+                            return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blog')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogAction',  '_format' => NULL,));
+                        }
+                        not_api_blogs_get_blog:
+
+                    }
+
+                    // api_blogs_delete_blg
+                    if (0 === strpos($pathinfo, '/api/blgs') && preg_match('#^/api/blgs/(?P<id>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                        if ($this->context->getMethod() != 'DELETE') {
+                            $allow[] = 'DELETE';
+                            goto not_api_blogs_delete_blg;
                         }
 
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blogs')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogsAction',  '_format' => NULL,));
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_delete_blg')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::deleteBlgAction',  '_format' => NULL,));
                     }
-                    not_api_blogs_get_blogs:
+                    not_api_blogs_delete_blg:
 
-                    // api_blogs_get_blog
-                    if (preg_match('#^/api/blogs/(?P<id>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
-                        if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                            $allow = array_merge($allow, array('GET', 'HEAD'));
-                            goto not_api_blogs_get_blog;
-                        }
+                }
 
-                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_get_blog')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::getBlogAction',  '_format' => NULL,));
+                // api_blogs_post
+                if (0 === strpos($pathinfo, '/api/') && preg_match('#^/api/(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_api_blogs_post;
                     }
-                    not_api_blogs_get_blog:
 
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_blogs_post')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::postAction',  '_format' => NULL,));
+                }
+                not_api_blogs_post:
+
+                // api_comments_new
+                if (preg_match('#^/api/(?P<blog_id>[^/]++)/new(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_api_comments_new;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_new')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::newAction',  '_format' => NULL,));
+                }
+                not_api_comments_new:
+
+                // api_comments_create
+                if (preg_match('#^/api/(?P<blog_id>[^/]++)/create(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_comments_create;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_create')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::createAction',  '_format' => NULL,));
+                }
+                not_api_comments_create:
+
+                // api_comments_delete
+                if (preg_match('#^/api/(?P<commentId>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'DELETE') {
+                        $allow[] = 'DELETE';
+                        goto not_api_comments_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_delete')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::deleteAction',  '_format' => NULL,));
+                }
+                not_api_comments_delete:
+
+                // api_comments_get_comment
+                if (0 === strpos($pathinfo, '/api/comments') && preg_match('#^/api/comments/(?P<id>[^/\\.]++)(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_api_comments_get_comment;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_get_comment')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::getCommentAction',  '_format' => NULL,));
+                }
+                not_api_comments_get_comment:
+
+                // nelmio_api_doc_index
+                if (0 === strpos($pathinfo, '/api/doc') && preg_match('#^/api/doc(?:/(?P<view>[^/]++))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_nelmio_api_doc_index;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'nelmio_api_doc_index')), array (  '_controller' => 'Nelmio\\ApiDocBundle\\Controller\\ApiDocController::indexAction',  'view' => 'default',));
+                }
+                not_nelmio_api_doc_index:
+
+                // api_login_check
+                if ($pathinfo === '/api/login_check') {
+                    return array('_route' => 'api_login_check');
                 }
 
             }

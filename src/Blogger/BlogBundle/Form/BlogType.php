@@ -28,7 +28,8 @@ class BlogType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Blogger\BlogBundle\Entity\Blog'
+            'data_class' => 'Blogger\BlogBundle\Entity\Blog',
+            'csrf_protection' => false
         ));
     }
 

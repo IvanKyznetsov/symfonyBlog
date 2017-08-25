@@ -50,6 +50,7 @@ class FormatListener
     {
         $request = $event->getRequest();
 
+
         if (!$request->attributes->get(FOSRestBundle::ZONE_ATTRIBUTE, true)) {
             return;
         }

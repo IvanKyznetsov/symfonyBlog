@@ -10,11 +10,11 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
-        '8ac9dba77d5c65db2811440ee8265f5d' => __DIR__ . '/..' . '/sonata-project/block-bundle/Resources/stubs/symfony2.php',
+        'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
+        '8ac9dba77d5c65db2811440ee8265f5d' => __DIR__ . '/..' . '/sonata-project/block-bundle/Resources/stubs/symfony2.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '023d27dca8066ef29e6739335ea73bad' => __DIR__ . '/..' . '/symfony/polyfill-php70/bootstrap.php',
-        'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         'edc6464955a37aa4d5fbf39d40fb6ee7' => __DIR__ . '/..' . '/symfony/polyfill-php55/bootstrap.php',
         '3e2471375464aac821502deb0ac64275' => __DIR__ . '/..' . '/symfony/polyfill-php54/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
@@ -54,6 +54,7 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
             'Symfony\\Bridge\\PhpUnit\\' => 23,
             'Symfony\\Bridge\\Monolog\\' => 23,
             'Symfony\\Bridge\\Doctrine\\' => 24,
+            'Stripe\\' => 7,
             'Sonata\\DoctrineORMAdminBundle\\' => 30,
             'Sonata\\DatagridBundle\\' => 22,
             'Sonata\\CoreBundle\\' => 18,
@@ -70,11 +71,17 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
         ),
         'N' => 
         array (
+            'Nelmio\\CorsBundle\\' => 18,
             'Negotiation\\' => 12,
+            'Namshi\\JOSE\\' => 12,
         ),
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'L' => 
+        array (
+            'Lexik\\Bundle\\JWTAuthenticationBundle\\' => 37,
         ),
         'K' => 
         array (
@@ -206,6 +213,10 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
         array (
             0 => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Bridge/Doctrine',
         ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
+        ),
         'Sonata\\DoctrineORMAdminBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/sonata-project/doctrine-orm-admin-bundle',
@@ -246,13 +257,25 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Nelmio\\CorsBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nelmio/cors-bundle',
+        ),
         'Negotiation\\' => 
         array (
             0 => __DIR__ . '/..' . '/willdurand/negotiation/src/Negotiation',
         ),
+        'Namshi\\JOSE\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/namshi/jose/src/Namshi/JOSE',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Lexik\\Bundle\\JWTAuthenticationBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lexik/jwt-authentication-bundle',
         ),
         'Knp\\Menu\\' => 
         array (
@@ -333,6 +356,13 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
     );
 
     public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'Uecode\\Bundle\\ApiKeyBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/uecode/api-key-bundle/src',
+            ),
+        ),
         'T' => 
         array (
             'Twig_Extensions_' => 
@@ -370,8 +400,19 @@ class ComposerStaticInit9c4a1ed07e7ef5953a988e80dc361664
                 0 => __DIR__ . '/..' . '/phpcollection/phpcollection/src',
             ),
         ),
+        'N' => 
+        array (
+            'Nelmio\\ApiDocBundle' => 
+            array (
+                0 => __DIR__ . '/..' . '/nelmio/api-doc-bundle',
+            ),
+        ),
         'M' => 
         array (
+            'Michelf' => 
+            array (
+                0 => __DIR__ . '/..' . '/michelf/php-markdown',
+            ),
             'Metadata\\' => 
             array (
                 0 => __DIR__ . '/..' . '/jms/metadata/src',
