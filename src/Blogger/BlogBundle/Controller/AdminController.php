@@ -150,8 +150,8 @@ class AdminController extends Controller
 
 //        $resimg = $this->container->get('just_test');
         $resimg = $this->container->get('test');
-
-        $test = 10;
+        
+        $test = 5;
 
         return $resimg->vardump();
     }
