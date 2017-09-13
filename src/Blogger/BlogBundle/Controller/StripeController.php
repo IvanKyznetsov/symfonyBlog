@@ -13,7 +13,13 @@ class StripeController extends Controller
 {
    public function indexAction()
    {
-       return $this->render('BloggerBlogBundle:Page:stripe.html.twig');
+       \Stripe\Stripe::setApiKey("sk_test_ts0PWLlX0wvEdgSvqAUQdheT");
+
+       $plans = \Stripe\Plan::all(array("limit" => 3));
+
+       return $this->render('BloggerBlogBundle:Page:stripe.html.twig', array(
+           'plans' => $plans,
+       ));
    }
 
    public function stripeAction(Request $request)
@@ -37,9 +43,9 @@ class StripeController extends Controller
        \Stripe\Stripe::setApiKey("sk_test_ts0PWLlX0wvEdgSvqAUQdheT");
 
        $plan = \Stripe\Plan::create(array(
-           "name" => "Basic Plan",
-           "id" => "basic-monthly",
-           "interval" => "month",
+           "name" => "Second Plan",
+           "id" => "second-plan",
+           "interval" => "year",
            "currency" => "usd",
            "amount" => 0,
        ));
@@ -74,7 +80,7 @@ class StripeController extends Controller
 
        \Stripe\Stripe::setApiKey("sk_test_ts0PWLlX0wvEdgSvqAUQdheT");
 
-       $subscription = \Stripe\Subscription::create(array(
+           $subscription = \Stripe\Subscription::create(array(
            "customer" => $stripe,
            "items" => array(
                array(
@@ -86,16 +92,17 @@ class StripeController extends Controller
        return $this->redirect($request->headers->get('referer'));
    }
 
-   public function hookAction(Request $request)
+   public function hookAction()
    {
        \Stripe\Stripe::setApiKey("sk_test_ts0PWLlX0wvEdgSvqAUQdheT");
 
-       $input = @file_get_contents("php://input");
-       $event_json = json_decode($input);
+       $user = \Stripe\Customer::retrieve("cus_BGpQSNrlHb2Efg");
 
-       var_dump($event_json);
+       var_dump($user);
        exit;
+   }
 
-       http_response_code(200);
+   public function subscriptionIdAction() {
+
    }
 }

@@ -143,4 +143,12 @@ class AdminController extends Controller
             'blogs' => $blogs
         ));
     }
+
+    public function testAction() {
+
+//        $resimg = $this->container->get('just_test');
+        $resimg = $this->container->get('test');
+
+        return $resimg->vardump();
+    }
 }

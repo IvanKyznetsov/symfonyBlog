@@ -108,3 +108,21 @@ BloggerBlogBundle_stripe_hook:
     defaults: { _controller: "BloggerBlogBundle:Stripe:hook" }
     requirements:
         methods:  GET
+
+BloggerBlogBundle_stripe_hook:
+    path:  /stripe/plan/{id}
+    defaults: { _controller: "BloggerBlogBundle:Stripe:subscriptionId" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_comment_ajax:
+    path:  /comment/ajax
+    defaults: { _controller: "BloggerBlogBundle:Comment:ajax" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_just_test:
+    path:  /justtest
+    defaults: { _controller: "BloggerBlogBundle:Admin:test" }
+    requirements:
+        methods:  GET

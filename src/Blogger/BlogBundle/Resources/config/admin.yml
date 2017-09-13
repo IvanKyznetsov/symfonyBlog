@@ -15,8 +15,16 @@ services:
                     - { name: sonata.admin, manager_type: orm, label: Comment }
 
     admin.user:
-                    class: Blogger\BlogBundle\Admin\UserAdmin
-                    arguments: [~, Blogger\BlogBundle\Entity\User, ~]
-                    tags:
-                        - { name: sonata.admin, manager_type: orm, label: User }
+                class: Blogger\BlogBundle\Admin\UserAdmin
+                arguments: [~, Blogger\BlogBundle\Entity\User, ~]
+                tags:
+                    - { name: sonata.admin, manager_type: orm, label: User }
+
+    just_test:
+                class:     Blogger\BlogBundle\DependencyInjection\JustTest
+                arguments: []
+
+    test:
+                class:     Blogger\BlogBundle\Services\Test
+                arguments: []
 #BloggerBlogBundle:CRUD

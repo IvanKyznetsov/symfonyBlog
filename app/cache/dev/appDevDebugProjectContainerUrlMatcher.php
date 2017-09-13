@@ -55,9 +55,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_51c56cc',);
                 }
 
-                // _assetic_51c56cc_0
-                if ($pathinfo === '/css/51c56cc_part_1_screen_1.css') {
-                    return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_51c56cc_0',);
+                if (0 === strpos($pathinfo, '/css/51c56cc_part_1_')) {
+                    // _assetic_51c56cc_0
+                    if ($pathinfo === '/css/51c56cc_part_1_screen_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_51c56cc_0',);
+                    }
+
+                    // _assetic_51c56cc_1
+                    if ($pathinfo === '/css/51c56cc_part_1_test_2.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_51c56cc_1',);
+                    }
+
                 }
 
             }
@@ -246,6 +254,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\StripeController::hookAction',  '_route' => 'BloggerBlogBundle_stripe_hook',);
             }
 
+        }
+
+        // BloggerBlogBundle_comment_ajax
+        if ($pathinfo === '/comment/ajax') {
+            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::ajaxAction',  '_route' => 'BloggerBlogBundle_comment_ajax',);
+        }
+
+        // BloggerBlogBundle_just_test
+        if ($pathinfo === '/justtest') {
+            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\AdminController::testAction',  '_route' => 'BloggerBlogBundle_just_test',);
         }
 
         if (0 === strpos($pathinfo, '/admins')) {
@@ -718,6 +736,17 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                     return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_get_comment')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::getCommentAction',  '_format' => NULL,));
                 }
                 not_api_comments_get_comment:
+
+                // api_comments_ajax
+                if (preg_match('#^/api/(?P<message>[^/]++)/ajax(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_comments_ajax;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_comments_ajax')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::ajaxAction',  '_format' => NULL,));
+                }
+                not_api_comments_ajax:
 
                 // nelmio_api_doc_index
                 if (0 === strpos($pathinfo, '/api/doc') && preg_match('#^/api/doc(?:/(?P<view>[^/]++))?$#s', $pathinfo, $matches)) {

@@ -4,6 +4,9 @@
 {% block title %}Stripe{% endblock%}
 
 {% block body %}
+    {% for plan in plans.data %}
+        <p>{{ plan.name }} <a href="">Подписаться</a> </p>
+    {% endfor %}
    <form action="{{ path("BloggerBlogBundle_stripe_post") }}" method="POST">
       <script
               src="https://checkout.stripe.com/checkout.js" class="stripe-button"
