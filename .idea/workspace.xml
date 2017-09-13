@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf97daf-bcd0-4574-91d7-5edc1e5383c1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/25/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223676574436f6d6d656e74416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/25/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223676574436f6d6d656e74416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2d/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/2d/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6a/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6a/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6e/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6e/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/91/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/91/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b6/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223706c616e416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b6/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223706c616e416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c5/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223686f6f6b416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/c5/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c657223686f6f6b416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/c9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ea/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c41646d696e436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ea/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c41646d696e436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f1/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/f1/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c537472697065436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/6d/6de800418f078f51568c91bdaf1a0298b8c6237d256146cc4ec5a470bd34885c.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/6d/6de800418f078f51568c91bdaf1a0298b8c6237d256146cc4ec5a470bd34885c.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/ad/ad4c070dfbac121b5515eb590b632abba9ae062e084dd838f6cd3d6cb8cf08e8.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/ad/ad4c070dfbac121b5515eb590b632abba9ae062e084dd838f6cd3d6cb8cf08e8.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/cb/cba43ca6c5c42f0018f0471de8315e61cc7df2d50e415fe1733ffc7df41b5d59.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/cb/cba43ca6c5c42f0018f0471de8315e61cc7df2d50e415fe1733ffc7df41b5d59.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/StripeController.php" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/StripeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/admin.yml" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/admin.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/form.html.twig" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/form.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/stripe.html.twig" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/stripe.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -61,6 +33,16 @@
               <folding>
                 <element signature="e#106#141#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,7 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/serializer/Blogger/BlogBundle/Entity.Blog.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/serializer/Entity.Comment.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/serializer/Entity.Blog.yml" />
@@ -188,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Test.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/admin.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -446,18 +428,17 @@
       <workItem from="1503982784936" duration="3602000" />
       <workItem from="1503997199362" duration="32000" />
       <workItem from="1505282879172" duration="986000" />
-      <workItem from="1505286461434" duration="8533000" />
+      <workItem from="1505286461434" duration="8547000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265242000" />
+    <option name="totallyTimeSpent" value="265256000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="-4" width="1227" height="1028" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2787286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2787286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3573807" sideWeight="0.5029636" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -499,13 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle/EventListener/FormatListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="71" column="62" lean-forward="false" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -880,6 +854,14 @@
           <folding>
             <element signature="e#106#141#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
