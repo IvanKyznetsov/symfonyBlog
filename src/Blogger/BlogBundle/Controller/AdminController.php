@@ -141,6 +141,7 @@ class AdminController extends Controller
 
         $test = 11;
         $tst = 100;
+        $tt = 111;
 
         return $this->render('BloggerBlogBundle:Page:admin.html.twig', array(
             'blogs' => $blogs
@@ -152,7 +153,7 @@ class AdminController extends Controller
 //        $resimg = $this->container->get('just_test');
         $resimg = $this->container->get('test');
 
-        $test = 55;
+        $test = 66;
 
         return $resimg->vardump();
     }
