@@ -139,8 +139,6 @@ class AdminController extends Controller
             }
         }
 
-        $up = 100;
-
         return $this->render('BloggerBlogBundle:Page:admin.html.twig', array(
             'blogs' => $blogs
         ));
@@ -150,8 +148,6 @@ class AdminController extends Controller
 
 //        $resimg = $this->container->get('just_test');
         $resimg = $this->container->get('test');
-        
-        $test = 5;
 
         return $resimg->vardump();
     }
