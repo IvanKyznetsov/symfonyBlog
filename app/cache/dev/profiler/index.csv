@@ -1251,3 +1251,9 @@ dd6c41,127.0.0.1,GET,http://symfonyblog/app_dev.php/justtest,1505292929,,500
 8f1820,127.0.0.1,GET,http://symfonyblog/app_dev.php/justtest,1505293625,,500
 5e1ddf,127.0.0.1,GET,http://symfonyblog/app_dev.php/justtest,1505293837,2d0c6e,200
 2d0c6e,127.0.0.1,GET,http://symfonyblog/app_dev.php/justtest,1505293837,,500
+243e9b,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505471327,9c79a8,200
+9c79a8,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505471327,,200
+d7aff2,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505474392,956b70,200
+956b70,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505474392,,200
+034cf8,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505807075,9cdf1d,200
+9cdf1d,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505807075,,200
