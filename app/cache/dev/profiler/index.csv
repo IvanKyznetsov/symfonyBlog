@@ -1257,3 +1257,11 @@ d7aff2,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dht
 956b70,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505474392,,200
 034cf8,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505807075,9cdf1d,200
 9cdf1d,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505807075,,200
+32b476,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505812785,043d8f,200
+043d8f,127.0.0.1,GET,http://symfonyblog/app_dev.php/114/test-blog-0,1505812785,,200
+a710b1,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505812803,d64ba2,200
+d64ba2,127.0.0.1,GET,http://symfonyblog/app_dev.php/114/test-blog-0,1505812803,,200
+160ef0,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505812805,04bcfb,200
+04bcfb,127.0.0.1,GET,http://symfonyblog/app_dev.php/,1505812805,,200
+3db1dc,127.0.0.1,GET,http://symfonyblog/app_dev.php/_fragment?_path=_format%3Dhtml%26_locale%3Den%26_controller%3DBloggerBlogBundle%253APage%253Asidebar,1505812806,c8ad4e,200
+c8ad4e,127.0.0.1,GET,http://symfonyblog/app_dev.php/114/test-blog-0,1505812806,,200
