@@ -30,6 +30,35 @@ class User extends BaseUser
     protected $stripe;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $image;
+
+    /**
+     * Set image
+     *
+     * @param string $image
+     *
+     * @return User
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
      * Set stripe
      *
      * @param string $stripe

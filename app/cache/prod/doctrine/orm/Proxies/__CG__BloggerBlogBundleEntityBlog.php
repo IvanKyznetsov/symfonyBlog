@@ -389,6 +389,17 @@ class Blog extends \Blogger\BlogBundle\Entity\Blog implements \Doctrine\ORM\Prox
     /**
      * {@inheritDoc}
      */
+    public function __toString()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__toString', []);
+
+        return parent::__toString();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     public function setSlug($slug)
     {
 
@@ -417,6 +428,50 @@ class Blog extends \Blogger\BlogBundle\Entity\Blog implements \Doctrine\ORM\Prox
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'slugify', [$text]);
 
         return parent::slugify($text);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getFullImagePath()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFullImagePath', []);
+
+        return parent::getFullImagePath();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function uploadImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'uploadImage', []);
+
+        return parent::uploadImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function moveImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'moveImage', []);
+
+        return parent::moveImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeImage', []);
+
+        return parent::removeImage();
     }
 
 }

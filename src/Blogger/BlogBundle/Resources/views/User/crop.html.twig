@@ -1,0 +1,60 @@
+{#{% extends 'BloggerBlogBundle::layout.html.twig' %}#}
+
+{#{% block stylesheets %}#}
+    {#{{ parent() }}#}
+    {#<style type="text/css">#}
+        {##crop{#}
+            {#display:none;#}
+        {#}#}
+    {#</style>#}
+{#{% endblock %}#}
+
+{#{% block body %}#}
+    {#<img class="crop_image" src="{{ asset('images/users/' ~ app.user.image)}}" id="target" alt="[Jcrop Example]" />#}
+
+    {#<button id="release">Убрать выделение</button>#}
+    {#<button id="crop">Обрезать</button>#}
+
+    {#<div class="optlist offset">#}
+        {#<label><input type="checkbox" id="ar_lock" />Соблюдать пропорции (4:3)</label>#}
+        {#<label><input type="checkbox" id="size_lock" />min/max размер (80x80/350x350)</label>#}
+    {#</div>#}
+{#{% endblock %}#}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ asset('css/jquery.Jcrop.css') }}">
+    <script src="{{ asset('js/ajax.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+    <script src="{{ asset('js/crop.js') }}"></script>
+    <script src="{{ asset('js/jquery.Jcrop.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <style type="text/css">
+        #crop{
+            display:none;
+        }
+        #cropresult{
+            border:2px solid #ddd;
+        }
+        .mini{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <img class="crop_image" src="{{ asset('images/users/' ~ app.user.image)}}" id="target" alt="[Jcrop Example]" />
+
+    <button id="crop">Обрезать</button>
+
+    <div class="optlist offset">
+        <label><input type="checkbox" id="ar_lock" />Сохранения пропорции (4:3)</label>
+        <label><input type="checkbox" id="size_lock" />min размер (80x80)</label>
+    </div>
+</body>
+</html>

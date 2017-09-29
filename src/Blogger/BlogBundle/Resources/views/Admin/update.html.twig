@@ -12,7 +12,7 @@
     {{ form_row(form.title, {'value' : blog.title}) }}
     {{ form_row(form.author, {'value' : blog.author}) }}
     {{ form_row(form.blog, {'value' : blog.blog}) }}
-    {{ form_row(form.image) }} <img class="image_update" src="{{ asset(['images/', blog.image]|join) }}" />
+    {{ form_row(form.image) }} <img class="image_update" src="{{ asset(['images/' ~ blog.id ~'/', blog.image]|join) }}" />
     {{ form_row(form.tags, {'value' : blog.tags}) }}
 
     {{ form_rest(form) }}

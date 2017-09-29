@@ -64,10 +64,10 @@ class User extends \Blogger\BlogBundle\Entity\User implements \Doctrine\ORM\Prox
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+            return ['__isInitialized__', 'id', 'apiKey', 'stripe', 'image', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
         }
 
-        return ['__isInitialized__', 'id', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
+        return ['__isInitialized__', 'id', 'apiKey', 'stripe', 'image', 'username', 'usernameCanonical', 'email', 'emailCanonical', 'enabled', 'salt', 'password', 'plainPassword', 'lastLogin', 'confirmationToken', 'passwordRequestedAt', 'groups', 'roles'];
     }
 
     /**
@@ -173,6 +173,72 @@ class User extends \Blogger\BlogBundle\Entity\User implements \Doctrine\ORM\Prox
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function setImage($image)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setImage', [$image]);
+
+        return parent::setImage($image);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getImage()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', []);
+
+        return parent::getImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setStripe($stripe)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setStripe', [$stripe]);
+
+        return parent::setStripe($stripe);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getStripe()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getStripe', []);
+
+        return parent::getStripe();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getApiKey()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getApiKey', []);
+
+        return parent::getApiKey();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getRolesAsString()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRolesAsString', []);
+
+        return parent::getRolesAsString();
+    }
+
     /**
      * {@inheritDoc}
      */

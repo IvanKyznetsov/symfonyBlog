@@ -13,8 +13,13 @@
         {% stylesheets 'css/*' %}
             <link href="{{ asset_url }}" rel="stylesheet" media="screen" />
         {% endstylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/jquery.Jcrop.css') }}">
         <script src="{{ asset('js/ajax.js') }}"></script>
         <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+        <script src="{{ asset('js/crop.js') }}"></script>
+        <script src="{{ asset('js/jquery.Jcrop.min.js') }}"></script>
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+
     {% endblock %}
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
 </head>
@@ -37,6 +42,7 @@
                             <li><a href="{{ path('fos_user_security_login') }}">Login</a></li>
                             <li><a href="{{ path('fos_user_registration_register') }}">Registartion</a></li>
                         {% else %}
+                            <li><a href="{{ path('BloggerBlogBundle_profile_show') }}">Profile</a></li>
                             <li><a href="{{ path('fos_user_security_logout') }}">{{ app.user.username }} Logout</a></li>
                         {% endif %}
                     </ul>

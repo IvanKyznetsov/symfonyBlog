@@ -57,13 +57,23 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
 
                 if (0 === strpos($pathinfo, '/css/51c56cc_part_1_')) {
                     // _assetic_51c56cc_0
-                    if ($pathinfo === '/css/51c56cc_part_1_screen_1.css') {
+                    if ($pathinfo === '/css/51c56cc_part_1_Jcrop_1.css') {
                         return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_51c56cc_0',);
                     }
 
                     // _assetic_51c56cc_1
-                    if ($pathinfo === '/css/51c56cc_part_1_test_2.css') {
+                    if ($pathinfo === '/css/51c56cc_part_1_jquery.Jcrop_2.css') {
                         return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_51c56cc_1',);
+                    }
+
+                    // _assetic_51c56cc_2
+                    if ($pathinfo === '/css/51c56cc_part_1_screen_3.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_51c56cc_2',);
+                    }
+
+                    // _assetic_51c56cc_3
+                    if ($pathinfo === '/css/51c56cc_part_1_test_4.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => 3,  '_format' => 'css',  '_route' => '_assetic_51c56cc_3',);
                     }
 
                 }
@@ -264,6 +274,32 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         // BloggerBlogBundle_just_test
         if ($pathinfo === '/justtest') {
             return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\AdminController::testAction',  '_route' => 'BloggerBlogBundle_just_test',);
+        }
+
+        if (0 === strpos($pathinfo, '/profile')) {
+            // BloggerBlogBundle_profile_show
+            if ($pathinfo === '/profiles') {
+                return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::showAction',  '_route' => 'BloggerBlogBundle_profile_show',);
+            }
+
+            // BloggerBlogBundle_profile_image
+            if (0 === strpos($pathinfo, '/profile/addimage') && preg_match('#^/profile/addimage/(?P<user_id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'BloggerBlogBundle_profile_image')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::imageAction',));
+            }
+
+            if (0 === strpos($pathinfo, '/profile/crop')) {
+                // BloggerBlogBundle_profile_crop
+                if (preg_match('#^/profile/crop/(?P<userId>\\d+)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'BloggerBlogBundle_profile_crop')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::cropAction',));
+                }
+
+                // BloggerBlogBundle_profile_release
+                if ($pathinfo === '/profile/crop/release') {
+                    return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::releaseAction',  '_route' => 'BloggerBlogBundle_profile_release',);
+                }
+
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/admins')) {
@@ -632,6 +668,61 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 }
                 not_api_users_get_user:
 
+                // api_users_show
+                if (0 === strpos($pathinfo, '/api/show') && preg_match('#^/api/show(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_api_users_show;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_show')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::showAction',  '_format' => NULL,));
+                }
+                not_api_users_show:
+
+                // api_users_image
+                if (preg_match('#^/api/(?P<user_id>[^/]++)/image(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_users_image;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_image')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::imageAction',  '_format' => NULL,));
+                }
+                not_api_users_image:
+
+                // api_users_crop
+                if (preg_match('#^/api/(?P<userId>[^/]++)/crop(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_users_crop;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_crop')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::cropAction',  '_format' => NULL,));
+                }
+                not_api_users_crop:
+
+                // api_users_release
+                if (0 === strpos($pathinfo, '/api/release') && preg_match('#^/api/release(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
+                        goto not_api_users_release;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_release')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::releaseAction',  '_format' => NULL,));
+                }
+                not_api_users_release:
+
+                // api_users_croping
+                if (preg_match('#^/api/(?P<file_input>[^/]++)/croping(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if ($this->context->getMethod() != 'PATCH') {
+                        $allow[] = 'PATCH';
+                        goto not_api_users_croping;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'api_users_croping')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\UsersController::cropingAction',  '_format' => NULL,));
+                }
+                not_api_users_croping:
+
                 // api_blogs_show
                 if (preg_match('#^/api/(?P<id>[^/]++)/show(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
                     if ($this->context->getMethod() != 'PATCH') {
@@ -738,9 +829,9 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
                 not_api_comments_get_comment:
 
                 // api_comments_ajax
-                if (preg_match('#^/api/(?P<message>[^/]++)/ajax(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
-                    if ($this->context->getMethod() != 'PATCH') {
-                        $allow[] = 'PATCH';
+                if (0 === strpos($pathinfo, '/api/ajax') && preg_match('#^/api/ajax(?:\\.(?P<_format>json|html))?$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                        $allow = array_merge($allow, array('GET', 'HEAD'));
                         goto not_api_comments_ajax;
                     }
 

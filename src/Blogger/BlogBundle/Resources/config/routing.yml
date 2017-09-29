@@ -126,3 +126,28 @@ BloggerBlogBundle_just_test:
     defaults: { _controller: "BloggerBlogBundle:Admin:test" }
     requirements:
         methods:  GET
+
+BloggerBlogBundle_profile_show:
+    path:  /profiles
+    defaults: { _controller: "BloggerBlogBundle:Users:show" }
+    requirements:
+        methods:  GET
+
+BloggerBlogBundle_profile_image:
+    path:  /profile/addimage/{user_id}
+    defaults: { _controller: "BloggerBlogBundle:Users:image" }
+    requirements:
+        methods:  POST
+
+BloggerBlogBundle_profile_crop:
+    path:  /profile/crop/{userId}
+    defaults: { _controller: "BloggerBlogBundle:Users:crop" }
+    requirements:
+        methods:  GET
+        userId: \d+
+
+BloggerBlogBundle_profile_release:
+    path:  /profile/crop/release
+    defaults: { _controller: "BloggerBlogBundle:Users:release" }
+    requirements:
+        methods:  POST

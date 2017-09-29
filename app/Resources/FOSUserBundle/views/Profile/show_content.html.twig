@@ -1,6 +1,35 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 <div class="fos_user_user_show">
+    <p>
+        {#<a href="{{ path('BloggerBlogBundle_profile_crop',{ 'userId': user.id }) }}">#}
+            {#<img class="profile_image" src="{{ asset('images/users/' ~ user.image)}}" />#}
+        {#</a>#}
+        <a href="#Modal" class="modal_button"><img class="profile_image" src="{{ asset('images/users/' ~ user.image)}}" /></a>
+    </p>
     <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
     <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    {% include 'BloggerBlogBundle:User:form.html.twig' with { 'form': form } %}
+    {#<p><a href="{{ path('fos_user_profile_edit') }}">Edit</a></p>#}
+    <hr>
+    {#<a href="#Modal" class="modal_button"><button type="button">Modal</button></a>#}
+    <div id="Modal" class="modalDialog">
+        <div class="modaldiv">
+            <a href="#" title="Закрыть" class="close">X</a>
+            {% include 'BloggerBlogBundle:User:crop.html.twig' %}
+            {#<link rel="stylesheet" href="{{ asset('css/jquery.Jcrop.css') }}">#}
+            {#<script src="{{ asset('js/ajax.js') }}"></script>#}
+            {#<script src="{{ asset('js/jquery-3.2.1.js') }}"></script>#}
+            {#<script src="{{ asset('js/crop.js') }}"></script>#}
+            {#<script src="{{ asset('js/jquery.Jcrop.min.js') }}"></script>#}
+            {#<script src="{{ asset('js/jquery.min.js') }}"></script>#}
+            {#<img class="crop_image" src="{{ asset('images/users/' ~ app.user.image)}}" id="target" alt="[Jcrop Example]" />#}
+
+            {#<button id="crop">Обрезать</button>#}
+
+            {#<div class="optlist offset">#}
+                {#<label><input type="checkbox" id="size_lock" />min/max размер (80x80/350x350)</label>#}
+            {#</div>#}
+        </div>
+    </div>
 </div>

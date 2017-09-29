@@ -471,6 +471,11 @@ the Team.
     'read_more' => 'Read more',
     'read_less' => 'Close',
   ),
+  'KnpPaginatorBundle' => 
+  array (
+    'label_previous' => 'Previous',
+    'label_next' => 'Next',
+  ),
 ));
 
 

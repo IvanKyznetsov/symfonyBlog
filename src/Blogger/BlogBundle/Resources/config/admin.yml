@@ -27,4 +27,15 @@ services:
     test:
                 class:     Blogger\BlogBundle\Services\Test
                 arguments: []
+
+    log:
+                class: Blogger\BlogBundle\Services\Log
+                arguments:
+                    - "@logger"
+
+    wsse:
+        class:  Blogger\BlogBundle\Services\Wsse
+        arguments: ["@logger"]
+        tags:
+          - { name: monolog.logger, channel: wsse }
 #BloggerBlogBundle:CRUD

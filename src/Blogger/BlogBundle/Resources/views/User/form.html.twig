@@ -1,0 +1,12 @@
+{# src/Blogger/BlogBundle/Resources/views/User/form.html.twig #}
+{{ form_start(form, { 'action': path('BloggerBlogBundle_profile_image',{ 'user_id': user.id }),  'method': 'POST', 'attr': {'class': 'blogger'} }) }}
+
+    {#{{ form_errors(form) }}#}
+
+    {#{{ form_row(form.comment) }}#}
+
+    {#{{ form_rest(form) }}#}
+    {{ form_widget(form) }}
+<p>
+    <input type="submit" value="Submit">
+</p>

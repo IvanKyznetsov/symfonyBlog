@@ -76,11 +76,20 @@ class CommentController extends Controller
 
     public function deleteAction(Request $request, $commentId)
     {
-        $em = $this->getDoctrine()->getManager();
-        $comment = $em->getRepository(Comment::class)->find($commentId);
-        $em->remove($comment);
-        $em->flush();
+        $log = [
+            '1' => '111',
+            '2' => '222',
+            '3' => '333',
+        ];
+        $log2 = 'Message';
+//        $logs = $this->container->get('wsse')->exampleMethod(json_encode($log));
+        $logs = $this->container->get('wsse')->exampleMethod($log2, $log);
 
+//        $em = $this->getDoctrine()->getManager();
+//        $comment = $em->getRepository(Comment::class)->find($commentId);
+//        $em->remove($comment);
+//        $em->flush();
+//
         return $this->redirect($request->headers->get('referer'));
     }
 
@@ -93,53 +102,54 @@ class CommentController extends Controller
         return array('blogs' => $blogs);
     }
 
-    public function ajaxAction(Request $request, $message)
+    public function ajaxAction(Request $request)
     {
+        if (isset($_POST['message'])) {
+            $message = $_POST['message'];
+            $blogid = $_POST['blogid'];
+            $blogid = substr($blogid, 31);
+            $blogid = stristr($blogid, '/', true);
 
-        if ($request->isXMLHttpRequest()) {
-            return new JsonResponse(array('data' => 'this is a json response'));
+            $blog = $this->getBlog($blogid);
+            $user = $this->getUser();
+            $comment  = new Comment();
+            $comment->setUser($user);
+            $comment->setBlog($blog);
+            $comment->setComment($message);
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($comment);
+            $em->flush();
+
+            $comments = $em->getRepository('BloggerBlogBundle:Comment')
+                ->findAll();
+            $cmnt = [];
+            foreach ($comments as $comment) {
+                $cmnt[] = $comment->getId();
+            }
+            $cmnt = max($cmnt);
+
+            $user = strval($user);
+            return new JsonResponse(array(
+                'message' => $message,
+                'user' => $user,
+                'cmnt' => $cmnt
+
+            ));
         }
+//        if ($request->isXMLHttpRequest()) {
+//            return new Response($message);
+//        }
+//
+//        return new Response('This is not ajax!', 400);
 
-        return new Response('This is not ajax!', 400);
+
+//        if ($request->isXMLHttpRequest()) {
+//            return new JsonResponse(array('data' => 'this is a json response'));
+//        }
+//
+//        return new Response('This is not ajax!', 400);
 //
 //        var_dump($message);
 //        exit;
-
-//        //$blog = $this->getBlog($blog_id);
-//
-//        $user = $this->getUser();
-//
-//        $comment  = new Comment();
-//        $test=$_POST['comment'];
-//        $comment->setUser($user);
-//        //$comment->setBlog($blog);
-//        $comment->setComment($test);
-//        $form    = $this->createForm(CommentType::class, $comment);
-//        $form->handleRequest($request);
-//
-//        if ($form->isValid()) {
-//            $em = $this->getDoctrine()
-//                ->getManager();
-//            $em->persist($comment);
-//            $em->flush();
-//
-//            return $this->redirect($this->generateUrl('BloggerBlogBundle_blog_show', array(
-//                    'id'    => $comment->getBlog()->getId(),
-//                    'slug'  => $comment->getBlog()->getSlug())) .
-//                '#comment-' . $comment->getId()
-//            );
-////            return new JsonResponse(array('message' => 'Success!'), 200);
-//        }
-//
-//        return $this->render('BloggerBlogBundle:Comment:create.html.twig', array(
-//            'comment' => $comment,
-//            'form'    => $form->createView()
-//        ));
-//        return new JsonResponse(array('message' => 'Success!'), 200);
-///
-///
-//            return array(
-//                "result" => $this->getRequest()->get("data"),
-//            );
     }
 }
