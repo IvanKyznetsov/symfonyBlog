@@ -76,19 +76,18 @@ class CommentController extends Controller
 
     public function deleteAction(Request $request, $commentId)
     {
-        $log = [
-            '1' => '111',
-            '2' => '222',
-            '3' => '333',
-        ];
-        $log2 = 'Message';
-//        $logs = $this->container->get('wsse')->exampleMethod(json_encode($log));
-        $logs = $this->container->get('wsse')->exampleMethod($log2, $log);
+//        $log = [
+//            '1' => '111',
+//            '2' => '222',
+//            '3' => '333',
+//        ];
+//        $log2 = 'Message';
+//        $logs = $this->container->get('wsse')->exampleMethod($log2, $log);
 
-//        $em = $this->getDoctrine()->getManager();
-//        $comment = $em->getRepository(Comment::class)->find($commentId);
-//        $em->remove($comment);
-//        $em->flush();
+        $em = $this->getDoctrine()->getManager();
+        $comment = $em->getRepository(Comment::class)->find($commentId);
+        $em->remove($comment);
+        $em->flush();
 //
         return $this->redirect($request->headers->get('referer'));
     }
