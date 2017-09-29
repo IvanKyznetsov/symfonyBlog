@@ -2,8 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf97daf-bcd0-4574-91d7-5edc1e5383c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlGenerator.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainerUrlMatcher.php.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/bloggerblog" afterPath="$PROJECT_DIR$/web/bundles/bloggerblog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/framework" afterPath="$PROJECT_DIR$/web/bundles/framework" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/nelmioapidoc" afterPath="$PROJECT_DIR$/web/bundles/nelmioapidoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/sensiodistribution" afterPath="$PROJECT_DIR$/web/bundles/sensiodistribution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/sonataadmin" afterPath="$PROJECT_DIR$/web/bundles/sonataadmin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/sonatacore" afterPath="$PROJECT_DIR$/web/bundles/sonatacore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/00/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65722364656c657465426c67416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/00/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65722364656c657465426c67416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/11/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223676574426c6f67416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/11/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223676574426c6f67416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/25/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223676574436f6d6d656e74416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/25/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223676574436f6d6d656e74416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/2d/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/2d/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223637265617465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/32/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/32/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6a/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6a/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/6e/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/6e/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c65722364656c657465416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/71/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223706f7374416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/71/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223706f7374416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ad/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223616a6178416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ad/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c657223616a6178416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c657223696e646578416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c65722373696465626172416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/ae/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c50616765436f6e74726f6c6c65722373696465626172416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/b9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65725d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/b9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65725d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/c9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/c9/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c436f6d6d656e74436f6e74726f6c6c6572236e6577416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/d6/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/d6/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c65722373686f77416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/annotations/f1/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223676574426c6f6773416374696f6e5d5b315d.doctrinecache.data" afterPath="$PROJECT_DIR$/app/cache/dev/annotations/f1/5b5b435d426c6f676765725c426c6f6742756e646c655c436f6e74726f6c6c65725c426c6f67436f6e74726f6c6c657223676574426c6f6773416374696f6e5d5b315d.doctrinecache.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" afterPath="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/07/0729186cd1e4c681b43f85172d455aca8dae0cccbf68f61f1bef2348b9397ade.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/07/0729186cd1e4c681b43f85172d455aca8dae0cccbf68f61f1bef2348b9397ade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/dev/twig/2e/2e095da6d2b9c2f56fd10015639f8781ec58500230c53966b8785bdb6eedb62d.php" afterPath="$PROJECT_DIR$/app/cache/dev/twig/2e/2e095da6d2b9c2f56fd10015639f8781ec58500230c53966b8785bdb6eedb62d.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/dev.log" afterPath="$PROJECT_DIR$/app/logs/dev.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/prod.log" afterPath="$PROJECT_DIR$/app/logs/prod.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig" afterPath="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/screen.css" afterPath="$PROJECT_DIR$/web/css/screen.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,63 +59,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php">
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
-              <folding>
-                <element signature="e#108#165#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="342">
+              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dev.wsse.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/logs/dev.wsse.log">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="59" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+            <state relative-caret-position="630">
+              <caret line="159" column="51" lean-forward="false" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wsse.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Wsse.php">
+      <file leaf-file-name="sliding.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/sliding.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/admin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_dev.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -91,8 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>admin_cre</find>
-      <find>fos_user_profile_edit</find>
       <find>image_directory</find>
       <find>image</find>
       <find>getUser</find>
@@ -121,6 +121,8 @@
       <find>detailed debug output</find>
       <find>conta</find>
       <find>WSSE Login</find>
+      <find>repos</find>
+      <find>color</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vendor/lexik</dir>
@@ -145,12 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle/Tests/Security/Guard/JWTTokenAuthenticatorTest.php" />
-        <option value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle/Security/Guard/JWTTokenAuthenticator.php" />
-        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/UserProvider.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/Stripe.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/stripe/stripe-php/lib/HttpClient/CurlClient.php" />
@@ -172,30 +168,36 @@
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Form/UsersType.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Form/UserType.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/web/js/action.php" />
         <option value="$PROJECT_DIR$/web/css/jquery.Jcrop.css" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/User/form.html.twig" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/UsersController.php" />
-        <option value="$PROJECT_DIR$/web/css/screen.css" />
         <option value="$PROJECT_DIR$/web/js/crop.js" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/User/crop.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/form.html.twig" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/web/js/ajax.js" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Log.php" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Test.php" />
         <option value="$PROJECT_DIR$/app/logs/dev.log" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/admin.yml" />
         <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Wsse.php" />
-        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/PaginationRepository.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/pagination.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/screen.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/sliding.html.twig" />
+        <option value="$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
       </list>
     </option>
   </component>
@@ -258,49 +260,6 @@
               <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="logs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Profile" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -462,40 +421,6 @@
               <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blogger" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Blogger" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BlogBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="jwt" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="symfonyBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfonyBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="log" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -510,6 +435,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog" />
       <recent name="$PROJECT_DIR$/src/Blogger/BlogBundle/DependencyInjection" />
       <recent name="$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/serializer" />
       <recent name="$PROJECT_DIR$/app/config/serializer" />
@@ -586,10 +512,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="391191000" />
+    <option name="totallyTimeSpent" value="399324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="-4" width="1229" height="1036" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28281116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -598,7 +525,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29365963" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29699665" sideWeight="0.4970364" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29810902" sideWeight="0.4970364" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -673,83 +600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Form/BlogType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="279" column="20" lean-forward="false" selection-start-line="279" selection-start-column="20" selection-end-line="279" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="1056" column="20" lean-forward="false" selection-start-line="1056" selection-start-column="20" selection-end-line="1056" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/DependencyInjection/ApiKey.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/DependencyInjection/BloggerBlogExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Security/ApiKey.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Security/ApiKeyAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Security/ApiKeyUserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Security/TokenAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="71" column="40" lean-forward="true" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Security/User/WebserviceUserProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -815,26 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -899,14 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="129" column="31" lean-forward="true" selection-start-line="129" selection-start-column="31" selection-end-line="129" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -923,26 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="148" column="32" lean-forward="false" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Services/Log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="153" column="8" lean-forward="true" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -1018,26 +821,162 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/dev.wsse.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
+        <state relative-caret-position="353">
           <caret line="42" column="59" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/CommentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+        <state relative-caret-position="355">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#108#165#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Admin/add.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/PaginationRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle/Resources/views/Pagination/sliding.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="45" column="120" lean-forward="false" selection-start-line="45" selection-start-column="120" selection-end-line="45" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/pagination.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="153" column="8" lean-forward="true" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="126" column="5" lean-forward="false" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/User/crop.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Comment/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Blog/sliding.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="106" column="14" lean-forward="false" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Entity/Repository/BlogRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blogger/BlogBundle/Controller/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="159" column="51" lean-forward="false" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
           <folding />
         </state>
       </provider>

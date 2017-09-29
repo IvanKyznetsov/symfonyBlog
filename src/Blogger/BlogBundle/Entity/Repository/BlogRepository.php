@@ -70,4 +70,10 @@ class BlogRepository extends \Doctrine\ORM\EntityRepository
 
         return $tagWeights;
     }
+
+    public function getLatestRecords()
+    {
+        $qb = $this->createQueryBuilder('q')->select('q');
+        return $qb->getQuery();
+    }
 }

@@ -11,16 +11,23 @@ use Blogger\BlogBundle\Form\EnquiryType;
 
 class PageController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-//        $user = $this->getUser()->getId();
-//        var_dump($user);
+//        $em = $this->getDoctrine()
+//            ->getManager();
+//
+//        $blogs = $em->getRepository('BloggerBlogBundle:Blog')
+//            ->getLatestBlogs();
+//
+        $em = $this->getDoctrine()->getManager();
+        $giftsdataquery = $em->getRepository('BloggerBlogBundle:Blog')->getLatestRecords();
 
-        $em = $this->getDoctrine()
-            ->getManager();
-
-        $blogs = $em->getRepository('BloggerBlogBundle:Blog')
-            ->getLatestBlogs();
+        $paginator = $this->get('knp_paginator');
+        $blogs = $paginator->paginate   (
+            $giftsdataquery,
+            $request->query->getInt('page', 1),
+            5
+        );
 
         return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
             'blogs' => $blogs

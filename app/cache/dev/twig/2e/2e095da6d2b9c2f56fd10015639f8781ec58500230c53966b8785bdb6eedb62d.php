@@ -21,38 +21,45 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d2737df620e47c1abe187c89d5af74fb364e8188cdb8f05c46af5c81ba20e170 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_d2737df620e47c1abe187c89d5af74fb364e8188cdb8f05c46af5c81ba20e170->enter($__internal_d2737df620e47c1abe187c89d5af74fb364e8188cdb8f05c46af5c81ba20e170_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:index.html.twig"));
+        $__internal_b9d70a3cfb421ca0bef5dfc88e371a30a129865d593e57b2c5fa8eeea4fcdf96 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b9d70a3cfb421ca0bef5dfc88e371a30a129865d593e57b2c5fa8eeea4fcdf96->enter($__internal_b9d70a3cfb421ca0bef5dfc88e371a30a129865d593e57b2c5fa8eeea4fcdf96_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Page:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_d2737df620e47c1abe187c89d5af74fb364e8188cdb8f05c46af5c81ba20e170->leave($__internal_d2737df620e47c1abe187c89d5af74fb364e8188cdb8f05c46af5c81ba20e170_prof);
+        $__internal_b9d70a3cfb421ca0bef5dfc88e371a30a129865d593e57b2c5fa8eeea4fcdf96->leave($__internal_b9d70a3cfb421ca0bef5dfc88e371a30a129865d593e57b2c5fa8eeea4fcdf96_prof);
 
     }
 
     // line 5
     public function block_body($context, array $blocks = array())
     {
-        $__internal_415267df448afe0fe6271a7005b3d0b323b4ddc0be74c076ce38729f7058c73e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_415267df448afe0fe6271a7005b3d0b323b4ddc0be74c076ce38729f7058c73e->enter($__internal_415267df448afe0fe6271a7005b3d0b323b4ddc0be74c076ce38729f7058c73e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_1040d422204073fbd1ba2ae496cb7a8ffb108e78dd99873e71d3e3f019493011 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1040d422204073fbd1ba2ae496cb7a8ffb108e78dd99873e71d3e3f019493011->enter($__internal_1040d422204073fbd1ba2ae496cb7a8ffb108e78dd99873e71d3e3f019493011_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    ";
+        echo "    <div class=\"navigation\">
+        ";
+        // line 7
+        echo $this->env->getExtension('Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension')->render($this->env, (isset($context["blogs"]) ? $context["blogs"] : $this->getContext($context, "blogs")));
+        echo "
+    </div>
+    ";
+        // line 9
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["blogs"]) ? $context["blogs"] : $this->getContext($context, "blogs")));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["blog"]) {
-            // line 7
+            // line 10
             echo "        <article class=\"blog\">
             <div class=\"date\"><time datetime=\"";
-            // line 8
+            // line 11
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["blog"], "created", array()), "c"), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["blog"], "created", array()), "l, F j, Y"), "html", null, true);
             echo "</time></div>
             <header>
                 <h2><a href=\"";
-            // line 10
+            // line 13
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("BloggerBlogBundle_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "title", array()), "html", null, true);
@@ -60,35 +67,35 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
             </header>
 
             <img src=\"";
-            // line 13
+            // line 16
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl(((("images/" . $this->getAttribute($context["blog"], "id", array())) . "/") . $this->getAttribute($context["blog"], "image", array()))), "html", null, true);
             echo "\" />
             <div class=\"snippet\">
                 <p>";
-            // line 15
+            // line 18
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "blog", array(0 => 500), "method"), "html", null, true);
             echo "</p>
                 <p class=\"continue\"><a href=\"";
-            // line 16
+            // line 19
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("BloggerBlogBundle_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "\">Continue reading...</a></p>
             </div>
 
             <footer class=\"meta\">
                 <p>Comments: <a href=\"";
-            // line 20
+            // line 23
             echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("BloggerBlogBundle_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "#comments\">";
             echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute($context["blog"], "comments", array())), "html", null, true);
             echo "</a></p>
                 <p>Posted by <span class=\"highlight\">";
-            // line 21
+            // line 24
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "author", array()), "html", null, true);
             echo "</span> at ";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["blog"], "created", array()), "h:iA"), "html", null, true);
             echo "</p>
                 <p>Tags: <span class=\"highlight\">";
-            // line 22
+            // line 25
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "tags", array()), "html", null, true);
             echo "</span></p>
             </footer>
@@ -97,15 +104,23 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 26
+            // line 29
             echo "        <p>There are no blog entries for symblog</p>
     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['blog'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 31
+        echo "    <div class=\"navigation\">
+        ";
+        // line 32
+        echo $this->env->getExtension('Knp\Bundle\PaginatorBundle\Twig\Extension\PaginationExtension')->render($this->env, (isset($context["blogs"]) ? $context["blogs"] : $this->getContext($context, "blogs")));
+        echo "
+    </div>
+";
         
-        $__internal_415267df448afe0fe6271a7005b3d0b323b4ddc0be74c076ce38729f7058c73e->leave($__internal_415267df448afe0fe6271a7005b3d0b323b4ddc0be74c076ce38729f7058c73e_prof);
+        $__internal_1040d422204073fbd1ba2ae496cb7a8ffb108e78dd99873e71d3e3f019493011->leave($__internal_1040d422204073fbd1ba2ae496cb7a8ffb108e78dd99873e71d3e3f019493011_prof);
 
     }
 
@@ -121,7 +136,7 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
 
     public function getDebugInfo()
     {
-        return array (  101 => 26,  92 => 22,  86 => 21,  80 => 20,  73 => 16,  69 => 15,  64 => 13,  56 => 10,  49 => 8,  46 => 7,  40 => 6,  34 => 5,  11 => 3,);
+        return array (  118 => 32,  115 => 31,  108 => 29,  99 => 25,  93 => 24,  87 => 23,  80 => 19,  76 => 18,  71 => 16,  63 => 13,  56 => 11,  53 => 10,  48 => 9,  43 => 7,  40 => 6,  34 => 5,  11 => 3,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -139,6 +154,9 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
 {% extends 'BloggerBlogBundle::layout.html.twig' %}
 
 {% block body %}
+    <div class=\"navigation\">
+        {{ knp_pagination_render(blogs) }}
+    </div>
     {% for blog in blogs %}
         <article class=\"blog\">
             <div class=\"date\"><time datetime=\"{{ blog.created|date('c') }}\">{{ blog.created|date('l, F j, Y') }}</time></div>
@@ -161,6 +179,9 @@ class __TwigTemplate_6bb38c37d480f80e5fdd72287eb9478606261dcf07ef30e298bb59a00d3
     {% else %}
         <p>There are no blog entries for symblog</p>
     {% endfor %}
+    <div class=\"navigation\">
+        {{ knp_pagination_render(blogs) }}
+    </div>
 {% endblock %}", "BloggerBlogBundle:Page:index.html.twig", "/var/www/html/symfonyBlog/src/Blogger/BlogBundle/Resources/views/Page/index.html.twig");
     }
 }

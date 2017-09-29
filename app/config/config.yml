@@ -160,7 +160,7 @@ knp_paginator:
         filter_field_name: filterField  # filter field query parameter name
         filter_value_name: filterValue  # filter value query paameter name
     template:
-        pagination: 'KnpPaginatorBundle:Pagination:sliding.html.twig'     # sliding pagination controls template
+        pagination: 'BloggerBlogBundle:Blog:sliding.html.twig'     # sliding pagination controls template
         sortable: 'KnpPaginatorBundle:Pagination:sortable_link.html.twig' # sort link template
         filtration: 'KnpPaginatorBundle:Pagination:filtration.html.twig'  # filters template
 #lexik_jwt_authentication:
