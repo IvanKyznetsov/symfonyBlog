@@ -1,0 +1,11 @@
+Blogger\BlogBundle\Entity\TeOne:
+    type: entity
+    table: null
+    repositoryClass: Blogger\BlogBundle\Repository\TeOneRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

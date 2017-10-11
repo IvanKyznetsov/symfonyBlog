@@ -1,0 +1,11 @@
+Blogger\BlogBundle\Entity\Car:
+    type: entity
+    table: null
+    repositoryClass: Blogger\BlogBundle\Repository\CarRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

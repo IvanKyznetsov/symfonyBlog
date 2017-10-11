@@ -14,6 +14,13 @@
         </span>
     {% endif %}
 
+    {% if current >= first+3 %}
+        <span class="first">
+            <a href="{{ path(route, query|merge({(pageParameterName): first})) }}">{{ first }}</a>
+            <span class="dots">...</span>
+        </span>
+    {% endif %}
+
     {% for page in pagesInRange %}
         {% if page != current %}
             <span class="page">
@@ -23,6 +30,13 @@
             <span class="current">{{ page }}</span>
         {% endif %}
     {% endfor %}
+
+    {% if current <= last-3 %}
+        <span class="last">
+            <span class="dots">...</span>
+            <a href="{{ path(route, query|merge({(pageParameterName): last})) }}">{{ last }}</a>
+        </span>
+    {% endif %}
 
     {% if next is defined %}
         <span class="next">

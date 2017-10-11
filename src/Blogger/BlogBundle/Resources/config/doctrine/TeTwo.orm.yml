@@ -1,0 +1,11 @@
+Blogger\BlogBundle\Entity\TeTwo:
+    type: entity
+    table: null
+    repositoryClass: Blogger\BlogBundle\Repository\TeTwoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

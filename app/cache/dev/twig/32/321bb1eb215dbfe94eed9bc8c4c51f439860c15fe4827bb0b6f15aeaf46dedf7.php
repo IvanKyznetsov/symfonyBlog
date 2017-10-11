@@ -15,8 +15,8 @@ class __TwigTemplate_0aaf6d511031bafbe64f3729d4674657142bae0e906786f3b925b297410
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_5cbe36f582c87b88ade514185c14d1344524aaafbedf4ba267855ad01606290c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5cbe36f582c87b88ade514185c14d1344524aaafbedf4ba267855ad01606290c->enter($__internal_5cbe36f582c87b88ade514185c14d1344524aaafbedf4ba267855ad01606290c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:User:form.html.twig"));
+        $__internal_2e49475df40ad44e309e97d83a27d5938c2dc091c26b23d5c0547a5013e4d542 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2e49475df40ad44e309e97d83a27d5938c2dc091c26b23d5c0547a5013e4d542->enter($__internal_2e49475df40ad44e309e97d83a27d5938c2dc091c26b23d5c0547a5013e4d542_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:User:form.html.twig"));
 
         // line 2
         echo         $this->env->getExtension('Symfony\Bridge\Twig\Extension\FormExtension')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start', array("action" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("BloggerBlogBundle_profile_image", array("user_id" => $this->getAttribute((isset($context["user"]) ? $context["user"] : $this->getContext($context, "user")), "id", array()))), "method" => "POST", "attr" => array("class" => "blogger")));
@@ -37,7 +37,7 @@ class __TwigTemplate_0aaf6d511031bafbe64f3729d4674657142bae0e906786f3b925b297410
     <input type=\"submit\" value=\"Submit\">
 </p>";
         
-        $__internal_5cbe36f582c87b88ade514185c14d1344524aaafbedf4ba267855ad01606290c->leave($__internal_5cbe36f582c87b88ade514185c14d1344524aaafbedf4ba267855ad01606290c_prof);
+        $__internal_2e49475df40ad44e309e97d83a27d5938c2dc091c26b23d5c0547a5013e4d542->leave($__internal_2e49475df40ad44e309e97d83a27d5938c2dc091c26b23d5c0547a5013e4d542_prof);
 
     }
 

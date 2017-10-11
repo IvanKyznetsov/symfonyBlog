@@ -15,8 +15,8 @@ class __TwigTemplate_6984defce92f247bdbe5c7656add25612ca905c08143bd80d954e614899
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_39cf194b709866b77b09296df7b0ffe09e5bbc8942dbe7ee013b96efe6802e0e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_39cf194b709866b77b09296df7b0ffe09e5bbc8942dbe7ee013b96efe6802e0e->enter($__internal_39cf194b709866b77b09296df7b0ffe09e5bbc8942dbe7ee013b96efe6802e0e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:User:crop.html.twig"));
+        $__internal_58d53ca99100bd49e6f8c70c7bc8ff5478a30024726f02b8af7656acfcf42263 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_58d53ca99100bd49e6f8c70c7bc8ff5478a30024726f02b8af7656acfcf42263->enter($__internal_58d53ca99100bd49e6f8c70c7bc8ff5478a30024726f02b8af7656acfcf42263_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:User:crop.html.twig"));
 
         // line 2
         echo "
@@ -113,7 +113,7 @@ class __TwigTemplate_6984defce92f247bdbe5c7656add25612ca905c08143bd80d954e614899
 </body>
 </html>";
         
-        $__internal_39cf194b709866b77b09296df7b0ffe09e5bbc8942dbe7ee013b96efe6802e0e->leave($__internal_39cf194b709866b77b09296df7b0ffe09e5bbc8942dbe7ee013b96efe6802e0e_prof);
+        $__internal_58d53ca99100bd49e6f8c70c7bc8ff5478a30024726f02b8af7656acfcf42263->leave($__internal_58d53ca99100bd49e6f8c70c7bc8ff5478a30024726f02b8af7656acfcf42263_prof);
 
     }
 

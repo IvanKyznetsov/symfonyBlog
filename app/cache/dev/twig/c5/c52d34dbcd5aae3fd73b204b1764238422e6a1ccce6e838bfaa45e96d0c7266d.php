@@ -15,8 +15,8 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_4140714cc71df0d2a9e0f179c8faa3242bfe17393d44ce7f9333e9f9a69df0af = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_4140714cc71df0d2a9e0f179c8faa3242bfe17393d44ce7f9333e9f9a69df0af->enter($__internal_4140714cc71df0d2a9e0f179c8faa3242bfe17393d44ce7f9333e9f9a69df0af_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Blog:sliding.html.twig"));
+        $__internal_2bd158b588665748e14839217629e0e8ddf248fbfba33eda1078e90970088d91 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2bd158b588665748e14839217629e0e8ddf248fbfba33eda1078e90970088d91->enter($__internal_2bd158b588665748e14839217629e0e8ddf248fbfba33eda1078e90970088d91_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "BloggerBlogBundle:Blog:sliding.html.twig"));
 
         // line 2
         echo "
@@ -55,16 +55,33 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
             echo "
     ";
             // line 17
+            if (((isset($context["current"]) ? $context["current"] : $this->getContext($context, "current")) >= ((isset($context["first"]) ? $context["first"] : $this->getContext($context, "first")) + 3))) {
+                // line 18
+                echo "        <span class=\"first\">
+            <a href=\"";
+                // line 19
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath((isset($context["route"]) ? $context["route"] : $this->getContext($context, "route")), twig_array_merge((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), array((isset($context["pageParameterName"]) ? $context["pageParameterName"] : $this->getContext($context, "pageParameterName")) => (isset($context["first"]) ? $context["first"] : $this->getContext($context, "first"))))), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, (isset($context["first"]) ? $context["first"] : $this->getContext($context, "first")), "html", null, true);
+                echo "</a>
+            <span class=\"dots\">...</span>
+        </span>
+    ";
+            }
+            // line 23
+            echo "
+    ";
+            // line 24
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["pagesInRange"]) ? $context["pagesInRange"] : $this->getContext($context, "pagesInRange")));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 18
+                // line 25
                 echo "        ";
                 if (($context["page"] != (isset($context["current"]) ? $context["current"] : $this->getContext($context, "current")))) {
-                    // line 19
+                    // line 26
                     echo "            <span class=\"page\">
                 <a href=\"";
-                    // line 20
+                    // line 27
                     echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath((isset($context["route"]) ? $context["route"] : $this->getContext($context, "route")), twig_array_merge((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), array((isset($context["pageParameterName"]) ? $context["pageParameterName"] : $this->getContext($context, "pageParameterName")) => $context["page"]))), "html", null, true);
                     echo "\">";
                     echo twig_escape_filter($this->env, $context["page"], "html", null, true);
@@ -72,52 +89,69 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
             </span>
         ";
                 } else {
-                    // line 23
+                    // line 30
                     echo "            <span class=\"current\">";
                     echo twig_escape_filter($this->env, $context["page"], "html", null, true);
                     echo "</span>
         ";
                 }
-                // line 25
+                // line 32
                 echo "    ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 26
+            // line 33
             echo "
     ";
-            // line 27
+            // line 34
+            if (((isset($context["current"]) ? $context["current"] : $this->getContext($context, "current")) <= ((isset($context["last"]) ? $context["last"] : $this->getContext($context, "last")) - 3))) {
+                // line 35
+                echo "        <span class=\"last\">
+            <span class=\"dots\">...</span>
+            <a href=\"";
+                // line 37
+                echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath((isset($context["route"]) ? $context["route"] : $this->getContext($context, "route")), twig_array_merge((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), array((isset($context["pageParameterName"]) ? $context["pageParameterName"] : $this->getContext($context, "pageParameterName")) => (isset($context["last"]) ? $context["last"] : $this->getContext($context, "last"))))), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, (isset($context["last"]) ? $context["last"] : $this->getContext($context, "last")), "html", null, true);
+                echo "</a>
+        </span>
+    ";
+            }
+            // line 40
+            echo "
+    ";
+            // line 41
             if (array_key_exists("next", $context)) {
-                // line 28
+                // line 42
                 echo "        <span class=\"next\">
             <a href=\"";
-                // line 29
+                // line 43
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath((isset($context["route"]) ? $context["route"] : $this->getContext($context, "route")), twig_array_merge((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), array((isset($context["pageParameterName"]) ? $context["pageParameterName"] : $this->getContext($context, "pageParameterName")) => (isset($context["next"]) ? $context["next"] : $this->getContext($context, "next"))))), "html", null, true);
                 echo "\">&gt;</a>
         </span>
     ";
             }
-            // line 32
+            // line 46
             echo "
     ";
-            // line 33
+            // line 47
             if ((array_key_exists("last", $context) && ((isset($context["current"]) ? $context["current"] : $this->getContext($context, "current")) != (isset($context["last"]) ? $context["last"] : $this->getContext($context, "last"))))) {
-                // line 34
+                // line 48
                 echo "        <span class=\"last\">
             <a href=\"";
-                // line 35
+                // line 49
                 echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath((isset($context["route"]) ? $context["route"] : $this->getContext($context, "route")), twig_array_merge((isset($context["query"]) ? $context["query"] : $this->getContext($context, "query")), array((isset($context["pageParameterName"]) ? $context["pageParameterName"] : $this->getContext($context, "pageParameterName")) => (isset($context["last"]) ? $context["last"] : $this->getContext($context, "last"))))), "html", null, true);
                 echo "\">&gt;&gt;</a>
         </span>
     ";
             }
-            // line 38
+            // line 52
             echo "</div>
 ";
         }
         
-        $__internal_4140714cc71df0d2a9e0f179c8faa3242bfe17393d44ce7f9333e9f9a69df0af->leave($__internal_4140714cc71df0d2a9e0f179c8faa3242bfe17393d44ce7f9333e9f9a69df0af_prof);
+        $__internal_2bd158b588665748e14839217629e0e8ddf248fbfba33eda1078e90970088d91->leave($__internal_2bd158b588665748e14839217629e0e8ddf248fbfba33eda1078e90970088d91_prof);
 
     }
 
@@ -133,7 +167,7 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
 
     public function getDebugInfo()
     {
-        return array (  116 => 38,  110 => 35,  107 => 34,  105 => 33,  102 => 32,  96 => 29,  93 => 28,  91 => 27,  88 => 26,  82 => 25,  76 => 23,  68 => 20,  65 => 19,  62 => 18,  58 => 17,  55 => 16,  49 => 13,  46 => 12,  44 => 11,  41 => 10,  35 => 7,  32 => 6,  30 => 5,  27 => 4,  25 => 3,  22 => 2,);
+        return array (  150 => 52,  144 => 49,  141 => 48,  139 => 47,  136 => 46,  130 => 43,  127 => 42,  125 => 41,  122 => 40,  114 => 37,  110 => 35,  108 => 34,  105 => 33,  99 => 32,  93 => 30,  85 => 27,  82 => 26,  79 => 25,  75 => 24,  72 => 23,  63 => 19,  60 => 18,  58 => 17,  55 => 16,  49 => 13,  46 => 12,  44 => 11,  41 => 10,  35 => 7,  32 => 6,  30 => 5,  27 => 4,  25 => 3,  22 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -162,6 +196,13 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
         </span>
     {% endif %}
 
+    {% if current >= first+3 %}
+        <span class=\"first\">
+            <a href=\"{{ path(route, query|merge({(pageParameterName): first})) }}\">{{ first }}</a>
+            <span class=\"dots\">...</span>
+        </span>
+    {% endif %}
+
     {% for page in pagesInRange %}
         {% if page != current %}
             <span class=\"page\">
@@ -171,6 +212,13 @@ class __TwigTemplate_7c1eb67a23e41dfdfea00b8e1fa25504be5d65b67f8f94ba90242faa8ad
             <span class=\"current\">{{ page }}</span>
         {% endif %}
     {% endfor %}
+
+    {% if current <= last-3 %}
+        <span class=\"last\">
+            <span class=\"dots\">...</span>
+            <a href=\"{{ path(route, query|merge({(pageParameterName): last})) }}\">{{ last }}</a>
+        </span>
+    {% endif %}
 
     {% if next is defined %}
         <span class=\"next\">

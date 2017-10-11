@@ -3,11 +3,11 @@
 
 namespace Blogger\BlogBundle\Controller;
 
+use Doctrine\Common\Cache\FilesystemCache;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Blogger\BlogBundle\Entity\Enquiry;
 use Blogger\BlogBundle\Form\EnquiryType;
-
 
 class PageController extends Controller
 {
@@ -26,7 +26,7 @@ class PageController extends Controller
         $blogs = $paginator->paginate   (
             $giftsdataquery,
             $request->query->getInt('page', 1),
-            5
+            2
         );
 
         return $this->render('BloggerBlogBundle:Page:index.html.twig', array(
@@ -34,7 +34,7 @@ class PageController extends Controller
         ));
     }
 
-    public function aboutAction()
+    public function aboutAction(Request $request)
     {
         return $this->render('BloggerBlogBundle:Page:about.html.twig');
     }

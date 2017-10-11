@@ -39,6 +39,8 @@ class AdminController extends Controller
     {
         $blog = new Blog();
         $form = $this->createForm(BlogType::class, $blog);
+        var_dump($request);
+        exit;
 
         if ($request->isMethod($request::METHOD_POST)) {
             $form->handleRequest($request);

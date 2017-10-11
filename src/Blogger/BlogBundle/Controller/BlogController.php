@@ -14,10 +14,11 @@ use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\Annotations\Route;
 use Blogger\BlogBundle\Entity\User;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
+use Symfony\Component\Filesystem\Filesystem;
 
 class BlogController extends FOSRestController
 {
-    public function showAction($id, $slug)
+    public function showAction($id, $slug, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
 
@@ -90,8 +91,16 @@ class BlogController extends FOSRestController
      */
     public function deleteBlgAction($id)
     {
+//        $em = $this->getDoctrine()->getManager();
+//        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($id);
+//        $em->remove($blog);
+//        $em->flush();
+
         $em = $this->getDoctrine()->getManager();
-        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($id);
+        $blog = $em->getRepository(Blog::class)->find($id);
+        $imgdel = $blog->getImage();
+        $fs = new Filesystem();
+        $fs->remove($this->getParameter('image_directory').$imgdel);
         $em->remove($blog);
         $em->flush();
 

@@ -9,6 +9,7 @@ use Blogger\BlogBundle\Form\CommentType;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Kernel;
 
 /**
  * Comment controller.
@@ -88,7 +89,7 @@ class CommentController extends Controller
         $comment = $em->getRepository(Comment::class)->find($commentId);
         $em->remove($comment);
         $em->flush();
-//
+
         return $this->redirect($request->headers->get('referer'));
     }
 
@@ -104,8 +105,9 @@ class CommentController extends Controller
     public function ajaxAction(Request $request)
     {
         if (isset($_POST['message'])) {
-            $message = $_POST['message'];
-            $blogid = $_POST['blogid'];
+            $ajax = $request->request->all();
+            $message = $ajax['message'];
+            $blogid = $ajax['blogid'];
             $blogid = substr($blogid, 31);
             $blogid = stristr($blogid, '/', true);
 

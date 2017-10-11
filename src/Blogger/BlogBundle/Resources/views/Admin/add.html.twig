@@ -11,6 +11,12 @@
 
     {{ form_row(form.title) }}
     {{ form_row(form.author) }}
+    {#{% for emailField in form.author %}#}
+        {#<li>#}
+            {#{{ form_errors(emailField) }}#}
+            {#{{ form_widget(emailField) }}#}
+        {#</li>#}
+    {#{% endfor %}#}
     {{ form_row(form.blog) }}
     {{ form_row(form.image) }}
     {{ form_row(form.tags) }}

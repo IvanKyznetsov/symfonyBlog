@@ -1,0 +1,11 @@
+Blogger\BlogBundle\Entity\Mark:
+    type: entity
+    table: null
+    repositoryClass: Blogger\BlogBundle\Repository\MarkRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
