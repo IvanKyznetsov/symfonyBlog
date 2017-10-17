@@ -155,6 +155,8 @@ class AdminController extends Controller
 
         $test = 66;
 
+
+
         return $resimg->vardump();
     }
 }
