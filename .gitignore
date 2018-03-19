@@ -1,5 +1,4 @@
 web/images/13/misdirection.jpg
-/.idea
+.idea/
 /app/logs/*
-/.idea/
 /app/cache/*
